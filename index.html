@@ -417,13 +417,29 @@
     }
 
     @keyframes pulseDot {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.3; transform: scale(0.7); }
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.3;
+        transform: scale(0.7);
+      }
     }
 
     @keyframes pulseGlow {
-      0%, 100% { box-shadow: 0 0 16px var(--primary-glow); }
-      50% { box-shadow: 0 0 28px rgba(132, 204, 22, 0.45); }
+
+      0%,
+      100% {
+        box-shadow: 0 0 16px var(--primary-glow);
+      }
+
+      50% {
+        box-shadow: 0 0 28px rgba(132, 204, 22, 0.45);
+      }
     }
 
     .prompt-title {
@@ -732,23 +748,28 @@
         width: 36px;
         height: 36px;
       }
+
       .carousel-nav-btn.prev {
         left: 8px;
       }
+
       .carousel-nav-btn.next {
         right: 8px;
       }
+
       .carousel-badge-counter {
         top: 10px;
         right: 10px;
         font-size: 0.68rem;
         padding: 3px 9px;
       }
+
       .carousel-indicators {
         bottom: 8px;
         padding: 4px 10px;
         gap: 5px;
       }
+
       .carousel-dot.active {
         width: 18px;
       }
@@ -1095,6 +1116,97 @@
       border-color: var(--primary);
       background: var(--card);
       box-shadow: 0 0 0 3px var(--primary-glow);
+    }
+
+    /* Permanent +62 Phone Input Group */
+    .phone-input-group {
+      display: flex;
+      align-items: stretch;
+      width: 100%;
+      border: 1.5px solid var(--line);
+      border-radius: var(--radius-sm);
+      background: var(--bg);
+      transition: all 0.2s ease;
+      overflow: hidden;
+      min-height: 48px;
+    }
+
+    .phone-input-group:focus-within {
+      border-color: var(--primary);
+      background: var(--card);
+      box-shadow: 0 0 0 3px var(--primary-glow);
+    }
+
+    .bad .phone-input-group {
+      border-color: var(--danger) !important;
+      background: var(--danger-bg) !important;
+    }
+
+    .phone-prefix-addon {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 0 14px;
+      background: rgba(132, 204, 22, 0.12);
+      border-right: 1.5px solid var(--line);
+      color: var(--primary);
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 0.95rem;
+      letter-spacing: 0.02em;
+      user-select: none;
+      flex-shrink: 0;
+      transition: all 0.2s ease;
+    }
+
+    [data-theme="light"] .phone-prefix-addon {
+      background: rgba(132, 204, 22, 0.16);
+      color: #3f6212;
+      border-right-color: var(--line);
+    }
+
+    .phone-input-group:focus-within .phone-prefix-addon {
+      border-right-color: var(--primary);
+      background: rgba(132, 204, 22, 0.22);
+    }
+
+    .bad .phone-input-group .phone-prefix-addon {
+      border-right-color: var(--danger);
+      color: var(--danger);
+      background: rgba(239, 68, 68, 0.15);
+    }
+
+    .phone-input-group input[type="tel"],
+    .phone-input-group input.phone-input-field {
+      border: none !important;
+      border-radius: 0 !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      padding: 11px 14px !important;
+      flex: 1;
+      min-width: 0;
+      font-size: 0.96rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .prefix-badge-label {
+      display: inline-block;
+      margin-left: 4px;
+      padding: 1px 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--primary);
+      background: rgba(132, 204, 22, 0.15);
+      border: 1px solid rgba(132, 204, 22, 0.3);
+      border-radius: 4px;
+      vertical-align: middle;
+    }
+
+    [data-theme="light"] .prefix-badge-label {
+      background: rgba(132, 204, 22, 0.2);
+      color: #3f6212;
+      border-color: rgba(63, 98, 18, 0.3);
     }
 
     .row {
@@ -2075,6 +2187,7 @@
         opacity: 0;
         transform: translateY(-8px);
       }
+
       to {
         opacity: 1;
         transform: translateY(0);
@@ -2355,12 +2468,15 @@
         align-items: center;
         text-align: center;
       }
+
       .qris-merchant-details {
         text-align: center;
       }
+
       .qris-action-buttons {
         justify-content: center;
       }
+
       .qris-amount-row {
         flex-direction: column;
         align-items: flex-start;
@@ -3219,7 +3335,8 @@
       </div>
       <h2 class="prompt-title">Pilih Ekspedisi Anda Terlebih Dahulu</h2>
       <p class="prompt-desc">
-        Silakan klik salah satu ekspedisi di atas (<b>VOL 6: Curug Lewibumi</b> atau <b>VOL 7: Curug Panjang</b>) untuk membuka poster rute perjalanan, rincian paket trekking, dan formulir pendaftaran rombongan.
+        Silakan klik salah satu ekspedisi di atas (<b>VOL 6: Curug Lewibumi</b> atau <b>VOL 7: Curug Panjang</b>) untuk
+        membuka poster rute perjalanan, rincian paket trekking, dan formulir pendaftaran rombongan.
       </p>
       <div class="prompt-actions-grid">
         <button type="button" class="prompt-expedition-card" onclick="switchEvent('vol6')">
@@ -3246,519 +3363,556 @@
     <div id="eventContentWrapper" class="event-content-wrapper hide">
       <!-- Hero Poster Showcase (Dynamic based on selected event) -->
       <header class="hero-card">
-      <div class="hero-visual" id="heroVisual">
-        <div class="carousel-container" id="heroCarousel" aria-roledescription="carousel" aria-label="Showcase Poster dan Informasi Event">
-          <div class="carousel-track" id="heroCarouselTrack">
-            <!-- Slide 1: TJ1.jpeg -->
-            <div class="carousel-slide active" data-index="0">
-              <img id="heroImg" src="./TJ1.jpeg" alt="Poster Teman Satu Jalan Vol 7 Goes to Curug Panjang" loading="eager">
+        <div class="hero-visual" id="heroVisual">
+          <div class="carousel-container" id="heroCarousel" aria-roledescription="carousel"
+            aria-label="Showcase Poster dan Informasi Event">
+            <div class="carousel-track" id="heroCarouselTrack">
+              <!-- Slide 1: TJ1.jpeg -->
+              <div class="carousel-slide active" data-index="0">
+                <img id="heroImg" src="./TJ1.jpeg" alt="Poster Teman Satu Jalan Vol 7 Goes to Curug Panjang"
+                  loading="eager">
+              </div>
+              <!-- Slide 2: TJ21.png -->
+              <div class="carousel-slide" data-index="1">
+                <img src="./TJ21.png" alt="Rute Trek & Special Include Curug Panjang" loading="lazy">
+              </div>
+              <!-- Slide 3: TJ22.png -->
+              <div class="carousel-slide" data-index="2">
+                <img src="./TJ22.png" alt="Pilihan Paket Registrasi Vol 7 Curug Panjang" loading="lazy">
+              </div>
+              <!-- Slide 4: TJ12.jpeg -->
+              <div class="carousel-slide" data-index="3">
+                <img src="./TJ12.jpeg" alt="Bonus Buku Pulih Bersama Allah Khusus 10 Tiket Pertama" loading="lazy">
+              </div>
             </div>
-            <!-- Slide 2: TJ21.png -->
-            <div class="carousel-slide" data-index="1">
-              <img src="./TJ21.png" alt="Rute Trek & Special Include Curug Panjang" loading="lazy">
-            </div>
-            <!-- Slide 3: TJ22.png -->
-            <div class="carousel-slide" data-index="2">
-              <img src="./TJ22.png" alt="Pilihan Paket Registrasi Vol 7 Curug Panjang" loading="lazy">
-            </div>
-            <!-- Slide 4: TJ12.jpeg -->
-            <div class="carousel-slide" data-index="3">
-              <img src="./TJ12.jpeg" alt="Bonus Buku Pulih Bersama Allah Khusus 10 Tiket Pertama" loading="lazy">
-            </div>
-          </div>
 
-          <!-- Carousel Controls -->
-          <button type="button" class="carousel-nav-btn prev" id="carouselPrevBtn" aria-label="Slide sebelumnya">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-          </button>
-          <button type="button" class="carousel-nav-btn next" id="carouselNextBtn" aria-label="Slide berikutnya">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-          </button>
-
-          <!-- Top-Right Slide Badge Counter -->
-          <div class="carousel-badge-counter" id="carouselCounter">
-            <span class="carousel-counter-curr">1</span> / <span class="carousel-counter-total">4</span>
-          </div>
-
-          <!-- Bottom Navigation Indicators -->
-          <div class="carousel-indicators" id="carouselIndicators">
-            <button type="button" class="carousel-dot active" data-index="0" aria-label="Slide 1"></button>
-            <button type="button" class="carousel-dot" data-index="1" aria-label="Slide 2"></button>
-            <button type="button" class="carousel-dot" data-index="2" aria-label="Slide 3"></button>
-            <button type="button" class="carousel-dot" data-index="3" aria-label="Slide 4"></button>
-          </div>
-
-          <!-- Progress Bar for Autoplay -->
-          <div class="carousel-progress-track">
-            <div class="carousel-progress-bar" id="carouselProgressBar"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-headline">
-        <div
-          style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:6px;">
-          <span class="vol-tag" id="heroVolTag">VOL 7</span>
-          <span class="hero-status-pill" id="badgeLimited">⚡ KUOTA SANGAT TERBATAS!</span>
-        </div>
-        <h1 class="main-title"><span id="heroMainTitle">TEMAN</span> <span class="highlight"
-            id="heroHighlightTitle">SATUJALAN</span></h1>
-        <div class="dest-badge">
-          GOES TO <span id="heroDestination">CURUG PANJANG</span>
-        </div>
-      </div>
-
-      <!-- Spesifikasi Event Dinamis Sesuai Event yang Dipilih -->
-      <div class="specs-grid">
-        <div class="spec-box">
-          <span class="label">📅 Tanggal</span>
-          <span class="val" id="specDate">27 Desember 2026</span>
-        </div>
-        <div class="spec-box">
-          <span class="label">⏰ Waktu</span>
-          <span class="val" id="specTime">06.00 WIB</span>
-        </div>
-        <div class="spec-box">
-          <span class="label">📍 Titik Kumpul</span>
-          <span class="val" id="specTikum">Bukit Waruwangi</span>
-        </div>
-        <div class="spec-box">
-          <span class="label">🥾 Jarak Trek</span>
-          <span class="val" id="specDistance">5 KM</span>
-        </div>
-      </div>
-
-      <!-- Syarat Ketentuan Peserta Sesuai Poster -->
-      <div class="mahram-banner">
-        <span class="mahram-icon">👥</span>
-        <div class="mahram-text">
-          <h4>Ketentuan Peserta</h4>
-          <p id="mahramDesc"><b>Khusus:</b> Pasangan Suami-Istri (Couple), Keluarga (Family), Saudara Semahram, Ikhwan & Akhwat.
-          </p>
-        </div>
-      </div>
-
-      <!-- Kontak Resmi Poster -->
-      <div class="contact-ribbon">
-        <span>Informasi & Pendaftaran Resmi:</span>
-        <div class="contact-numbers">
-          <a class="contact-link" href="https://wa.me/6285882582729" target="_blank" rel="noopener">📱 0858 8258
-            2729</a>
-          <a class="contact-link" href="https://wa.me/6285811474778" target="_blank" rel="noopener">📱 0858 1147
-            4778</a>
-        </div>
-      </div>
-    </header>
-
-    <!-- Registration Form -->
-    <form id="f" novalidate>
-
-      <!-- Section 1: Informasi Kegiatan & Paket -->
-      <fieldset>
-        <legend><span class="icon">📋</span> <span class="legend-title">1. Informasi Kegiatan & Paket</span> <span
-            class="legend-pill" id="paketEventName">Vol 7</span></legend>
-
-        <!-- Pilihan Paket Trekking -->
-        <div class="f" id="tkbox">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:8px;">
-            <span class="lbl" style="margin-bottom:0;">Pilihan Paket Trekking</span>
-            <button type="button" class="btn-info-link" id="btnViewInfografis" onclick="openInfoPosterModal()" style="background:transparent; border:none; color:var(--primary); font-size:0.8rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:5px; text-decoration:underline; padding:0;">
-              <span>📊</span> Lihat Brosur Infografis Paket
+            <!-- Carousel Controls -->
+            <button type="button" class="carousel-nav-btn prev" id="carouselPrevBtn" aria-label="Slide sebelumnya">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
             </button>
+            <button type="button" class="carousel-nav-btn next" id="carouselNextBtn" aria-label="Slide berikutnya">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+
+            <!-- Top-Right Slide Badge Counter -->
+            <div class="carousel-badge-counter" id="carouselCounter">
+              <span class="carousel-counter-curr">1</span> / <span class="carousel-counter-total">4</span>
+            </div>
+
+            <!-- Bottom Navigation Indicators -->
+            <div class="carousel-indicators" id="carouselIndicators">
+              <button type="button" class="carousel-dot active" data-index="0" aria-label="Slide 1"></button>
+              <button type="button" class="carousel-dot" data-index="1" aria-label="Slide 2"></button>
+              <button type="button" class="carousel-dot" data-index="2" aria-label="Slide 3"></button>
+              <button type="button" class="carousel-dot" data-index="3" aria-label="Slide 4"></button>
+            </div>
+
+            <!-- Progress Bar for Autoplay -->
+            <div class="carousel-progress-track">
+              <div class="carousel-progress-bar" id="carouselProgressBar"></div>
+            </div>
           </div>
-          <!-- Ticket container rendered dynamically by selected event -->
-          <div class="tickets" id="ticketsContainer"></div>
-          <p class="err">Pilih salah satu paket trekking.</p>
         </div>
 
-        <div class="f">
-          <label for="routeInput">Rute Perjalanan</label>
-          <input type="text" id="routeInput" value="5 KM (Desa Kadubereum - Curug Lewi Bumi)" readonly
-            style="opacity:0.85; cursor:not-allowed;">
-        </div>
-
-        <!-- Pilihan Transportasi Menuju Titik Kumpul -->
-        <div class="f" id="transportBox">
-          <span class="lbl">Pilihan Transportasi Menuju Titik Kumpul</span>
-          <div class="radio-pill-grid">
-            <label class="radio-pill">
-              <input type="radio" name="transportasi" value="Kendaraan Pribadi">
-              <span class="pill-box">
-                <span class="pill-icon">🚗</span>
-                <span class="pill-title">Kendaraan Pribadi</span>
-              </span>
-            </label>
-            <label class="radio-pill">
-              <input type="radio" name="transportasi" value="Transportasi dari Panitia">
-              <span class="pill-box">
-                <span class="pill-icon">🚐</span>
-                <span class="pill-title">Transportasi dari Panitia</span>
-              </span>
-            </label>
-            <label class="radio-pill">
-              <input type="radio" name="transportasi" value="Nebeng/kendaraan bersama peserta lain">
-              <span class="pill-box">
-                <span class="pill-icon">🤝</span>
-                <span class="pill-title">Nebeng/bersama peserta lain</span>
-              </span>
-            </label>
-            <label class="radio-pill">
-              <input type="radio" name="transportasi" value="Datang Secara Mandiri">
-              <span class="pill-box">
-                <span class="pill-icon">🚶</span>
-                <span class="pill-title">Datang Secara Mandiri</span>
-              </span>
-            </label>
+        <div class="hero-headline">
+          <div
+            style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:6px;">
+            <span class="vol-tag" id="heroVolTag">VOL 7</span>
+            <span class="hero-status-pill" id="badgeLimited">⚡ KUOTA SANGAT TERBATAS!</span>
           </div>
-          <p class="err">Pilih salah satu opsi transportasi menuju titik kumpul.</p>
+          <h1 class="main-title"><span id="heroMainTitle">TEMAN</span> <span class="highlight"
+              id="heroHighlightTitle">SATUJALAN</span></h1>
+          <div class="dest-badge">
+            GOES TO <span id="heroDestination">CURUG PANJANG</span>
+          </div>
         </div>
 
-        <!-- Pengalaman Trekking & Intensitas Olahraga -->
-        <div class="row">
-          <div class="f" id="trekBox">
-            <span class="lbl">Apakah Pernah Mengikuti Trekking</span>
-            <div class="segment-group">
-              <label class="seg-item">
-                <input type="radio" name="pengalamanTrek" value="Belum Pernah">
-                <span>Belum Pernah</span>
+        <!-- Spesifikasi Event Dinamis Sesuai Event yang Dipilih -->
+        <div class="specs-grid">
+          <div class="spec-box">
+            <span class="label">📅 Tanggal</span>
+            <span class="val" id="specDate">27 Desember 2026</span>
+          </div>
+          <div class="spec-box">
+            <span class="label">⏰ Waktu</span>
+            <span class="val" id="specTime">06.00 WIB</span>
+          </div>
+          <div class="spec-box">
+            <span class="label">📍 Titik Kumpul</span>
+            <span class="val" id="specTikum">Bukit Waruwangi</span>
+          </div>
+          <div class="spec-box">
+            <span class="label">🥾 Jarak Trek</span>
+            <span class="val" id="specDistance">5 KM</span>
+          </div>
+        </div>
+
+        <!-- Syarat Ketentuan Peserta Sesuai Poster -->
+        <div class="mahram-banner">
+          <span class="mahram-icon">👥</span>
+          <div class="mahram-text">
+            <h4>Ketentuan Peserta</h4>
+            <p id="mahramDesc"><b>Khusus:</b> Pasangan Suami-Istri (Couple), Keluarga (Family), Saudara Semahram, Ikhwan
+              & Akhwat.
+            </p>
+          </div>
+        </div>
+
+        <!-- Kontak Resmi Poster -->
+        <div class="contact-ribbon">
+          <span>Informasi & Pendaftaran Resmi:</span>
+          <div class="contact-numbers">
+            <a class="contact-link" href="https://wa.me/6285882582729" target="_blank" rel="noopener">📱 0858 8258 2729</a>
+            <a class="contact-link" href="https://wa.me/6285811474778" target="_blank" rel="noopener">📱 0858 1147 4778</a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Registration Form -->
+      <form id="f" novalidate>
+
+        <!-- Section 1: Informasi Kegiatan & Paket -->
+        <fieldset>
+          <legend><span class="icon">📋</span> <span class="legend-title">1. Informasi Kegiatan & Paket</span> <span
+              class="legend-pill" id="paketEventName">Vol 7</span></legend>
+
+          <!-- Pilihan Paket Trekking -->
+          <div class="f" id="tkbox">
+            <div
+              style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:8px;">
+              <span class="lbl" style="margin-bottom:0;">Pilihan Paket Trekking</span>
+              <button type="button" class="btn-info-link" id="btnViewInfografis" onclick="openInfoPosterModal()"
+                style="background:transparent; border:none; color:var(--primary); font-size:0.8rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:5px; text-decoration:underline; padding:0;">
+                <span>📊</span> Lihat Brosur Infografis Paket
+              </button>
+            </div>
+            <!-- Ticket container rendered dynamically by selected event -->
+            <div class="tickets" id="ticketsContainer"></div>
+            <p class="err">Pilih salah satu paket trekking.</p>
+          </div>
+
+          <div class="f">
+            <label for="routeInput">Rute Perjalanan</label>
+            <input type="text" id="routeInput" value="5 KM (Desa Kadubereum - Curug Lewi Bumi)" readonly
+              style="opacity:0.85; cursor:not-allowed;">
+          </div>
+
+          <!-- Pilihan Transportasi Menuju Titik Kumpul -->
+          <div class="f" id="transportBox">
+            <span class="lbl">Pilihan Transportasi Menuju Titik Kumpul</span>
+            <div class="radio-pill-grid">
+              <label class="radio-pill">
+                <input type="radio" name="transportasi" value="Kendaraan Pribadi">
+                <span class="pill-box">
+                  <span class="pill-icon">🚗</span>
+                  <span class="pill-title">Kendaraan Pribadi</span>
+                </span>
               </label>
-              <label class="seg-item">
-                <input type="radio" name="pengalamanTrek" value="Pernah">
-                <span>Pernah</span>
+              <label class="radio-pill">
+                <input type="radio" name="transportasi" value="Transportasi dari Panitia">
+                <span class="pill-box">
+                  <span class="pill-icon">🚐</span>
+                  <span class="pill-title">Transportasi dari Panitia</span>
+                </span>
               </label>
-              <label class="seg-item">
-                <input type="radio" name="pengalamanTrek" value="Sering">
-                <span>Sering</span>
+              <label class="radio-pill">
+                <input type="radio" name="transportasi" value="Nebeng/kendaraan bersama peserta lain">
+                <span class="pill-box">
+                  <span class="pill-icon">🤝</span>
+                  <span class="pill-title">Nebeng/bersama peserta lain</span>
+                </span>
+              </label>
+              <label class="radio-pill">
+                <input type="radio" name="transportasi" value="Datang Secara Mandiri">
+                <span class="pill-box">
+                  <span class="pill-icon">🚶</span>
+                  <span class="pill-title">Datang Secara Mandiri</span>
+                </span>
               </label>
             </div>
-            <p class="err">Pilih pengalaman trekking Anda.</p>
+            <p class="err">Pilih salah satu opsi transportasi menuju titik kumpul.</p>
           </div>
 
-          <div class="f" id="sportBox">
-            <span class="lbl">Seberapa Intens Olahraga</span>
-            <div class="segment-group">
-              <label class="seg-item">
-                <input type="radio" name="intensitasOlahraga" value="Tidak Pernah">
-                <span>Tidak Pernah</span>
-              </label>
-              <label class="seg-item">
-                <input type="radio" name="intensitasOlahraga" value="Jarang">
-                <span>Jarang</span>
-              </label>
-              <label class="seg-item">
-                <input type="radio" name="intensitasOlahraga" value="Rutin">
-                <span>Rutin</span>
-              </label>
+          <!-- Pengalaman Trekking & Intensitas Olahraga -->
+          <div class="row">
+            <div class="f" id="trekBox">
+              <span class="lbl">Apakah Pernah Mengikuti Trekking</span>
+              <div class="segment-group">
+                <label class="seg-item">
+                  <input type="radio" name="pengalamanTrek" value="Belum Pernah">
+                  <span>Belum Pernah</span>
+                </label>
+                <label class="seg-item">
+                  <input type="radio" name="pengalamanTrek" value="Pernah">
+                  <span>Pernah</span>
+                </label>
+                <label class="seg-item">
+                  <input type="radio" name="pengalamanTrek" value="Sering">
+                  <span>Sering</span>
+                </label>
+              </div>
+              <p class="err">Pilih pengalaman trekking Anda.</p>
             </div>
-            <p class="err">Pilih seberapa intens aktivitas olahraga Anda.</p>
+
+            <div class="f" id="sportBox">
+              <span class="lbl">Seberapa Intens Olahraga</span>
+              <div class="segment-group">
+                <label class="seg-item">
+                  <input type="radio" name="intensitasOlahraga" value="Tidak Pernah">
+                  <span>Tidak Pernah</span>
+                </label>
+                <label class="seg-item">
+                  <input type="radio" name="intensitasOlahraga" value="Jarang">
+                  <span>Jarang</span>
+                </label>
+                <label class="seg-item">
+                  <input type="radio" name="intensitasOlahraga" value="Rutin">
+                  <span>Rutin</span>
+                </label>
+              </div>
+              <p class="err">Pilih seberapa intens aktivitas olahraga Anda.</p>
+            </div>
           </div>
-        </div>
-      </fieldset>
+        </fieldset>
 
-      <!-- Section 2: DATA PETUALANG LENGKAP (MULTI-PESERTA DYNAMIC) -->
-      <fieldset id="sectionPetualang">
-        <legend><span class="icon">👥</span> <span class="legend-title">2. Data Petualang</span> <span
-            class="legend-pill"><span id="totalBadgeCount">1</span> Orang</span></legend>
+        <!-- Section 2: DATA PETUALANG LENGKAP (MULTI-PESERTA DYNAMIC) -->
+        <fieldset id="sectionPetualang">
+          <legend><span class="icon">👥</span> <span class="legend-title">2. Data Petualang</span> <span
+              class="legend-pill"><span id="totalBadgeCount">1</span> Orang</span></legend>
 
-        <div class="explorer-header-info">
-          <span>Setiap petualang yang didaftarkan wajib diisi datanya untuk data simaksi perizinan & asuransi
-            jalur:</span>
-          <b id="rosterSummaryText">1 Petualang</b>
-        </div>
+          <div class="explorer-header-info">
+            <span>Setiap petualang yang didaftarkan wajib diisi datanya untuk data simaksi perizinan & asuransi
+              jalur:</span>
+            <b id="rosterSummaryText">1 Petualang</b>
+          </div>
 
-        <!-- Container tempat form setiap petualang dibuat secara dinamis -->
-        <div id="explorerContainer"></div>
+          <!-- Container tempat form setiap petualang dibuat secara dinamis -->
+          <div id="explorerContainer"></div>
 
-        <!-- Tombol Tambah Data Petualang Tambahan -->
-        <button type="button" class="btn-add-explorer" id="btnAddExplorer">
-          <span>➕ Tambah Data Petualang / Anggota Lain</span>
+          <!-- Tombol Tambah Data Petualang Tambahan -->
+          <button type="button" class="btn-add-explorer" id="btnAddExplorer">
+            <span>➕ Tambah Data Petualang / Anggota Lain</span>
+          </button>
+
+          <!-- Informasi Alamat Lengkap & Titik Kumpul Dinamis -->
+          <div class="f" data-req id="alamatBox">
+            <label for="alamatLengkap">Alamat Lengkap Domisili Petualang / Rombongan</label>
+            <textarea id="alamatLengkap" rows="2"
+              placeholder="Nama Jalan, Nomor Rumah, RT/RW, Kelurahan/Desa, Kecamatan"></textarea>
+            <p class="err">Alamat lengkap petualang wajib diisi.</p>
+          </div>
+
+          <div class="row">
+            <div class="f" data-req id="kotaBox">
+              <label for="kota">Kota / Kabupaten Domisili</label>
+              <input id="kota" type="text" autocomplete="address-level2"
+                placeholder="Contoh: Jakarta Selatan / Kota Serang / Kab. Tangerang">
+              <p class="err">Kota / Kabupaten domisili wajib diisi.</p>
+            </div>
+            <div class="f" data-req id="tikumField">
+              <label for="titikKumpulSelect">Konfirmasi Titik Kumpul</label>
+              <select id="titikKumpulSelect"></select>
+              <p class="err">Pilih titik kumpul rombongan.</p>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Section 3: Kontak Darurat Rombongan -->
+        <fieldset id="sectionDarurat">
+          <legend><span class="icon">🆘</span> <span class="legend-title">3. Kontak Darurat</span> <span
+              class="legend-pill darurat-pill">Keluarga di Luar Jalur</span></legend>
+
+          <div class="darurat-info-banner">
+            <span class="darurat-info-icon">🛡️</span>
+            <div class="darurat-info-text">
+              <b>Wajib Kontak di Luar Jalur Trekking:</b>
+              <span>Nomor ini wajib diisi keluarga / kerabat terdekat yang <u>tidak ikut mendaki</u>, untuk segera
+                dihubungi oleh koordinator TSJ jika terjadi kondisi darurat selama kegiatan.</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="f" data-req>
+              <label for="darurat">Nama Kontak Darurat</label>
+              <input id="darurat" type="text" placeholder="Contoh: Bpk. H. Ahmad (Ayah / Kakak)">
+              <p class="err">Nama kontak darurat wajib diisi demi keselamatan rombongan.</p>
+            </div>
+            <div class="f" data-req>
+              <label for="daruratHp">No. HP / WA Kontak Darurat <span class="prefix-badge-label">+62
+                  Permanen</span></label>
+              <div class="phone-input-group">
+                <span class="phone-prefix-addon">🇮🇩 +62</span>
+                <input id="daruratHp" type="tel" class="phone-input-field" placeholder="812-3456-7890 (Aktif & Siaga)">
+              </div>
+              <p class="err">Nomor kontak darurat wajib 9–13 digit angka.</p>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Section 4: Metode Pembayaran & Bukti Transfer -->
+        <fieldset id="bayar">
+          <legend><span class="icon">💳</span> <span class="legend-title">4. Metode Pembayaran & Bukti Transfer</span>
+          </legend>
+
+          <!-- Pilihan Skema Pembayaran: Lunas atau DP -->
+          <div class="f" id="skemaBayarBox">
+            <div
+              style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:8px;">
+              <span class="lbl" style="margin-bottom:0;">Pilihan Skema Pembayaran</span>
+              <span class="skema-info-pill">
+                <span>💡 Bisa DP 50% atau Lunas</span>
+              </span>
+            </div>
+
+            <div class="skema-options-grid">
+              <!-- Opsi 1: Lunas 100% -->
+              <div class="skema-card active" id="skemaCardLunas" onclick="setPaymentScheme('Lunas')" role="button"
+                tabindex="0" title="Pilih Pembayaran Lunas (100%)">
+                <input type="radio" name="skemaBayarRadio" id="skemaRadioLunas" value="Lunas" checked>
+                <div class="skema-card-header">
+                  <div class="skema-title-group">
+                    <span class="skema-radio-circle"></span>
+                    <div class="skema-title-text">
+                      <span class="skema-name">Pembayaran Lunas (100%)</span>
+                      <span class="skema-badge badge-lunas">Paling Praktis</span>
+                    </div>
+                  </div>
+                  <div class="skema-amount-badge" id="skemaValLunas">Rp 0</div>
+                </div>
+                <p class="skema-desc">
+                  Bayar penuh sekarang. Pendaftaran langsung tuntas terkonfirmasi 100% tanpa perlu transfer kedua
+                  menjelang hari H.
+                </p>
+              </div>
+
+              <!-- Opsi 2: DP / Uang Muka (50%) -->
+              <div class="skema-card" id="skemaCardDp" onclick="setPaymentScheme('DP')" role="button" tabindex="0"
+                title="Pilih Pembayaran DP (50%)">
+                <input type="radio" name="skemaBayarRadio" id="skemaRadioDp" value="DP">
+                <div class="skema-card-header">
+                  <div class="skema-title-group">
+                    <span class="skema-radio-circle"></span>
+                    <div class="skema-title-text">
+                      <span class="skema-name">DP / Uang Muka (50%)</span>
+                      <span class="skema-badge badge-dp">Kunci Kuota Dulu</span>
+                    </div>
+                  </div>
+                  <div class="skema-amount-badge dp" id="skemaValDp">Rp 0</div>
+                </div>
+                <p class="skema-desc">
+                  Cukup bayar 50% sekarang untuk mengunci slot petualang Anda. Sisa pelunasan <b>50%</b> dibayarkan
+                  paling lambat <b>H-7 kegiatan</b>.
+                </p>
+              </div>
+            </div>
+
+            <!-- Banner Ketentuan Lunas -->
+            <div class="lunas-notice-banner" id="lunasNoticeBanner">
+              <span>✅ <b>Pembayaran Lunas 100%:</b> Slot pendaftaran rombongan langsung terkonfirmasi resmi & tuntas.
+                Anda siap berangkat tanpa memikirkan pelunasan lagi.</span>
+            </div>
+
+            <!-- Banner Informasi & Ketentuan DP -->
+            <div class="dp-notice-banner" id="dpNoticeBanner" style="display:none;">
+              <div class="dp-notice-header">
+                <span class="dp-notice-icon">📋</span>
+                <span>Ketentuan Pembayaran DP (Uang Muka 50%):</span>
+              </div>
+              <ul class="dp-notice-list">
+                <li><b>Kunci Slot Registrasi:</b> Transfer DP sebesar <b id="dpNoticeAmount">Rp 0</b> (50% dari harga
+                  paket) melalui QRIS di bawah dan unggah struknya untuk mengamankan kuota peserta Anda.</li>
+                <li><b>Sisa Pelunasan:</b> Sebesar <b id="dpNoticeRemaining">Rp 0</b> (50%) wajib dilunasi maksimal
+                  <b>H-7 sebelum hari keberangkatan trip</b>.
+                </li>
+                <li><b>Metode Pelunasan:</b> Pelunasan dapat ditransfer via QRIS yang sama dan dikonfirmasi langsung ke
+                  WhatsApp Admin / di dalam WhatsApp Group Trip.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Pilihan Metode Pembayaran: Hanya QRIS Saja (Klik untuk Menampilkan/Menutup) -->
+          <div class="f" id="metodeBayarBox">
+            <div
+              style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:8px;">
+              <span class="lbl" style="margin-bottom:0;">Pilihan Metode Pembayaran</span>
+              <span class="pay-hint-pill" onclick="toggleQrisShowcase()" style="cursor:pointer;"
+                title="Klik untuk menampilkan QRIS">
+                <span id="payToggleBadge">👆 Klik untuk Tampilkan QRIS</span>
+              </span>
+            </div>
+            <div class="payment-methods-grid">
+              <div class="pay-method-card" id="payMethodCard" onclick="toggleQrisShowcase()" role="button" tabindex="0"
+                aria-expanded="false" title="Klik untuk menampilkan kode QRIS & panduan transfer">
+                <input type="radio" name="metodePembayaran" value="QRIS" checked>
+                <div class="pay-method-content">
+                  <div class="pay-method-header">
+                    <div class="pay-method-title">
+                      <span class="pay-icon">📱</span>
+                      <b>QRIS (Pembayaran Nasional)</b>
+                      <span class="pay-badge-official">Resmi BI & GPN</span>
+                    </div>
+                    <div class="pay-toggle-indicator" id="payToggleIndicator">
+                      <span id="payToggleText">Tampilkan Kode QRIS</span>
+                      <span class="pay-toggle-chevron" id="payToggleChevron">▼</span>
+                    </div>
+                  </div>
+                  <div class="pay-method-desc">
+                    Mendukung transfer instan dari <b>BCA, Mandiri, BRI, BNI, GoPay, OVO, Dana, ShopeePay, LinkAja</b> &
+                    semua bank. <b>Klik di sini untuk membuka kode QRIS & rincian pembayaran.</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Showcase QRIS & Tagihan (Hidden by default, baru muncul setelah diklik) -->
+          <div class="qris-showcase-box hide" id="qrisShowcaseBox">
+            <div class="qris-amount-row">
+              <div class="qris-amount-info">
+                <span class="qris-amount-label" id="qrisAmountLabel">Total Tagihan Registrasi (Lunas 100%):</span>
+                <div class="qris-amount-val" id="qrisTotalDisplay">Rp 0</div>
+                <span class="qris-amount-sub" id="qrisPackageSub">Pilih salah satu paket trekking di bagian atas
+                  terlebih dahulu</span>
+                <div class="qris-dp-reminder hide" id="qrisDpReminder">
+                  <span>⚠️ Sisa Pelunasan: <b id="qrisDpRemainingVal">Rp 0</b> (Wajib lunas maks. H-7 trip)</span>
+                </div>
+              </div>
+              <span class="qris-status-tag">⚡ Bebas Biaya Admin</span>
+            </div>
+
+            <div class="qris-qr-wrapper">
+              <div class="qris-qr-frame" onclick="openQrisZoomModal()" title="Klik untuk memperbesar QRIS">
+                <img src="./qris.png" alt="QRIS Resmi Adventure Temansatujalan" class="qris-qr-img" id="qrisImgPreview">
+              </div>
+              <div class="qris-merchant-details">
+                <div class="qris-merchant-title">ADVENTURE TEMANSATUJALAN</div>
+                <div class="qris-nmid-row">
+                  <span class="nmid-label">NMID:</span>
+                  <span class="nmid-code" id="nmidCodeTxt">ID1025375876469</span>
+                  <button type="button" class="btn-copy-nmid" onclick="copyNmid()" title="Salin NMID">📋 Salin</button>
+                </div>
+                <p class="qris-scan-hint">Scan langsung lewat kamera HP Anda atau unduh gambar QRIS untuk diunggah dari
+                  galeri m-Banking/E-Wallet.</p>
+
+                <div class="qris-action-buttons">
+                  <a href="./qris.png" download="QRIS-TemanSatuJalan.png" class="btn-qris-action btn-qris-download"
+                    title="Unduh gambar QRIS ke galeri HP">
+                    <span>📥</span> Unduh QRIS
+                  </a>
+                  <button type="button" class="btn-qris-action btn-qris-zoom" onclick="openQrisZoomModal()"
+                    title="Lihat ukuran penuh">
+                    <span>🔍</span> Perbesar QR
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick 3-Step Guide -->
+            <div class="qris-steps-guide">
+              <div class="step-guide-item">
+                <span class="step-num">1</span>
+                <span>Buka aplikasi m-Banking atau E-Wallet Anda (BCA Mobile, Livin' Mandiri, BRImo, GoPay, Dana,
+                  dll).</span>
+              </div>
+              <div class="step-guide-item">
+                <span class="step-num">2</span>
+                <span>Pilih menu <b>QRIS / Bayar</b> lalu scan kode QR di atas (atau pilih foto QRIS dari galeri
+                  HP).</span>
+              </div>
+              <div class="step-guide-item">
+                <span class="step-num">3</span>
+                <span>Pastikan nama merchant penerima <b>ADVENTURE TEMANSATUJALAN</b>, selesaikan transaksi, dan unggah
+                  bukti struknya di bawah.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unggah Struk / Bukti Transfer -->
+          <div class="f" data-req id="bukti">
+            <label for="file" id="buktiTransferLabel">Unggah Struk / Bukti Pembayaran Lunas (100%)</label>
+            <div class="file-dropzone" id="dropzone">
+              <input id="file" type="file" accept="image/*,.pdf">
+              <span class="file-icon">📸</span>
+              <div class="file-text">Klik atau seret struk pembayaran QRIS ke sini</div>
+              <div class="file-subtext">Mendukung format JPG, PNG, atau PDF (Maks. 5 MB). Wajib dilampirkan untuk
+                verifikasi pendaftaran.
+              </div>
+              <div class="file-selected hide" id="fileNameBadge">
+                <span>📄</span> <span id="fileNameTxt">bukti-transfer.jpg</span>
+              </div>
+            </div>
+            <p class="err">Struk / bukti pembayaran QRIS wajib diunggah.</p>
+          </div>
+        </fieldset>
+
+        <!-- Section 5: Janji Seru & Aman 🌿 -->
+        <fieldset>
+          <legend><span class="icon">🌿</span> 5. Janji Seru & Aman 🌿</legend>
+
+          <div class="f" data-req id="boxJanji1">
+            <label class="chk">
+              <input type="checkbox" id="janji1">
+              <span><b>Rombongan Sesuai Aturan Main:</b> Aku pastikan semua petualang yang didaftarkan sesuai kriteria
+                acara: pasangan suami-istri, keluarga, saudara semahram, atau sesama ikhwan. Jadi nggak ada yang nyempil
+                dari luar jalur ya! 😄</span>
+            </label>
+            <p class="err">Centang untuk menyetujui kriteria rombongan.</p>
+          </div>
+
+          <div class="f" data-req id="boxJanji2">
+            <label class="chk">
+              <input type="checkbox" id="janji2">
+              <span><b>Badan & Hati Siap Tempur:</b> Semua anggota rombongan dalam kondisi sehat fisik dan mental buat
+                trekking alam bebas di rute pilihan. Lutut aman, semangat on! 💪</span>
+            </label>
+            <p class="err">Centang untuk menyetujui kesiapan fisik & mental.</p>
+          </div>
+
+          <div class="f" data-req id="boxJanji3">
+            <label class="chk">
+              <input type="checkbox" id="janji3">
+              <span><b>Adab Petualang Muslim:</b> Alam dijaga, sampah dibawa pulang (jangan ninggalin apa-apa selain
+                jejak
+                kaki!), aurat dan etika islami tetap terjaga sepanjang kegiatan. 🌲</span>
+            </label>
+            <p class="err">Centang untuk menyetujui adab petualang muslim.</p>
+          </div>
+
+          <div class="f" data-req id="boxJanji4">
+            <label class="chk">
+              <input type="checkbox" id="janji4">
+              <span><b>Taat Aba-Aba Guide:</b> Ikuti arahan tim dan jangan jalan sendiri demi konten. Pemandangan bagus,
+                tapi keselamatan nomor satu! 📸</span>
+            </label>
+            <p class="err">Centang untuk menyetujui arahan guide & keselamatan.</p>
+          </div>
+
+          <div class="f" data-req id="boxJanji5">
+            <label class="chk">
+              <input type="checkbox" id="janji5">
+              <span><b>Siap Kompak & Saling Jaga:</b> Nggak ada yang ditinggal, nggak ada yang ditinggal sendirian di
+                belakang. Kita berangkat bareng, pulang bareng! 🤝</span>
+            </label>
+            <p class="err">Centang untuk menyetujui komitmen saling jaga & kompak.</p>
+          </div>
+        </fieldset>
+
+        <button class="main" type="submit">
+          <span>🥾 DAFTARKAN ROMBONGAN PETUALANG</span>
         </button>
 
-        <!-- Informasi Alamat Lengkap & Titik Kumpul Dinamis -->
-        <div class="f" data-req id="alamatBox">
-          <label for="alamatLengkap">Alamat Lengkap Domisili Petualang / Rombongan</label>
-          <textarea id="alamatLengkap" rows="2"
-            placeholder="Nama Jalan, Nomor Rumah, RT/RW, Kelurahan/Desa, Kecamatan"></textarea>
-          <p class="err">Alamat lengkap petualang wajib diisi.</p>
-        </div>
-
-        <div class="row">
-          <div class="f" data-req id="kotaBox">
-            <label for="kota">Kota / Kabupaten Domisili</label>
-            <input id="kota" type="text" autocomplete="address-level2"
-              placeholder="Contoh: Jakarta Selatan / Kota Serang / Kab. Tangerang">
-            <p class="err">Kota / Kabupaten domisili wajib diisi.</p>
-          </div>
-          <div class="f" data-req id="tikumField">
-            <label for="titikKumpulSelect">Konfirmasi Titik Kumpul</label>
-            <select id="titikKumpulSelect"></select>
-            <p class="err">Pilih titik kumpul rombongan.</p>
-          </div>
-        </div>
-      </fieldset>
-
-      <!-- Section 3: Kontak Darurat Rombongan -->
-      <fieldset id="sectionDarurat">
-        <legend><span class="icon">🆘</span> <span class="legend-title">3. Kontak Darurat</span> <span
-            class="legend-pill darurat-pill">Keluarga di Luar Jalur</span></legend>
-
-        <div class="darurat-info-banner">
-          <span class="darurat-info-icon">🛡️</span>
-          <div class="darurat-info-text">
-            <b>Wajib Kontak di Luar Jalur Trekking:</b>
-            <span>Nomor ini wajib diisi keluarga / kerabat terdekat yang <u>tidak ikut mendaki</u>, untuk segera
-              dihubungi oleh koordinator TSJ jika terjadi kondisi darurat selama kegiatan.</span>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="f" data-req>
-            <label for="darurat">Nama Kontak Darurat</label>
-            <input id="darurat" type="text" placeholder="Contoh: Bpk. H. Ahmad (Ayah / Kakak)">
-            <p class="err">Nama kontak darurat wajib diisi demi keselamatan rombongan.</p>
-          </div>
-          <div class="f" data-req>
-            <label for="daruratHp">No. HP / WA Kontak Darurat</label>
-            <input id="daruratHp" type="tel" placeholder="Contoh: 081234567890 (Aktif & Siaga)">
-            <p class="err">No. HP kontak darurat wajib diisi.</p>
-          </div>
-        </div>
-      </fieldset>
-
-      <!-- Section 4: Metode Pembayaran & Bukti Transfer -->
-      <fieldset id="bayar">
-        <legend><span class="icon">💳</span> <span class="legend-title">4. Metode Pembayaran & Bukti Transfer</span></legend>
-
-        <!-- Pilihan Skema Pembayaran: Lunas atau DP -->
-        <div class="f" id="skemaBayarBox">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:8px;">
-            <span class="lbl" style="margin-bottom:0;">Pilihan Skema Pembayaran</span>
-            <span class="skema-info-pill">
-              <span>💡 Bisa DP 50% atau Lunas</span>
-            </span>
-          </div>
-
-          <div class="skema-options-grid">
-            <!-- Opsi 1: Lunas 100% -->
-            <div class="skema-card active" id="skemaCardLunas" onclick="setPaymentScheme('Lunas')" role="button" tabindex="0" title="Pilih Pembayaran Lunas (100%)">
-              <input type="radio" name="skemaBayarRadio" id="skemaRadioLunas" value="Lunas" checked>
-              <div class="skema-card-header">
-                <div class="skema-title-group">
-                  <span class="skema-radio-circle"></span>
-                  <div class="skema-title-text">
-                    <span class="skema-name">Pembayaran Lunas (100%)</span>
-                    <span class="skema-badge badge-lunas">Paling Praktis</span>
-                  </div>
-                </div>
-                <div class="skema-amount-badge" id="skemaValLunas">Rp 0</div>
-              </div>
-              <p class="skema-desc">
-                Bayar penuh sekarang. Pendaftaran langsung tuntas terkonfirmasi 100% tanpa perlu transfer kedua menjelang hari H.
-              </p>
-            </div>
-
-            <!-- Opsi 2: DP / Uang Muka (50%) -->
-            <div class="skema-card" id="skemaCardDp" onclick="setPaymentScheme('DP')" role="button" tabindex="0" title="Pilih Pembayaran DP (50%)">
-              <input type="radio" name="skemaBayarRadio" id="skemaRadioDp" value="DP">
-              <div class="skema-card-header">
-                <div class="skema-title-group">
-                  <span class="skema-radio-circle"></span>
-                  <div class="skema-title-text">
-                    <span class="skema-name">DP / Uang Muka (50%)</span>
-                    <span class="skema-badge badge-dp">Kunci Kuota Dulu</span>
-                  </div>
-                </div>
-                <div class="skema-amount-badge dp" id="skemaValDp">Rp 0</div>
-              </div>
-              <p class="skema-desc">
-                Cukup bayar 50% sekarang untuk mengunci slot petualang Anda. Sisa pelunasan <b>50%</b> dibayarkan paling lambat <b>H-7 kegiatan</b>.
-              </p>
-            </div>
-          </div>
-
-          <!-- Banner Ketentuan Lunas -->
-          <div class="lunas-notice-banner" id="lunasNoticeBanner">
-            <span>✅ <b>Pembayaran Lunas 100%:</b> Slot pendaftaran rombongan langsung terkonfirmasi resmi & tuntas. Anda siap berangkat tanpa memikirkan pelunasan lagi.</span>
-          </div>
-
-          <!-- Banner Informasi & Ketentuan DP -->
-          <div class="dp-notice-banner" id="dpNoticeBanner" style="display:none;">
-            <div class="dp-notice-header">
-              <span class="dp-notice-icon">📋</span>
-              <span>Ketentuan Pembayaran DP (Uang Muka 50%):</span>
-            </div>
-            <ul class="dp-notice-list">
-              <li><b>Kunci Slot Registrasi:</b> Transfer DP sebesar <b id="dpNoticeAmount">Rp 0</b> (50% dari harga paket) melalui QRIS di bawah dan unggah struknya untuk mengamankan kuota peserta Anda.</li>
-              <li><b>Sisa Pelunasan:</b> Sebesar <b id="dpNoticeRemaining">Rp 0</b> (50%) wajib dilunasi maksimal <b>H-7 sebelum hari keberangkatan trip</b>.</li>
-              <li><b>Metode Pelunasan:</b> Pelunasan dapat ditransfer via QRIS yang sama dan dikonfirmasi langsung ke WhatsApp Admin / di dalam WhatsApp Group Trip.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Pilihan Metode Pembayaran: Hanya QRIS Saja (Klik untuk Menampilkan/Menutup) -->
-        <div class="f" id="metodeBayarBox">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:8px;">
-            <span class="lbl" style="margin-bottom:0;">Pilihan Metode Pembayaran</span>
-            <span class="pay-hint-pill" onclick="toggleQrisShowcase()" style="cursor:pointer;" title="Klik untuk menampilkan QRIS">
-              <span id="payToggleBadge">👆 Klik untuk Tampilkan QRIS</span>
-            </span>
-          </div>
-          <div class="payment-methods-grid">
-            <div class="pay-method-card" id="payMethodCard" onclick="toggleQrisShowcase()" role="button" tabindex="0" aria-expanded="false" title="Klik untuk menampilkan kode QRIS & panduan transfer">
-              <input type="radio" name="metodePembayaran" value="QRIS" checked>
-              <div class="pay-method-content">
-                <div class="pay-method-header">
-                  <div class="pay-method-title">
-                    <span class="pay-icon">📱</span>
-                    <b>QRIS (Pembayaran Nasional)</b>
-                    <span class="pay-badge-official">Resmi BI & GPN</span>
-                  </div>
-                  <div class="pay-toggle-indicator" id="payToggleIndicator">
-                    <span id="payToggleText">Tampilkan Kode QRIS</span>
-                    <span class="pay-toggle-chevron" id="payToggleChevron">▼</span>
-                  </div>
-                </div>
-                <div class="pay-method-desc">
-                  Mendukung transfer instan dari <b>BCA, Mandiri, BRI, BNI, GoPay, OVO, Dana, ShopeePay, LinkAja</b> & semua bank. <b>Klik di sini untuk membuka kode QRIS & rincian pembayaran.</b>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Showcase QRIS & Tagihan (Hidden by default, baru muncul setelah diklik) -->
-        <div class="qris-showcase-box hide" id="qrisShowcaseBox">
-          <div class="qris-amount-row">
-            <div class="qris-amount-info">
-              <span class="qris-amount-label" id="qrisAmountLabel">Total Tagihan Registrasi (Lunas 100%):</span>
-              <div class="qris-amount-val" id="qrisTotalDisplay">Rp 0</div>
-              <span class="qris-amount-sub" id="qrisPackageSub">Pilih salah satu paket trekking di bagian atas terlebih dahulu</span>
-              <div class="qris-dp-reminder hide" id="qrisDpReminder">
-                <span>⚠️ Sisa Pelunasan: <b id="qrisDpRemainingVal">Rp 0</b> (Wajib lunas maks. H-7 trip)</span>
-              </div>
-            </div>
-            <span class="qris-status-tag">⚡ Bebas Biaya Admin</span>
-          </div>
-
-          <div class="qris-qr-wrapper">
-            <div class="qris-qr-frame" onclick="openQrisZoomModal()" title="Klik untuk memperbesar QRIS">
-              <img src="./qris.png" alt="QRIS Resmi Adventure Temansatujalan" class="qris-qr-img" id="qrisImgPreview">
-            </div>
-            <div class="qris-merchant-details">
-              <div class="qris-merchant-title">ADVENTURE TEMANSATUJALAN</div>
-              <div class="qris-nmid-row">
-                <span class="nmid-label">NMID:</span>
-                <span class="nmid-code" id="nmidCodeTxt">ID1025375876469</span>
-                <button type="button" class="btn-copy-nmid" onclick="copyNmid()" title="Salin NMID">📋 Salin</button>
-              </div>
-              <p class="qris-scan-hint">Scan langsung lewat kamera HP Anda atau unduh gambar QRIS untuk diunggah dari galeri m-Banking/E-Wallet.</p>
-              
-              <div class="qris-action-buttons">
-                <a href="./qris.png" download="QRIS-TemanSatuJalan.png" class="btn-qris-action btn-qris-download" title="Unduh gambar QRIS ke galeri HP">
-                  <span>📥</span> Unduh QRIS
-                </a>
-                <button type="button" class="btn-qris-action btn-qris-zoom" onclick="openQrisZoomModal()" title="Lihat ukuran penuh">
-                  <span>🔍</span> Perbesar QR
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Quick 3-Step Guide -->
-          <div class="qris-steps-guide">
-            <div class="step-guide-item">
-              <span class="step-num">1</span>
-              <span>Buka aplikasi m-Banking atau E-Wallet Anda (BCA Mobile, Livin' Mandiri, BRImo, GoPay, Dana, dll).</span>
-            </div>
-            <div class="step-guide-item">
-              <span class="step-num">2</span>
-              <span>Pilih menu <b>QRIS / Bayar</b> lalu scan kode QR di atas (atau pilih foto QRIS dari galeri HP).</span>
-            </div>
-            <div class="step-guide-item">
-              <span class="step-num">3</span>
-              <span>Pastikan nama merchant penerima <b>ADVENTURE TEMANSATUJALAN</b>, selesaikan transaksi, dan unggah bukti struknya di bawah.</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Unggah Struk / Bukti Transfer -->
-        <div class="f" data-req id="bukti">
-          <label for="file" id="buktiTransferLabel">Unggah Struk / Bukti Pembayaran Lunas (100%)</label>
-          <div class="file-dropzone" id="dropzone">
-            <input id="file" type="file" accept="image/*,.pdf">
-            <span class="file-icon">📸</span>
-            <div class="file-text">Klik atau seret struk pembayaran QRIS ke sini</div>
-            <div class="file-subtext">Mendukung format JPG, PNG, atau PDF (Maks. 5 MB). Wajib dilampirkan untuk
-              verifikasi pendaftaran.
-            </div>
-            <div class="file-selected hide" id="fileNameBadge">
-              <span>📄</span> <span id="fileNameTxt">bukti-transfer.jpg</span>
-            </div>
-          </div>
-          <p class="err">Struk / bukti pembayaran QRIS wajib diunggah.</p>
-        </div>
-      </fieldset>
-
-      <!-- Section 5: Janji Seru & Aman 🌿 -->
-      <fieldset>
-        <legend><span class="icon">🌿</span> 5. Janji Seru & Aman 🌿</legend>
-
-        <div class="f" data-req id="boxJanji1">
-          <label class="chk">
-            <input type="checkbox" id="janji1">
-            <span><b>Rombongan Sesuai Aturan Main:</b> Aku pastikan semua petualang yang didaftarkan sesuai kriteria
-              acara: pasangan suami-istri, keluarga, saudara semahram, atau sesama ikhwan. Jadi nggak ada yang nyempil
-              dari luar jalur ya! 😄</span>
-          </label>
-          <p class="err">Centang untuk menyetujui kriteria rombongan.</p>
-        </div>
-
-        <div class="f" data-req id="boxJanji2">
-          <label class="chk">
-            <input type="checkbox" id="janji2">
-            <span><b>Badan & Hati Siap Tempur:</b> Semua anggota rombongan dalam kondisi sehat fisik dan mental buat
-              trekking alam bebas di rute pilihan. Lutut aman, semangat on! 💪</span>
-          </label>
-          <p class="err">Centang untuk menyetujui kesiapan fisik & mental.</p>
-        </div>
-
-        <div class="f" data-req id="boxJanji3">
-          <label class="chk">
-            <input type="checkbox" id="janji3">
-            <span><b>Adab Petualang Muslim:</b> Alam dijaga, sampah dibawa pulang (jangan ninggalin apa-apa selain jejak
-              kaki!), aurat dan etika islami tetap terjaga sepanjang kegiatan. 🌲</span>
-          </label>
-          <p class="err">Centang untuk menyetujui adab petualang muslim.</p>
-        </div>
-
-        <div class="f" data-req id="boxJanji4">
-          <label class="chk">
-            <input type="checkbox" id="janji4">
-            <span><b>Taat Aba-Aba Guide:</b> Ikuti arahan tim dan jangan jalan sendiri demi konten. Pemandangan bagus,
-              tapi keselamatan nomor satu! 📸</span>
-          </label>
-          <p class="err">Centang untuk menyetujui arahan guide & keselamatan.</p>
-        </div>
-
-        <div class="f" data-req id="boxJanji5">
-          <label class="chk">
-            <input type="checkbox" id="janji5">
-            <span><b>Siap Kompak & Saling Jaga:</b> Nggak ada yang ditinggal, nggak ada yang ditinggal sendirian di
-              belakang. Kita berangkat bareng, pulang bareng! 🤝</span>
-          </label>
-          <p class="err">Centang untuk menyetujui komitmen saling jaga & kompak.</p>
-        </div>
-      </fieldset>
-
-      <button class="main" type="submit">
-        <span>🥾 DAFTARKAN ROMBONGAN PETUALANG</span>
-      </button>
-
-      <p class="note">
-        Slot petualangan terbatas, yuk daftar sebelum penuh! Setelah daftar, nomor urut briefing dan info lanjutan akan
-        kami kirim lewat WhatsApp penanggung jawab. Pastikan nomornya aktif, biar kabar seru nggak nyasar! 🌄
-      </p>
-    </form>
+        <p class="note">
+          Slot petualangan terbatas, yuk daftar sebelum penuh! Setelah daftar, nomor urut briefing dan info lanjutan
+          akan
+          kami kirim lewat WhatsApp penanggung jawab. Pastikan nomornya aktif, biar kabar seru nggak nyasar! 🌄
+        </p>
+      </form>
     </div> <!-- /#eventContentWrapper -->
 
     <!-- Success Confirmation Screen (Boarding Pass & Multi-Explorer Roster) -->
@@ -3849,7 +4003,8 @@
         </div>
         <div class="pass-row">
           <span class="pass-label">Skema Pembayaran</span>
-          <span class="pass-value" id="passSkemaBayar" style="color:var(--primary); font-weight:800;">Lunas (100%)</span>
+          <span class="pass-value" id="passSkemaBayar" style="color:var(--primary); font-weight:800;">Lunas
+            (100%)</span>
         </div>
         <div class="pass-row">
           <span class="pass-label">Nominal Ditransfer</span>
@@ -3857,11 +4012,13 @@
         </div>
         <div class="pass-row hide" id="passRowSisa">
           <span class="pass-label">Sisa Pelunasan (H-7)</span>
-          <span class="pass-value" id="passSisaBayar" style="color:#f59e0b; font-weight:800;">Rp 0 (Wajib lunas maks. H-7 trip)</span>
+          <span class="pass-value" id="passSisaBayar" style="color:#f59e0b; font-weight:800;">Rp 0 (Wajib lunas maks.
+            H-7 trip)</span>
         </div>
         <div class="pass-row">
           <span class="pass-label">Metode Pembayaran</span>
-          <span class="pass-value" style="color:var(--ink-secondary); font-weight:600;">QRIS (ADVENTURE TEMANSATUJALAN)</span>
+          <span class="pass-value" style="color:var(--ink-secondary); font-weight:600;">QRIS (ADVENTURE
+            TEMANSATUJALAN)</span>
         </div>
 
         <!-- Roster Seluruh Petualang yang Terdaftar -->
@@ -3951,12 +4108,19 @@
     aria-labelledby="modalInfoPosterTitle" onclick="if(event.target===this)closeInfoPosterModal()">
     <div class="modal-card" style="max-width: 480px; padding: 22px; text-align: center;">
       <button type="button" class="modal-close" onclick="closeInfoPosterModal()" aria-label="Tutup">&times;</button>
-      <div class="modal-celebrate-badge" style="background:var(--ok-bg); color:var(--primary); border:1px solid var(--primary); margin-bottom:12px;">📊 INFOGRAFIS PAKET & HARGA</div>
-      <h3 id="modalInfoPosterTitle" style="font-family:var(--font-display); font-size:1.15rem; margin-bottom:12px; color:var(--ink);">Teman Satu Jalan Vol 7 — Rincian Paket</h3>
-      <div style="border-radius:var(--radius-md); overflow:hidden; border:1.5px solid var(--card-border); background:#0d1611; margin-bottom:14px; box-shadow:var(--shadow-sm);">
-        <img id="modalInfoPosterImg" src="./TJ22.png" alt="Infografis Brosur Resmi TSJ" style="width:100%; height:auto; display:block;">
+      <div class="modal-celebrate-badge"
+        style="background:var(--ok-bg); color:var(--primary); border:1px solid var(--primary); margin-bottom:12px;">📊
+        INFOGRAFIS PAKET & HARGA</div>
+      <h3 id="modalInfoPosterTitle"
+        style="font-family:var(--font-display); font-size:1.15rem; margin-bottom:12px; color:var(--ink);">Teman Satu
+        Jalan Vol 7 — Rincian Paket</h3>
+      <div
+        style="border-radius:var(--radius-md); overflow:hidden; border:1.5px solid var(--card-border); background:#0d1611; margin-bottom:14px; box-shadow:var(--shadow-sm);">
+        <img id="modalInfoPosterImg" src="./TJ22.png" alt="Infografis Brosur Resmi TSJ"
+          style="width:100%; height:auto; display:block;">
       </div>
-      <button type="button" class="btn-modal-view-pass" onclick="closeInfoPosterModal()" style="width:100%;">Tutup Infografis</button>
+      <button type="button" class="btn-modal-view-pass" onclick="closeInfoPosterModal()" style="width:100%;">Tutup
+        Infografis</button>
     </div>
   </div>
 
@@ -3965,19 +4129,27 @@
     aria-labelledby="modalQrisZoomTitle" onclick="if(event.target===this)closeQrisZoomModal()">
     <div class="modal-card" style="max-width: 440px; padding: 22px; text-align: center;">
       <button type="button" class="modal-close" onclick="closeQrisZoomModal()" aria-label="Tutup">&times;</button>
-      <div class="modal-celebrate-badge" style="background:#0284c7; color:#fff; margin-bottom:10px;">📱 SCAN & BAYAR</div>
-      <h3 id="modalQrisZoomTitle" style="font-family:var(--font-display); font-size:1.15rem; color:var(--ink); margin-bottom:4px;">QRIS Adventure Temansatujalan</h3>
-      <p style="font-size:0.82rem; color:var(--ink-secondary); margin-bottom:12px;">NMID: ID1025375876469 • Bebas Biaya Admin</p>
-      
-      <div style="background:#ffffff; padding:12px; border-radius:var(--radius-md); box-shadow:0 8px 30px rgba(0,0,0,0.4); display:inline-block; margin-bottom:14px; max-width:100%;">
-        <img src="./qris.png" alt="QRIS Pembayaran TSJ" style="width:100%; max-width:320px; height:auto; display:block; margin:0 auto; border-radius:8px;">
+      <div class="modal-celebrate-badge" style="background:#0284c7; color:#fff; margin-bottom:10px;">📱 SCAN & BAYAR
+      </div>
+      <h3 id="modalQrisZoomTitle"
+        style="font-family:var(--font-display); font-size:1.15rem; color:var(--ink); margin-bottom:4px;">QRIS Adventure
+        Temansatujalan</h3>
+      <p style="font-size:0.82rem; color:var(--ink-secondary); margin-bottom:12px;">NMID: ID1025375876469 • Bebas Biaya
+        Admin</p>
+
+      <div
+        style="background:#ffffff; padding:12px; border-radius:var(--radius-md); box-shadow:0 8px 30px rgba(0,0,0,0.4); display:inline-block; margin-bottom:14px; max-width:100%;">
+        <img src="./qris.png" alt="QRIS Pembayaran TSJ"
+          style="width:100%; max-width:320px; height:auto; display:block; margin:0 auto; border-radius:8px;">
       </div>
 
       <div style="display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
-        <a href="./qris.png" download="QRIS-TemanSatuJalan.png" class="btn-modal-join" style="padding:10px 18px; font-size:0.88rem; text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
+        <a href="./qris.png" download="QRIS-TemanSatuJalan.png" class="btn-modal-join"
+          style="padding:10px 18px; font-size:0.88rem; text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
           <span>📥</span> Unduh QRIS
         </a>
-        <button type="button" class="btn-modal-view-pass" onclick="closeQrisZoomModal()" style="padding:10px 18px; font-size:0.88rem;">
+        <button type="button" class="btn-modal-view-pass" onclick="closeQrisZoomModal()"
+          style="padding:10px 18px; font-size:0.88rem;">
           Tutup
         </button>
       </div>
@@ -4718,6 +4890,50 @@
       }
 
       // ==========================================
+      // HELPER NOMOR WHATSAPP / HP (+62 PERMANEN)
+      // ==========================================
+      function cleanLocalPhone(val) {
+        if (!val) return "";
+        var s = String(val).trim().replace(/[^0-9]/g, "");
+        // Jika pendaftar mengetik/paste 628...
+        if (s.indexOf("62") === 0) {
+          s = s.substring(2);
+        }
+        // Jika pendaftar mengetik/paste 08...
+        while (s.charAt(0) === "0") {
+          s = s.substring(1);
+        }
+        return s;
+      }
+
+      function formatFullPhone(val) {
+        var local = cleanLocalPhone(val);
+        return local ? ("+62" + local) : "";
+      }
+
+      function isValidPhone(val) {
+        var local = cleanLocalPhone(val);
+        // Standar nomor seluler Indonesia: diawali angka 8, panjang 9-13 digit (misal: 8123456789)
+        return /^8[0-9]{8,12}$/.test(local);
+      }
+
+      function bindPhoneInputEvents(inputEl) {
+        if (!inputEl) return;
+        inputEl.addEventListener("input", function () {
+          var raw = this.value;
+          var cleaned = cleanLocalPhone(raw);
+          // Otomatis hilangkan awalan 0, 62, atau + jika diketik
+          if (raw.indexOf("0") === 0 || raw.indexOf("62") === 0 || raw.indexOf("+") === 0) {
+            this.value = cleaned;
+          }
+          var parentF = this.closest(".f");
+          if (parentF && isValidPhone(this.value)) {
+            mark(parentF, true);
+          }
+        });
+      }
+
+      // ==========================================
       // DYNAMIC MULTI-EXPLORER LOGIC
       // ==========================================
       var explorerContainer = $("explorerContainer");
@@ -4809,9 +5025,12 @@
 
       <div class="row">
         <div class="f" ${isLeader ? 'data-req' : ''}>
-          <label for="${cardId}_hp">No. WhatsApp / HP ${isLeader ? '' : '<span class="opt">(Opsional jika sama dg ketua)</span>'}</label>
-          <input type="tel" id="${cardId}_hp" class="exp-hp" placeholder="${isLeader ? '08xxxxxxxxxx (Wajib untuk info grup)' : '08xxxxxxxxxx (Boleh dikosongkan jika anak/istri)'}">
-          <p class="err">Nomor WhatsApp wajib 9–14 digit angka.</p>
+          <label for="${cardId}_hp">No. WhatsApp / HP <span class="prefix-badge-label">+62 Permanen</span> ${isLeader ? '' : '<span class="opt">(Opsional jika sama dg ketua)</span>'}</label>
+          <div class="phone-input-group">
+            <span class="phone-prefix-addon">🇮🇩 +62</span>
+            <input type="tel" id="${cardId}_hp" class="exp-hp phone-input-field" placeholder="${isLeader ? '812-3456-7890 (Wajib untuk info grup)' : '812-3456-7890 (Boleh kosong jika anak/istri)'}">
+          </div>
+          <p class="err">Nomor WhatsApp wajib 9–13 digit angka.</p>
         </div>
 
         <div class="f" ${isLeader ? 'data-req' : ''}>
@@ -4827,10 +5046,15 @@
       </div>
     `;
 
+        var hpInput = card.querySelector(".exp-hp");
+        bindPhoneInputEvents(hpInput);
+
         card.querySelectorAll("input").forEach(function (inp) {
-          inp.addEventListener("input", function () {
-            if (this.value.trim().length >= 2) mark(this.closest(".f"), true);
-          });
+          if (!inp.classList.contains("exp-hp")) {
+            inp.addEventListener("input", function () {
+              if (this.value.trim().length >= 2) mark(this.closest(".f"), true);
+            });
+          }
         });
         card.querySelectorAll("select").forEach(function (sel) {
           sel.addEventListener("change", function () {
@@ -4940,9 +5164,7 @@
       $("darurat").addEventListener("input", function () {
         if (this.value.trim().length >= 2) mark(this.closest(".f"), true);
       });
-      $("daruratHp").addEventListener("input", function () {
-        if (/^\+?[0-9\s-]{9,16}$/.test(this.value.trim())) mark(this.closest(".f"), true);
-      });
+      bindPhoneInputEvents($("daruratHp"));
       for (var j = 1; j <= 5; j++) {
         (function (n) {
           var chk = $("janji" + n);
@@ -5007,23 +5229,24 @@
 
           // Validate Leader contact
           if (idx === 0) {
-            checkField(hpInput.closest(".f"), /^\+?[0-9\s-]{9,16}$/.test(hpVal));
+            checkField(hpInput.closest(".f"), isValidPhone(hpVal));
             checkField(emailInput.closest(".f"), /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailVal));
           } else {
             if (hpVal.length > 0) {
-              checkField(hpInput.closest(".f"), /^\+?[0-9\s-]{9,16}$/.test(hpVal));
+              checkField(hpInput.closest(".f"), isValidPhone(hpVal));
             } else {
               mark(hpInput.closest(".f"), true);
             }
           }
 
+          var formattedHp = hpVal ? formatFullPhone(hpVal) : "";
           explorerList.push({
             num: idx + 1,
             nama: nameVal,
             peran: roleVal || "Peserta",
             gender: genderVal || "-",
             usia: ageVal || "-",
-            hp: hpVal,
+            hp: formattedHp,
             email: emailVal,
             medis: medisVal || "-"
           });
@@ -5048,8 +5271,10 @@
         checkField($("tikumField"), tikumVal !== "");
 
         // 5. Validate Emergency Contact
+        var daruratHpRaw = $("daruratHp").value.trim();
+        var formattedDaruratHp = formatFullPhone(daruratHpRaw);
         checkField($("darurat").closest(".f"), $("darurat").value.trim().length >= 2);
-        checkField($("daruratHp").closest(".f"), /^\+?[0-9\s-]{9,16}$/.test($("daruratHp").value.trim()));
+        checkField($("daruratHp").closest(".f"), isValidPhone(daruratHpRaw));
 
         // 6. Ticket Selection
         checkField($("tkbox"), !!getSelectedTicket());
@@ -5091,7 +5316,7 @@
 
         var leader = explorerList[0];
         $("de").textContent = leader.email || "email terdaftar";
-        $("dhp").textContent = leader.hp || $("daruratHp").value;
+        $("dhp").textContent = leader.hp || formattedDaruratHp;
         $("passEventName").textContent = evt.eventNameDisplay;
         $("passTk").textContent = getSelectedTicket().value;
         $("passTotalOrang").textContent = explorerList.length + " Orang Petualang";
@@ -5116,7 +5341,7 @@
         var nominalStr = isDp ? ("Rp " + dpPrice.toLocaleString("id-ID")) : ("Rp " + fullPrice.toLocaleString("id-ID"));
         var sisaStr = isDp ? ("Rp " + sisaPrice.toLocaleString("id-ID")) : "Rp 0 (Lunas)";
         var skemaStr = isDp ? "DP / Uang Muka (50%)" : "Lunas (100%)";
-        var metodeStr = isDp 
+        var metodeStr = isDp
           ? ("QRIS - DP 50% (Bayar: " + nominalStr + ", Sisa: " + sisaStr + " maks. H-7)")
           : ("QRIS - Lunas 100% (" + nominalStr + ")");
 
@@ -5154,7 +5379,7 @@
           skemaPembayaran: skemaStr,
           nominalBayar: nominalStr,
           sisaPelunasan: sisaStr,
-          leaderHp: leader.hp || $("daruratHp").value.trim(),
+          leaderHp: leader.hp || formattedDaruratHp,
           leaderEmail: leader.email || "",
           alamatLengkap: fullAddress || "-",
           kotaDomisili: combinedAddress,
@@ -5164,7 +5389,7 @@
           titikKumpul: $("titikKumpulSelect") ? $("titikKumpulSelect").value : "-",
           metodePembayaran: metodeStr,
           kontakDaruratNama: $("darurat").value.trim(),
-          kontakDaruratHp: $("daruratHp").value.trim(),
+          kontakDaruratHp: formattedDaruratHp,
           buktiTransferFileName: (fileInput && fileInput.files && fileInput.files.length > 0) ? fileInput.files[0].name : "Struk Transfer Terlampir",
           explorers: explorerList
         };

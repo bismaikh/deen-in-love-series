@@ -23,6 +23,7 @@ Formulir pendaftaran interaktif untuk kegiatan trekking alam ramah syari'ah (pas
   - Form otomatis menyesuaikan jumlah kartu petualang sesuai paket yang dipilih.
   - Petualang 1 otomatis menjadi Penanggung Jawab / PIC (Wajib PIC).
   - Kolom isian lengkap: Nama KTP/KIA, Status Peran/Hubungan, Jenis Kelamin, Usia/Kategori, No. WA, Email, dan Catatan Medis/Alergi.
+  - **No. WhatsApp & Kontak Darurat (+62 Permanen)**: Dilengkapi addon kode negara `+62` permanen dengan auto-sanitasi awalan `0` / `62` saat pendaftar mengetik atau menempelkan nomor. Data tersimpan rapi berformat internasional (`+628xxxxxxxxxx`).
 - **Metode Pembayaran QRIS Resmi (Semua Bank & E-Wallet)**:
   - Pembayaran instan via QRIS (BCA, Mandiri, BRI, BNI, GoPay, OVO, Dana, ShopeePay, dll).
   - Merchant: **ADVENTURE TEMANSATUJALAN** • NMID: `ID1025375876469` (fitur salin NMID, unduh QRIS, dan zoom modal).

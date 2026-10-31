@@ -668,25 +668,25 @@ function isiDataSimulasi() {
     // Rombongan 1: Vol 7 Lovetrail Couple (DP 50%)
     [
       1, "TMN1JLN-V7-1011", new Date(), "Vol 7 — Curug Panjang", "Lovetrail Couple (400K)", "DP (50%)", 200000, 200000, "BELUM LUNAS (H-7)",
-      "Petualang 1 (PIC)", "Ahmad Fauzi", "Suami / Ayah (Ketua)", "Ikhwan", "Dewasa (32 Th)", "'081288889999", "ahmad.fauzi@gmail.com", "-",
-      "Jakarta Selatan", "Kendaraan Pribadi", "Langsung ke Bukit Waruwangi (06.00 WIB)", "Pernah • Rutin", "Siti Rahma", "'081299998888", "struk-dp-fauzi.jpg"
+      "Petualang 1 (PIC)", "Ahmad Fauzi", "Suami / Ayah (Ketua)", "Ikhwan", "Dewasa (32 Th)", "'+6281288889999", "ahmad.fauzi@gmail.com", "-",
+      "Jakarta Selatan", "Kendaraan Pribadi", "Langsung ke Bukit Waruwangi (06.00 WIB)", "Pernah • Rutin", "Siti Rahma", "'+6281299998888", "struk-dp-fauzi.jpg"
     ],
     [
       2, "TMN1JLN-V7-1011", new Date(), "Vol 7 — Curug Panjang", "Lovetrail Couple (400K)", "DP (50%)", 0, 0, "BELUM LUNAS (H-7)",
-      "Petualang 2", "Siti Rahma", "Istri / Ibu", "Akhwat", "Dewasa (29 Th)", "'081299998888", "-", "Alergi Dingin Ringan",
-      "Jakarta Selatan", "Kendaraan Pribadi", "Langsung ke Bukit Waruwangi (06.00 WIB)", "Pernah • Rutin", "Ahmad Fauzi", "'081288889999", "struk-dp-fauzi.jpg"
+      "Petualang 2", "Siti Rahma", "Istri / Ibu", "Akhwat", "Dewasa (29 Th)", "'+6281299998888", "-", "Alergi Dingin Ringan",
+      "Jakarta Selatan", "Kendaraan Pribadi", "Langsung ke Bukit Waruwangi (06.00 WIB)", "Pernah • Rutin", "Ahmad Fauzi", "'+6281288889999", "struk-dp-fauzi.jpg"
     ],
     // Rombongan 2: Vol 7 Lovetrail Single (Lunas 100%)
     [
       3, "TMN1JLN-V7-2022", new Date(), "Vol 7 — Curug Panjang", "Lovetrail Single (200K)", "Lunas (100%)", 200000, 0, "LUNAS",
-      "Petualang 1 (PIC)", "Muhammad Rizky", "Ikhwan (Ketua)", "Ikhwan", "Pemuda (24 Th)", "'085711223344", "rizky.adv@gmail.com", "-",
-      "Tangerang", "Konvoi Tol Cilegon", "Konvoi Rest Area Tol Cilegon Timur (04.45 WIB)", "Sering Trekking • Rutin", "Bapak Hendra", "'081233445566", "bukti-lunas-rizky.png"
+      "Petualang 1 (PIC)", "Muhammad Rizky", "Ikhwan (Ketua)", "Ikhwan", "Pemuda (24 Th)", "'+6285711223344", "rizky.adv@gmail.com", "-",
+      "Tangerang", "Konvoi Tol Cilegon", "Konvoi Rest Area Tol Cilegon Timur (04.45 WIB)", "Sering Trekking • Rutin", "Bapak Hendra", "'+6281233445566", "bukti-lunas-rizky.png"
     ],
     // Rombongan 3: Vol 6 Lovetrail Squad Family (Lunas 100%)
     [
       4, "TMN1JLN-V6-3033", new Date(), "Vol 6 — Curug Lewibumi", "Lovetrail Squad Family (630K)", "Lunas (100%)", 630000, 0, "LUNAS",
-      "Petualang 1 (PIC)", "Hendrawan Pratama", "Suami / Ayah (Ketua)", "Ikhwan", "Dewasa (38 Th)", "'081377889900", "hendra.pratama@outlook.com", "-",
-      "Serang, Banten", "Kendaraan Pribadi", "Kadubereum (06.00 WIB)", "Pemula • Cukup Aktif", "Rina Marlina", "'081366778899", "transfer-bca-hendra.pdf"
+      "Petualang 1 (PIC)", "Hendrawan Pratama", "Suami / Ayah (Ketua)", "Ikhwan", "Dewasa (38 Th)", "'+6281377889900", "hendra.pratama@outlook.com", "-",
+      "Serang, Banten", "Kendaraan Pribadi", "Kadubereum (06.00 WIB)", "Pemula • Cukup Aktif", "Rina Marlina", "'+6281366778899", "transfer-bca-hendra.pdf"
     ]
   ];
 
