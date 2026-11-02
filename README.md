@@ -69,6 +69,10 @@ Formulir pendaftaran interaktif bertema *Deep Ocean Midnight Teal & Luminous Cya
   - **Seksi Bukti Transfer Pembayaran**: Terintegrasi langsung dengan drop-zone **Unggah Struk / Bukti Pembayaran** (mendukung JPG, PNG, PDF maks. 5 MB) sesuai skema pembayaran yang dipilih.
   - Bagian Kontak Wali / Keluarga Terdekat ditiadakan demi kecepatan pendaftaran.
 
+- **Tautan WhatsApp Group Kelas Resmi**:
+  - 🥾 **Grup WhatsApp Khusus Ikhwan & Duda**: [https://chat.whatsapp.com/B7LGjbbegq6FeYh3K27vHT](https://chat.whatsapp.com/B7LGjbbegq6FeYh3K27vHT)
+  - 🌸 **Grup WhatsApp Khusus Akhwat & Janda**: [https://chat.whatsapp.com/HVGn5cEdCzy4eZCKVx2cSC](https://chat.whatsapp.com/HVGn5cEdCzy4eZCKVx2cSC)
+
 ---
 
 ## 📊 Desain & Fitur Google Spreadsheet (`google-apps-script.js`)

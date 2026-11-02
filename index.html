@@ -4289,7 +4289,7 @@
 
       <!-- AJAKAN BERGABUNG KE GRUP WHATSAPP PESERTA -->
       <div class="group-invite-card" id="groupInviteCard">
-        <div class="group-invite-badge">
+        <div class="group-invite-badge" id="groupInviteBadge">
           <span>💬</span> <span>Langkah Terakhir: Wajib Masuk Grup Kelas</span>
         </div>
         <h3 class="group-title">Gabung ke WhatsApp Group <span id="groupEventName">Deen In Love Series</span>!</h3>
@@ -4298,11 +4298,25 @@
           mendapatkan link Zoom Meeting mingguan, info kelas offline Masjid Tholibul Ilmi Widya Cendikia, pembagian Materi PPT, Video Materi per Pekan, dan agenda Rihlah.
         </p>
         <div style="display:flex; flex-direction:column; align-items:center; gap:12px;">
-          <a href="https://chat.whatsapp.com/DgIVi7aOfYjGh76TbuwxaZ" target="_blank" rel="noopener"
+          <!-- Primary CTA Button (Disesuaikan otomatis sesuai pendaftaran: Ikhwan / Akhwat) -->
+          <a href="https://chat.whatsapp.com/B7LGjbbegq6FeYh3K27vHT" target="_blank" rel="noopener"
             class="btn-join-group" id="btnJoinGroup">
-            <span style="font-size:1.35rem;">📲</span>
+            <span style="font-size:1.35rem;" id="btnJoinGroupIcon">📲</span>
             <span id="btnJoinGroupText">Gabung Grup WhatsApp Kelas Sekarang</span>
           </a>
+
+          <!-- Dua Pilihan Akses Cepat Grup (Ikhwan & Akhwat) -->
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(210px, 1fr)); gap:10px; width:100%; max-width:480px;">
+            <a id="btnCardIkhwan" href="https://chat.whatsapp.com/B7LGjbbegq6FeYh3K27vHT" target="_blank" rel="noopener"
+              class="btn-secondary" style="min-height:44px; font-size:0.86rem; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; gap:8px;">
+              <span>🥾</span> <span>Grup WhatsApp Ikhwan</span>
+            </a>
+            <a id="btnCardAkhwat" href="https://chat.whatsapp.com/HVGn5cEdCzy4eZCKVx2cSC" target="_blank" rel="noopener"
+              class="btn-secondary" style="min-height:44px; font-size:0.86rem; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; gap:8px;">
+              <span>🌸</span> <span>Grup WhatsApp Akhwat</span>
+            </a>
+          </div>
+
           <div style="display:flex; gap:10px; width:100%; max-width:480px; flex-wrap:wrap;">
             <button type="button" class="btn-secondary" style="flex:1; min-height:42px; font-size:0.86rem;"
               onclick="copyTripGroupLink()">
@@ -4315,7 +4329,7 @@
           </div>
         </div>
         <small class="group-note">
-          🔒 Grup resmi khusus peserta terdaftar (s.id/deeninloveseries). Jika link terkendala, hubungi Admin: <a id="adminWaLink"
+          🔒 Grup resmi khusus peserta terdaftar (bit.ly/deeninloveseries). Jika link terkendala, hubungi Admin: <a id="adminWaLink"
             href="https://wa.me/6281282785454" target="_blank" rel="noopener">+62 812-8278-5454</a>
         </small>
       </div>
@@ -4441,10 +4455,23 @@
         </div>
       </div>
 
-      <a href="#" target="_blank" rel="noopener" class="btn-modal-join" id="modalJoinBtn" style="background:var(--primary); color:var(--primary-ink);">
-        <span style="font-size:1.3rem;">📲</span>
+      <!-- Primary Modal Join Button -->
+      <a href="https://chat.whatsapp.com/B7LGjbbegq6FeYh3K27vHT" target="_blank" rel="noopener" class="btn-modal-join" id="modalJoinBtn" style="background:var(--primary); color:var(--primary-ink);">
+        <span style="font-size:1.3rem;" id="modalJoinBtnIcon">📲</span>
         <span id="modalJoinBtnText">Gabung Grup WhatsApp Sekarang</span>
       </a>
+
+      <!-- Quick Switch buttons in modal -->
+      <div style="display:flex; gap:8px; justify-content:center; margin-top:8px; margin-bottom:12px; width:100%;">
+        <a id="modalBtnIkhwan" href="https://chat.whatsapp.com/B7LGjbbegq6FeYh3K27vHT" target="_blank" rel="noopener"
+          style="font-size:0.78rem; padding:6px 14px; border-radius:999px; text-decoration:none; border:1px solid var(--line); color:var(--ink-secondary); background:rgba(255,255,255,0.04); display:inline-flex; align-items:center; gap:5px;">
+          <span>🥾</span> <span>Link Ikhwan</span>
+        </a>
+        <a id="modalBtnAkhwat" href="https://chat.whatsapp.com/HVGn5cEdCzy4eZCKVx2cSC" target="_blank" rel="noopener"
+          style="font-size:0.78rem; padding:6px 14px; border-radius:999px; text-decoration:none; border:1px solid var(--line); color:var(--ink-secondary); background:rgba(255,255,255,0.04); display:inline-flex; align-items:center; gap:5px;">
+          <span>🌸</span> <span>Link Akhwat</span>
+        </a>
+      </div>
 
       <div class="modal-secondary-row">
         <button type="button" class="btn-modal-copy" onclick="copyTripGroupLink()">
@@ -4595,7 +4622,9 @@
           routeDesc: "6 Pertemuan (Setiap Minggu, 6 Des - 17 Jan 2026 Pukul 09.00 WIB) + Rihlah & Buku Pulih Bersama Allah",
           codePrefix: "DIL-2026-",
           barcodeCaption: "VALIDASI PESERTA DEEN IN LOVE SERIES",
-          waGroupUrl: "https://chat.whatsapp.com/DgIVi7aOfYjGh76TbuwxaZ",
+          waGroupUrl: "https://chat.whatsapp.com/B7LGjbbegq6FeYh3K27vHT",
+          waGroupIkhwan: "https://chat.whatsapp.com/B7LGjbbegq6FeYh3K27vHT",
+          waGroupAkhwat: "https://chat.whatsapp.com/HVGn5cEdCzy4eZCKVx2cSC",
           waGroupName: "Deen In Love Series - UM Official",
           tikumOptions: [
             "Offline — Masjid Tholibul Ilmi Widya Cendikia (Setiap Minggu, 09.00 WIB)",
@@ -5696,19 +5725,71 @@
           });
         }
 
-        // 2. PERBARUI KARTU AJAKAN GRUP DI HALAMAN SUKSES
-        if ($("groupEventName")) $("groupEventName").textContent = "DEEN IN LOVE SERIES";
+        // 2. PERBARUI KARTU AJAKAN GRUP DI HALAMAN SUKSES (IKHWAN VS AKHWAT)
+        var leader = explorerList[0];
+        var isAkhwat = false;
+        if (leader) {
+          var peran = (leader.peran || "").toLowerCase();
+          var gender = (leader.gender || "").toLowerCase();
+          if (peran === "akhwat" || peran === "janda" || gender.includes("akhwat") || gender.includes("perempuan")) {
+            isAkhwat = true;
+          }
+        }
+        var ticket = getSelectedTicket();
+        if (ticket && ticket.value.toLowerCase().includes("akhwat")) {
+          isAkhwat = true;
+        }
+
+        var activeGroupUrl = isAkhwat ? evt.waGroupAkhwat : evt.waGroupIkhwan;
+        var activeGroupName = isAkhwat ? "Grup WhatsApp Khusus Akhwat" : "Grup WhatsApp Khusus Ikhwan";
+        window.userRegisteredGroupUrl = activeGroupUrl;
+        window.userRegisteredGroupName = activeGroupName;
+
+        if ($("groupEventName")) $("groupEventName").textContent = isAkhwat ? "Deen In Love (Khusus Akhwat)" : "Deen In Love (Khusus Ikhwan)";
         if ($("groupEventDest")) $("groupEventDest").textContent = "Belajar Sebelum Berlayar • Ustadz Mahruroji";
         if ($("btnJoinGroup")) {
-          $("btnJoinGroup").href = evt.waGroupUrl;
-          if ($("btnJoinGroupText")) $("btnJoinGroupText").textContent = "Gabung WhatsApp Group Kelas Sekarang";
+          $("btnJoinGroup").href = activeGroupUrl;
+          if ($("btnJoinGroupText")) $("btnJoinGroupText").textContent = isAkhwat ? "Gabung WhatsApp Group Akhwat Sekarang" : "Gabung WhatsApp Group Ikhwan Sekarang";
+        }
+        if ($("groupInviteBadge")) {
+          $("groupInviteBadge").innerHTML = isAkhwat
+            ? '<span>🌸</span> <span>Grup Resmi: Khusus Peserta Akhwat & Janda</span>'
+            : '<span>🥾</span> <span>Grup Resmi: Khusus Peserta Ikhwan & Duda</span>';
+        }
+        if ($("btnCardIkhwan")) {
+          $("btnCardIkhwan").href = evt.waGroupIkhwan;
+          if (!isAkhwat) {
+            $("btnCardIkhwan").style.borderColor = "var(--primary)";
+            $("btnCardIkhwan").style.fontWeight = "bold";
+            $("btnCardIkhwan").style.background = "rgba(45, 212, 191, 0.12)";
+            $("btnCardIkhwan").innerHTML = "<span>🥾</span> <span>Grup Ikhwan (Pilihan Anda)</span>";
+          } else {
+            $("btnCardIkhwan").style.borderColor = "";
+            $("btnCardIkhwan").style.fontWeight = "normal";
+            $("btnCardIkhwan").style.background = "";
+            $("btnCardIkhwan").innerHTML = "<span>🥾</span> <span>Grup Ikhwan</span>";
+          }
+        }
+        if ($("btnCardAkhwat")) {
+          $("btnCardAkhwat").href = evt.waGroupAkhwat;
+          if (isAkhwat) {
+            $("btnCardAkhwat").style.borderColor = "#f43f5e";
+            $("btnCardAkhwat").style.fontWeight = "bold";
+            $("btnCardAkhwat").style.background = "rgba(244, 63, 94, 0.12)";
+            $("btnCardAkhwat").innerHTML = "<span>🌸</span> <span>Grup Akhwat (Pilihan Anda)</span>";
+          } else {
+            $("btnCardAkhwat").style.borderColor = "";
+            $("btnCardAkhwat").style.fontWeight = "normal";
+            $("btnCardAkhwat").style.background = "";
+            $("btnCardAkhwat").innerHTML = "<span>🌸</span> <span>Grup Akhwat</span>";
+          }
         }
         if ($("adminWaLink")) {
           var adminMsg = "Assalamu'alaikum Admin UM Official, saya mendaftar " + evt.eventNameDisplay + " [Kode: " + randomCode + "] dengan Skema " + skemaStr + " (" + nominalStr + (isBertahap ? ", Sisa: " + sisaStr : "") + "). Struk / bukti transfer telah saya lampirkan. Mohon verifikasi pendaftaran & akses grup Deen In Love Series.";
           $("adminWaLink").href = "https://wa.me/6281282785454?text=" + encodeURIComponent(adminMsg);
         }
         if ($("btnShareWa")) {
-          var shareText = "Bismillah! Kami sudah mendaftar *Deen In Love Series: Belajar Sebelum Berlayar* bersama Ustadz Mahruroji (Setiap Minggu, 6 Des - 17 Jan 2026) dengan Kode: *" + randomCode + "*. Yuk daftar di s.id/deeninloveseries!";
+          var shareText = "Bismillah! Kami sudah mendaftar *Deen In Love Series: Belajar Sebelum Berlayar* bersama Ustadz Mahruroji (Setiap Minggu, 6 Des - 17 Jan 2026) dengan Kode: *" + randomCode + "*. Yuk daftar di bit.ly/deeninloveseries!";
           $("btnShareWa").href = "https://wa.me/?text=" + encodeURIComponent(shareText);
         }
 
@@ -5798,11 +5879,28 @@
       window.openGroupModal = function () {
         var evt = EVENTS_DATA[currentEventKey];
         if (!evt) return;
-        if ($("modalEventBadge")) $("modalEventBadge").textContent = "DEEN IN LOVE SERIES";
-        if ($("modalEventName")) $("modalEventName").textContent = evt.eventNameDisplay;
+        var activeGroupUrl = window.userRegisteredGroupUrl || evt.waGroupUrl;
+        var isAkhwat = (activeGroupUrl === evt.waGroupAkhwat);
+
+        if ($("modalEventBadge")) {
+          $("modalEventBadge").textContent = isAkhwat ? "GRUP KHUSUS AKHWAT" : "GRUP KHUSUS IKHWAN";
+          $("modalEventBadge").style.background = isAkhwat ? "#f43f5e" : "var(--primary)";
+          $("modalEventBadge").style.color = isAkhwat ? "#ffffff" : "var(--primary-ink)";
+        }
+        if ($("modalEventName")) $("modalEventName").textContent = evt.eventNameDisplay + (isAkhwat ? " (Seksi Akhwat)" : " (Seksi Ikhwan)");
         if ($("modalJoinBtn")) {
-          $("modalJoinBtn").href = evt.waGroupUrl;
-          if ($("modalJoinBtnText")) $("modalJoinBtnText").textContent = "Gabung Grup WhatsApp Deen In Love Series";
+          $("modalJoinBtn").href = activeGroupUrl;
+          if ($("modalJoinBtnText")) $("modalJoinBtnText").textContent = isAkhwat ? "Gabung WhatsApp Group Akhwat Sekarang" : "Gabung WhatsApp Group Ikhwan Sekarang";
+        }
+        if ($("modalBtnIkhwan")) {
+          $("modalBtnIkhwan").href = evt.waGroupIkhwan;
+          $("modalBtnIkhwan").style.fontWeight = !isAkhwat ? "bold" : "normal";
+          $("modalBtnIkhwan").style.borderColor = !isAkhwat ? "var(--primary)" : "var(--line)";
+        }
+        if ($("modalBtnAkhwat")) {
+          $("modalBtnAkhwat").href = evt.waGroupAkhwat;
+          $("modalBtnAkhwat").style.fontWeight = isAkhwat ? "bold" : "normal";
+          $("modalBtnAkhwat").style.borderColor = isAkhwat ? "#f43f5e" : "var(--line)";
         }
         if ($("modalAdminWa")) {
           $("modalAdminWa").href = "https://wa.me/6281282785454?text=" + encodeURIComponent("Assalamu'alaikum Admin UM Official, mohon bantuan akses grup kelas " + evt.eventNameDisplay);
@@ -5816,7 +5914,7 @@
 
       window.copyTripGroupLink = function () {
         var evt = EVENTS_DATA[currentEventKey];
-        var url = (evt && evt.waGroupUrl) ? evt.waGroupUrl : "https://chat.whatsapp.com/invite";
+        var url = window.userRegisteredGroupUrl || (evt && evt.waGroupUrl) || "https://chat.whatsapp.com/B7LGjbbegq6FeYh3K27vHT";
 
         if (navigator.clipboard && navigator.clipboard.writeText) {
           navigator.clipboard.writeText(url).then(function () {
