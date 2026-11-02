@@ -4,55 +4,57 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Pendaftaran Teman Satu Jalan - Moeslim Sport Club</title>
+  <title>Deen In Love Series: Belajar Sebelum Berlayar — UM Official</title>
 
   <!-- Browser Favicon & Icons (Circular Transparent) -->
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
   <link rel="icon" type="image/png" sizes="192x192" href="./favicon.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="./favicon.png">
   <link rel="shortcut icon" type="image/png" href="./favicon.png">
-  <link rel="apple-touch-icon" href="./logo.png">
+  <link rel="apple-touch-icon" href="./favicon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesque:wght@700;800;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesque:wght@600;700;800;900&display=swap"
     rel="stylesheet">
   <style>
     :root {
       --font-display: 'Space Grotesque', system-ui, -apple-system, sans-serif;
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
       --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
 
-      /* Teman Satu Jalan Poster Palette (Army Green + Lime Neon + Sky Blue + Khaki) */
-      --bg: #0d1611;
-      --bg-gradient: radial-gradient(circle at 50% 0%, #1a2f22 0%, #0d1611 75%);
-      --card: #15241b;
-      --card-hover: #1c3124;
-      --card-border: rgba(132, 204, 22, 0.22);
-      --ink: #f4fbf5;
-      --ink-secondary: #a3b8aa;
-      --muted: #6c8374;
-      --line: #22372a;
+      /* Deen In Love Series Palette (Deep Ocean Midnight Teal + Emerald Cyan + Pearl White) */
+      --bg: #02131c;
+      --bg-gradient: radial-gradient(circle at 50% 0%, #0a3d52 0%, #042230 50%, #02131c 100%);
+      --card: #062331;
+      --card-hover: #0a2f42;
+      --card-border: rgba(45, 212, 191, 0.26);
+      --ink: #f8fafc;
+      --ink-secondary: #bae6fd;
+      --muted: #7aa6bc;
+      --line: #113c52;
 
-      /* Lime Neon Accent dari Judul SATUJALAN & LEWIBUMI */
-      --primary: #84cc16;
-      --primary-hover: #65a30d;
-      --primary-ink: #142e05;
-      --primary-glow: rgba(132, 204, 22, 0.3);
+      /* Luminous Emerald-Cyan Accent (Senada Cincin Zamrud & Glow Poster) */
+      --primary: #2dd4bf;
+      --primary-hover: #14b8a6;
+      --primary-ink: #021820;
+      --primary-glow: rgba(45, 212, 191, 0.35);
 
-      /* Sky Blue dari langit poster */
+      /* Ocean Sky & Warm Gold Accent */
       --accent-sky: #38bdf8;
-      --accent-khaki: #d4c5a9;
+      --accent-khaki: #fbbf24;
 
       --danger: #f87171;
       --danger-bg: rgba(239, 68, 68, 0.15);
-      --ok-bg: rgba(132, 204, 22, 0.14);
+      --ok-bg: rgba(45, 212, 191, 0.14);
 
-      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
-      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
-      --shadow-lg: 0 20px 40px -10px rgba(0, 0, 0, 0.7);
+      --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.4);
+      --shadow-md: 0 10px 28px rgba(0, 0, 0, 0.55);
+      --shadow-lg: 0 22px 48px -10px rgba(0, 0, 0, 0.75);
       --radius-sm: 8px;
       --radius-md: 14px;
-      --radius-lg: 20px;
+      --radius-lg: 22px;
 
       --safe-t: env(safe-area-inset-top, 0px);
       --safe-b: env(safe-area-inset-bottom, 0px);
@@ -60,31 +62,31 @@
     }
 
     [data-theme="light"] {
-      --bg: #f4f6f1;
-      --bg-gradient: radial-gradient(circle at 50% 0%, #e5ede0 0%, #f4f6f1 85%);
+      --bg: #eef7fa;
+      --bg-gradient: radial-gradient(circle at 50% 0%, #d5ecf5 0%, #eef7fa 85%);
       --card: #ffffff;
-      --card-hover: #f9fbf8;
-      --card-border: rgba(101, 163, 13, 0.25);
-      --ink: #132419;
-      --ink-secondary: #496352;
-      --muted: #6e8475;
-      --line: #d8e4d8;
+      --card-hover: #f2f9fc;
+      --card-border: rgba(13, 148, 136, 0.25);
+      --ink: #052230;
+      --ink-secondary: #154c66;
+      --muted: #527a8f;
+      --line: #cbe1ec;
 
-      --primary: #4d7c0f;
-      --primary-hover: #3f6212;
+      --primary: #0d9488;
+      --primary-hover: #0f766e;
       --primary-ink: #ffffff;
-      --primary-glow: rgba(77, 124, 15, 0.2);
+      --primary-glow: rgba(13, 148, 136, 0.22);
 
       --accent-sky: #0284c7;
-      --accent-khaki: #854d0e;
+      --accent-khaki: #d97706;
 
       --danger: #dc2626;
       --danger-bg: #fee2e2;
-      --ok-bg: #ecfccb;
+      --ok-bg: #ccfbf1;
 
-      --shadow-sm: 0 2px 8px rgba(19, 36, 25, 0.06);
-      --shadow-md: 0 8px 24px -4px rgba(19, 36, 25, 0.12);
-      --shadow-lg: 0 20px 40px -10px rgba(19, 36, 25, 0.16);
+      --shadow-sm: 0 2px 8px rgba(5, 34, 48, 0.06);
+      --shadow-md: 0 8px 24px -4px rgba(5, 34, 48, 0.12);
+      --shadow-lg: 0 20px 40px -10px rgba(5, 34, 48, 0.16);
       color-scheme: light;
     }
 
@@ -3267,14 +3269,442 @@
 
       0%,
       100% {
-        box-shadow: 0 0 15px rgba(34, 197, 94, 0.35);
+        box-shadow: 0 0 15px var(--primary-glow);
         transform: scale(1);
       }
 
       50% {
-        box-shadow: 0 0 28px rgba(34, 197, 94, 0.65);
+        box-shadow: 0 0 28px var(--primary-glow);
         transform: scale(1.04);
       }
+    }
+
+    /* =========================================================================
+       DEEN IN LOVE SERIES: DEEP OCEAN & EDITORIAL SERIF ENHANCEMENTS
+       ========================================================================= */
+    body::before {
+      background-image: radial-gradient(var(--card-border) 1px, transparent 1px),
+        radial-gradient(rgba(45, 212, 191, 0.08) 1px, transparent 1px);
+    }
+
+    .brand-capsule:hover {
+      border-color: var(--primary);
+      box-shadow: 0 4px 20px var(--primary-glow);
+    }
+
+    .brand-logo-img {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--primary);
+      box-shadow: 0 0 14px var(--primary-glow);
+      display: block;
+      flex-shrink: 0;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .brand-capsule:hover .brand-logo-img {
+      transform: scale(1.08) rotate(-4deg);
+    }
+
+    .hero-visual,
+    .carousel-slide {
+      background: #02131c;
+    }
+
+    .carousel-nav-btn:hover {
+      background: var(--primary);
+      color: var(--primary-ink);
+      border-color: var(--primary);
+      box-shadow: 0 0 18px var(--primary-glow);
+    }
+
+    .carousel-badge-counter {
+      background: rgba(3, 21, 30, 0.82);
+      border-color: var(--card-border);
+    }
+
+    .carousel-dot.active {
+      background: var(--primary);
+      box-shadow: 0 0 12px var(--primary-glow);
+    }
+
+    .carousel-progress-bar {
+      background: linear-gradient(90deg, var(--accent-sky), var(--primary));
+    }
+
+    /* Poster Quick Slide Switcher Strip */
+    .slide-quick-tabs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      padding: 12px 22px 6px;
+      background: rgba(2, 19, 28, 0.45);
+      border-bottom: 1px solid var(--line);
+    }
+
+    [data-theme="light"] .slide-quick-tabs {
+      background: rgba(13, 148, 136, 0.05);
+    }
+
+    @media (max-width: 520px) {
+      .slide-quick-tabs {
+        grid-template-columns: 1fr;
+        padding: 10px 14px;
+      }
+    }
+
+    .slide-tab-btn {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 8px 10px;
+      color: var(--ink-secondary);
+      font-family: var(--font-display);
+      font-size: 0.78rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: all 0.22s ease;
+    }
+
+    [data-theme="light"] .slide-tab-btn {
+      background: #ffffff;
+    }
+
+    .slide-tab-btn:hover {
+      border-color: var(--primary);
+      color: var(--ink);
+      background: var(--card-hover);
+    }
+
+    .slide-tab-btn.active {
+      background: var(--ok-bg);
+      border-color: var(--primary);
+      color: var(--primary);
+      box-shadow: 0 2px 12px var(--primary-glow);
+    }
+
+    /* Editorial Serif Headline Styling matching Poster 1.png */
+    .series-overline {
+      font-family: var(--font-display);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--ink-secondary);
+      margin-top: 8px;
+      margin-bottom: 4px;
+    }
+
+    .editorial-serif-title {
+      font-family: var(--font-serif);
+      font-size: 2.85rem;
+      font-weight: 600;
+      line-height: 1.08;
+      color: var(--ink);
+      margin: 4px 0 8px;
+      letter-spacing: -0.01em;
+    }
+
+    .editorial-serif-title .italic-light {
+      font-style: italic;
+      font-weight: 400;
+      font-size: 0.68em;
+      display: block;
+      color: var(--ink-secondary);
+      letter-spacing: 0.02em;
+      margin-bottom: 2px;
+    }
+
+    .editorial-serif-title .highlight-serif {
+      font-weight: 700;
+      color: var(--primary);
+      text-shadow: 0 0 26px var(--primary-glow);
+    }
+
+    @media (max-width: 520px) {
+      .editorial-serif-title {
+        font-size: 2.25rem;
+      }
+    }
+
+    /* Curriculum 6 Meetings & Benefit Showcase Grid inside Hero */
+    .deen-showcase-wrap {
+      margin: 0 22px 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    @media (max-width: 520px) {
+      .deen-showcase-wrap {
+        margin: 0 14px 18px;
+      }
+    }
+
+    .deen-section-card {
+      background: rgba(2, 19, 28, 0.55);
+      border: 1.5px solid var(--card-border);
+      border-radius: var(--radius-md);
+      padding: 18px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    [data-theme="light"] .deen-section-card {
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .deen-section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px dashed var(--line);
+    }
+
+    .deen-section-title {
+      font-family: var(--font-serif);
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      line-height: 1.1;
+    }
+
+    .deen-section-pill {
+      font-family: var(--font-display);
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--ok-bg);
+      color: var(--primary);
+      border: 1px solid var(--primary);
+    }
+
+    .materi-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    @media (max-width: 560px) {
+      .materi-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .materi-item {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      transition: all 0.22s ease;
+    }
+
+    .materi-item:hover {
+      border-color: var(--primary);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    }
+
+    .materi-num {
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
+      background: var(--ok-bg);
+      border: 1px solid var(--primary);
+      color: var(--primary);
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .materi-text h5 {
+      font-family: var(--font-serif);
+      font-size: 1.12rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 2px;
+    }
+
+    .materi-text p {
+      font-size: 0.86rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.38;
+    }
+
+    /* Hybrid Class Info Strip inside Materi */
+    .hybrid-strip {
+      margin-top: 12px;
+      padding: 12px 14px;
+      background: linear-gradient(135deg, rgba(45, 212, 191, 0.12) 0%, rgba(56, 189, 248, 0.08) 100%);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-sm);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    @media (max-width: 520px) {
+      .hybrid-strip {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .hybrid-col {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .hybrid-badge {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 68px;
+    }
+
+    .hybrid-val {
+      font-size: 0.84rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.35;
+    }
+
+    /* Benefit & Special Give Grid */
+    .benefit-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    @media (max-width: 560px) {
+      .benefit-cards-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .benefit-box {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 14px;
+      transition: all 0.22s ease;
+    }
+
+    .benefit-box:hover {
+      border-color: var(--primary);
+    }
+
+    .benefit-box.special-give {
+      background: linear-gradient(135deg, rgba(45, 212, 191, 0.16) 0%, rgba(6, 35, 49, 0.95) 100%);
+      border: 1.5px solid var(--primary);
+      box-shadow: 0 4px 18px var(--primary-glow);
+    }
+
+    [data-theme="light"] .benefit-box.special-give {
+      background: linear-gradient(135deg, #ccfbf1 0%, #f0fdfa 100%);
+    }
+
+    .benefit-box h5 {
+      font-family: var(--font-serif);
+      font-size: 1.18rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .benefit-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .benefit-list li {
+      font-size: 0.84rem;
+      color: var(--ink);
+      display: flex;
+      align-items: flex-start;
+      gap: 7px;
+      line-height: 1.4;
+    }
+
+    .benefit-list li::before {
+      content: "✦";
+      color: var(--primary);
+      font-size: 0.78rem;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* Clean overrides for old green shades in cards & buttons */
+    .skema-card.active,
+    .pay-method-card.expanded,
+    .qris-showcase-box {
+      background: linear-gradient(145deg, rgba(6, 35, 49, 0.96), rgba(3, 21, 30, 0.98));
+    }
+
+    [data-theme="light"] .skema-card.active,
+    [data-theme="light"] .pay-method-card.expanded,
+    [data-theme="light"] .qris-showcase-box,
+    [data-theme="light"] .lunas-notice-banner {
+      background: linear-gradient(145deg, #ffffff, #f0fdfa);
+      border-color: var(--primary);
+      color: var(--ink);
+    }
+
+    button.main {
+      background: linear-gradient(135deg, var(--primary) 0%, #0284c7 100%);
+      color: #021820;
+      box-shadow: 0 6px 24px var(--primary-glow);
+    }
+
+    [data-theme="light"] button.main {
+      color: #ffffff;
+    }
+
+    .phone-prefix-addon,
+    .prefix-badge-label {
+      background: var(--ok-bg);
+      color: var(--primary);
+      border-color: var(--card-border);
+    }
+
+    [data-theme="light"] .phone-prefix-addon,
+    [data-theme="light"] .prefix-badge-label {
+      background: var(--ok-bg);
+      color: var(--primary);
     }
   </style>
 </head>
@@ -3285,104 +3715,60 @@
     <!-- Top Bar -->
     <div class="top-bar">
       <div class="brand-capsule">
-        <img src="./logo.png" alt="Logo Teman Satu Jalan" class="brand-logo-img">
+        <img src="./favicon.png" alt="Logo UM Official — Deen In Love Series" class="brand-logo-img" width="42" height="42" loading="eager">
         <div class="brand-text-col">
-          <span class="brand-name">TMN1JLN.</span>
-          <span class="pill">MOESLIM SPORT CLUB</span>
+          <span class="brand-name">UM OFFICIAL</span>
+          <span class="pill" style="background:var(--ok-bg); color:var(--primary); border:1px solid var(--primary);">DEEN IN LOVE SERIES</span>
         </div>
       </div>
       <button type="button" class="theme-toggle" id="themeBtn" aria-label="Ganti Tema">
-        <span id="themeIcon">☀️</span> <span id="themeText">Outdoor Day</span>
+        <span id="themeIcon">🌊</span> <span id="themeText">Deep Ocean</span>
       </button>
     </div>
 
-    <!-- MODEL 1: EVENT SELECTOR TABS -->
+    <!-- EVENT BANNER / SERIES HEADER -->
     <div class="event-tabs-wrapper">
       <div class="event-tabs-label">
-        <span>🧭 Pilih Ekspedisi yang Ingin Diikuti:</span>
+        <span>⛵ Pre Marriage, Deen Prepared • Program Eksklusif UM Official:</span>
       </div>
-      <div class="event-tabs" role="tablist">
-        <button type="button" class="tab-btn" id="tabVol6" onclick="switchEvent('vol6')" role="tab"
-          aria-selected="false">
+      <div class="event-tabs" role="tablist" style="grid-template-columns: 1fr;">
+        <button type="button" class="tab-btn active" id="tabVol6" onclick="switchEvent('pranikah')" role="tab"
+          aria-selected="true" style="pointer-events:default;">
           <div class="tab-header-row">
-            <span class="tab-vol">VOL 6</span>
-            <span class="tab-badge">29 Nov 2026</span>
+            <span class="tab-vol">DEEN IN LOVE SERIES</span>
+            <span class="tab-badge">Setiap Minggu • 6 Des – 17 Jan 2026</span>
           </div>
-          <div class="tab-name">🌊 Curug Lewibumi</div>
-          <span class="tab-meta">5 KM • Kadubereum</span>
-        </button>
-
-        <button type="button" class="tab-btn" id="tabVol7" onclick="switchEvent('vol7')" role="tab"
-          aria-selected="false" title="Pendaftaran Vol 7 (Curug Panjang)">
-          <div class="tab-header-row">
-            <span class="tab-vol">VOL 7</span>
-            <span class="tab-badge">27 Des 2026</span>
-          </div>
-          <div class="tab-name">🌲 Curug Panjang</div>
-          <span class="tab-meta">5 KM • Bukit Waruwangi</span>
+          <div class="tab-name">💍 Belajar Sebelum Berlayar — Bersama Ustadz Mahruroji</div>
+          <span class="tab-meta">Pukul 09.00 WIB • Kelas Hybrid (Offline Masjid Tholibul Ilmi Widya Cendikia & Online Zoom Meeting)</span>
         </button>
       </div>
     </div>
 
-    <!-- PROMPT: PILIH EKSPEDISI DAHULU SEBELUM RINCIAN & FORM MUNCUL -->
-    <div id="noEventPrompt" class="no-event-prompt">
-      <div class="prompt-icon-ring">
-        <span class="prompt-icon">🧭</span>
-      </div>
-      <div class="prompt-badge">
-        <span class="pulsing-dot"></span>
-        <span>LANGKAH 1: PILIH EKSPEDISI</span>
-      </div>
-      <h2 class="prompt-title">Pilih Ekspedisi Anda Terlebih Dahulu</h2>
-      <p class="prompt-desc">
-        Silakan klik salah satu ekspedisi di atas (<b>VOL 6: Curug Lewibumi</b> atau <b>VOL 7: Curug Panjang</b>) untuk
-        membuka poster rute perjalanan, rincian paket trekking, dan formulir pendaftaran rombongan.
-      </p>
-      <div class="prompt-actions-grid">
-        <button type="button" class="prompt-expedition-card" onclick="switchEvent('vol6')">
-          <div class="pec-header">
-            <span class="pec-tag">VOL 6 • 29 Nov 2026</span>
-            <span class="pec-badge">Pilih & Buka ➔</span>
-          </div>
-          <div class="pec-title">🌊 Curug Lewibumi</div>
-          <div class="pec-meta">5 KM Trekking • Desa Kadubereum</div>
-        </button>
+    <!-- PROMPT: DIBUAT LANGSUNG AKTIF -->
+    <div id="noEventPrompt" class="no-event-prompt hide"></div>
 
-        <button type="button" class="prompt-expedition-card highlight" onclick="switchEvent('vol7')">
-          <div class="pec-header">
-            <span class="pec-tag">VOL 7 • 27 Des 2026</span>
-            <span class="pec-badge">Pilih & Buka ➔</span>
-          </div>
-          <div class="pec-title">🌲 Curug Panjang</div>
-          <div class="pec-meta">5 KM Trekking • Bukit Waruwangi</div>
-        </button>
-      </div>
-    </div>
-
-    <!-- WRAPPER DETAIL EKSPEDISI & FORMULIR (BARU MUNCUL SETELAH EKSPEDISI DIPILIH) -->
-    <div id="eventContentWrapper" class="event-content-wrapper hide">
-      <!-- Hero Poster Showcase (Dynamic based on selected event) -->
+    <!-- WRAPPER DETAIL ACARA & FORMULIR -->
+    <div id="eventContentWrapper" class="event-content-wrapper">
+      <!-- Hero Poster Showcase (3-Slide Interactive Carousel: 1.png, 2.png, 3.png) -->
       <header class="hero-card">
         <div class="hero-visual" id="heroVisual">
           <div class="carousel-container" id="heroCarousel" aria-roledescription="carousel"
-            aria-label="Showcase Poster dan Informasi Event">
+            aria-label="Showcase Poster Deen In Love Series: Belajar Sebelum Berlayar">
             <div class="carousel-track" id="heroCarouselTrack">
-              <!-- Slide 1: TJ1.jpeg -->
+              <!-- Slide 1: 1.png -->
               <div class="carousel-slide active" data-index="0">
-                <img id="heroImg" src="./TJ1.jpeg" alt="Poster Teman Satu Jalan Vol 7 Goes to Curug Panjang"
+                <img id="heroImg" src="./1.png" alt="Poster Utama Deen In Love Series: Belajar Sebelum Berlayar Bersama Ustadz Mahruroji"
                   loading="eager">
               </div>
-              <!-- Slide 2: TJ21.png -->
+              <!-- Slide 2: 2.png -->
               <div class="carousel-slide" data-index="1">
-                <img src="./TJ21.png" alt="Rute Trek & Special Include Curug Panjang" loading="lazy">
+                <img src="./2.png" alt="Materi 6 Pertemuan & Info Kelas Hybrid Deen In Love Series"
+                  loading="lazy">
               </div>
-              <!-- Slide 3: TJ22.png -->
+              <!-- Slide 3: 3.png -->
               <div class="carousel-slide" data-index="2">
-                <img src="./TJ22.png" alt="Pilihan Paket Registrasi Vol 7 Curug Panjang" loading="lazy">
-              </div>
-              <!-- Slide 4: TJ12.jpeg -->
-              <div class="carousel-slide" data-index="3">
-                <img src="./TJ12.jpeg" alt="Bonus Buku Pulih Bersama Allah Khusus 10 Tiket Pertama" loading="lazy">
+                <img src="./3.png" alt="Benefit, Fasilitas Kelas & Special Give Buku Pulih Bersama Allah"
+                  loading="lazy">
               </div>
             </div>
 
@@ -3402,7 +3788,7 @@
 
             <!-- Top-Right Slide Badge Counter -->
             <div class="carousel-badge-counter" id="carouselCounter">
-              <span class="carousel-counter-curr">1</span> / <span class="carousel-counter-total">4</span>
+              <span class="carousel-counter-curr">1</span> / <span class="carousel-counter-total">3</span>
             </div>
 
             <!-- Bottom Navigation Indicators -->
@@ -3410,7 +3796,6 @@
               <button type="button" class="carousel-dot active" data-index="0" aria-label="Slide 1"></button>
               <button type="button" class="carousel-dot" data-index="1" aria-label="Slide 2"></button>
               <button type="button" class="carousel-dot" data-index="2" aria-label="Slide 3"></button>
-              <button type="button" class="carousel-dot" data-index="3" aria-label="Slide 4"></button>
             </div>
 
             <!-- Progress Bar for Autoplay -->
@@ -3420,56 +3805,185 @@
           </div>
         </div>
 
+        <!-- Quick Poster Slide Switcher Strip -->
+        <div class="slide-quick-tabs" id="slideQuickTabs">
+          <button type="button" class="slide-tab-btn active" data-slide="0" onclick="jumpToPosterSlide(0)">
+            <span>⛵</span> <span>1. Poster Utama</span>
+          </button>
+          <button type="button" class="slide-tab-btn" data-slide="1" onclick="jumpToPosterSlide(1)">
+            <span>📚</span> <span>2. Materi (6 Pertemuan)</span>
+          </button>
+          <button type="button" class="slide-tab-btn" data-slide="2" onclick="jumpToPosterSlide(2)">
+            <span>🎁</span> <span>3. Benefit & Special Give</span>
+          </button>
+        </div>
+
         <div class="hero-headline">
           <div
-            style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:6px;">
-            <span class="vol-tag" id="heroVolTag">VOL 7</span>
-            <span class="hero-status-pill" id="badgeLimited">⚡ KUOTA SANGAT TERBATAS!</span>
+            style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:4px;">
+            <span class="vol-tag" id="heroVolTag" style="background:var(--ok-bg); color:var(--primary); border:1px solid var(--primary); padding:3px 10px; border-radius:999px; font-size:0.74rem;">PRE MARRIAGE, DEEN PREPARED</span>
+            <span class="hero-status-pill" id="badgeLimited">📘 SPECIAL GIVE: BUKU PULIH BERSAMA ALLAH</span>
           </div>
-          <h1 class="main-title"><span id="heroMainTitle">TEMAN</span> <span class="highlight"
-              id="heroHighlightTitle">SATUJALAN</span></h1>
+          <div class="series-overline">DEEN IN LOVE SERIES • PRESENT BY UM OFFICIAL</div>
+          <h1 class="editorial-serif-title">
+            <span class="italic-light" id="heroMainTitle">Belajar Sebelum</span>
+            <span class="highlight-serif" id="heroHighlightTitle">Berlayar</span>
+          </h1>
           <div class="dest-badge">
-            GOES TO <span id="heroDestination">CURUG PANJANG</span>
+            <span>🎓</span> <span id="heroDestination">Bersama Ustadz Mahruroji</span>
           </div>
         </div>
 
-        <!-- Spesifikasi Event Dinamis Sesuai Event yang Dipilih -->
+        <!-- Spesifikasi Event Dinamis Sesuai Poster 1.png & 2.png -->
         <div class="specs-grid">
           <div class="spec-box">
-            <span class="label">📅 Tanggal</span>
-            <span class="val" id="specDate">27 Desember 2026</span>
+            <span class="label">📅 Setiap Minggu</span>
+            <span class="val" id="specDate">6 Des – 17 Jan 2026</span>
           </div>
           <div class="spec-box">
-            <span class="label">⏰ Waktu</span>
-            <span class="val" id="specTime">06.00 WIB</span>
+            <span class="label">⏰ Waktu Kelas</span>
+            <span class="val" id="specTime">Pukul 09.00 WIB</span>
           </div>
           <div class="spec-box">
-            <span class="label">📍 Titik Kumpul</span>
-            <span class="val" id="specTikum">Bukit Waruwangi</span>
+            <span class="label">🕌 Kelas Offline</span>
+            <span class="val" id="specTikum">Masjid Tholibul Ilmi Widya Cendikia</span>
           </div>
           <div class="spec-box">
-            <span class="label">🥾 Jarak Trek</span>
-            <span class="val" id="specDistance">5 KM</span>
+            <span class="label">💻 Kelas Online</span>
+            <span class="val" id="specDistance">Zoom Meeting (Hybrid)</span>
           </div>
         </div>
 
-        <!-- Syarat Ketentuan Peserta Sesuai Poster -->
-        <div class="mahram-banner">
-          <span class="mahram-icon">👥</span>
+        <!-- INTERACTIVE SHOWCASE: KURIKULUM 6 PERTEMUAN (2.png) & BENEFIT LENGKAP (3.png) -->
+        <div class="deen-showcase-wrap">
+          <!-- Card 1: Kurikulum Materi 6 Pertemuan -->
+          <div class="deen-section-card">
+            <div class="deen-section-header">
+              <div class="deen-section-title">
+                <span>📖</span> <span>Materi Pembelajaran</span>
+              </div>
+              <span class="deen-section-pill">6 Pertemuan Intensif</span>
+            </div>
+
+            <div class="materi-grid">
+              <div class="materi-item">
+                <div class="materi-num">01</div>
+                <div class="materi-text">
+                  <h5>Pertemuan 1</h5>
+                  <p>Sudahkah Aku Siap Menjadi Pasangan?</p>
+                </div>
+              </div>
+              <div class="materi-item">
+                <div class="materi-num">02</div>
+                <div class="materi-text">
+                  <h5>Pertemuan 2</h5>
+                  <p>Memilih Pasangan Yang Tepat</p>
+                </div>
+              </div>
+              <div class="materi-item">
+                <div class="materi-num">03</div>
+                <div class="materi-text">
+                  <h5>Pertemuan 3</h5>
+                  <p>Membangun Fondasi Rumah Tangga</p>
+                </div>
+              </div>
+              <div class="materi-item">
+                <div class="materi-num">04</div>
+                <div class="materi-text">
+                  <h5>Pertemuan 4</h5>
+                  <p>Menjadi Pasangan hingga ke Surga</p>
+                </div>
+              </div>
+              <div class="materi-item">
+                <div class="materi-num">05</div>
+                <div class="materi-text">
+                  <h5>Pertemuan 5</h5>
+                  <p>Mengelola Kehidupan Rumah Tangga</p>
+                </div>
+              </div>
+              <div class="materi-item">
+                <div class="materi-num">06</div>
+                <div class="materi-text">
+                  <h5>Pertemuan 6</h5>
+                  <p>Mengelola Perbedaan dan Konflik</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Kelas Hybrid Banner -->
+            <div class="hybrid-strip">
+              <div class="hybrid-col">
+                <span class="hybrid-badge">Offline</span>
+                <span class="hybrid-val">📍 Masjid Tholibul Ilmi<br>Widya Cendikia</span>
+              </div>
+              <div class="hybrid-col">
+                <span class="hybrid-badge">Online</span>
+                <span class="hybrid-val">💻 Zoom Meeting<br>(Live & Interaktif)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Benefit, Fasilitas Kelas & Special Give -->
+          <div class="deen-section-card">
+            <div class="deen-section-header">
+              <div class="deen-section-title">
+                <span>🎁</span> <span>Benefit & Fasilitas Kelas</span>
+              </div>
+              <span class="deen-section-pill">Eksklusif Peserta</span>
+            </div>
+
+            <div class="benefit-cards-grid">
+              <div class="benefit-box">
+                <h5>✨ Pengalaman & Kesempatan</h5>
+                <ul class="benefit-list">
+                  <li><b>Draft CV Nikah</b> terstruktur & siap pakai</li>
+                  <li><b>Rihlah + Makan Bersama</b> seluruh peserta</li>
+                  <li><b>Kamar Hotel Aston 1 Malam</b> <i>(khusus peserta pertama yang menikah setelah event)</i></li>
+                </ul>
+              </div>
+
+              <div class="benefit-box">
+                <h5>📜 Materi & Sertifikasi</h5>
+                <ul class="benefit-list">
+                  <li><b>Rekaman Kelas</b> lengkap setiap pekan</li>
+                  <li><b>Materi PPT</b> eksklusif pemateri</li>
+                  <li><b>Video Materi per Pekan</b></li>
+                  <li><b>Sertifikat</b> resmi kelulusan program</li>
+                </ul>
+              </div>
+
+              <div class="benefit-box">
+                <h5>🎒 Fasilitas Kelas</h5>
+                <ul class="benefit-list">
+                  <li><b>Lanyard Eksklusif</b> Deen In Love Series</li>
+                  <li><b>Notebook</b> eksklusif catatan ilmu</li>
+                </ul>
+              </div>
+
+              <div class="benefit-box special-give">
+                <h5>📘 Special Give</h5>
+                <ul class="benefit-list">
+                  <li><b>Buku "Pulih Bersama Allah"</b> karya Ustadz Mahruroji <i>(Pelan-pelanlah, sebab pulih adalah perjalanan sunyi...)</i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Syarat & Ringkasan Program -->
+        <div class="mahram-banner" style="border-left-color:var(--primary); display:none;">
+          <span class="mahram-icon">⛵</span>
           <div class="mahram-text">
-            <h4>Ketentuan Peserta</h4>
-            <p id="mahramDesc"><b>Khusus:</b> Pasangan Suami-Istri (Couple), Keluarga (Family), Saudara Semahram, Ikhwan
-              & Akhwat.
-            </p>
+            <h4>Informasi Program:</h4>
+            <p id="mahramDesc">Pre Marriage, Deen Prepared — Belajar Sebelum Berlayar bersama Ustadz Mahruroji.</p>
           </div>
         </div>
 
-        <!-- Kontak Resmi Poster -->
+        <!-- Kontak & Link Resmi Poster -->
         <div class="contact-ribbon">
-          <span>Informasi & Pendaftaran Resmi:</span>
+          <span>Link Resmi: <a class="contact-link" href="https://s.id/deeninloveseries" target="_blank" rel="noopener">s.id/deeninloveseries</a></span>
           <div class="contact-numbers">
-            <a class="contact-link" href="https://wa.me/6285882582729" target="_blank" rel="noopener">📱 0858 8258 2729</a>
-            <a class="contact-link" href="https://wa.me/6285811474778" target="_blank" rel="noopener">📱 0858 1147 4778</a>
+            <a class="contact-link" href="https://wa.me/6281282785454" target="_blank" rel="noopener">📱 +62 812-8278-5454 (Layanan & Konfirmasi)</a>
           </div>
         </div>
       </header>
@@ -3477,72 +3991,72 @@
       <!-- Registration Form -->
       <form id="f" novalidate>
 
-        <!-- Section 1: Informasi Kegiatan & Paket -->
+        <!-- Section 1: Informasi Program & Pilihan Registrasi -->
         <fieldset>
-          <legend><span class="icon">📋</span> <span class="legend-title">1. Informasi Kegiatan & Paket</span> <span
-              class="legend-pill" id="paketEventName">Vol 7</span></legend>
+          <legend><span class="icon">📋</span> <span class="legend-title">1. Informasi Program & Registrasi</span> <span
+              class="legend-pill" id="paketEventName">DEEN IN LOVE</span></legend>
 
-          <!-- Pilihan Paket Trekking -->
+          <!-- Pilihan Paket Registrasi -->
           <div class="f" id="tkbox">
             <div
               style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:8px;">
-              <span class="lbl" style="margin-bottom:0;">Pilihan Paket Trekking</span>
+              <span class="lbl" style="margin-bottom:0;">Pilihan Kategori Registrasi</span>
               <button type="button" class="btn-info-link" id="btnViewInfografis" onclick="openInfoPosterModal()"
                 style="background:transparent; border:none; color:var(--primary); font-size:0.8rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:5px; text-decoration:underline; padding:0;">
-                <span>📊</span> Lihat Brosur Infografis Paket
+                <span>📊</span> Lihat Slide Poster, Materi & Benefit
               </button>
             </div>
             <!-- Ticket container rendered dynamically by selected event -->
             <div class="tickets" id="ticketsContainer"></div>
-            <p class="err">Pilih salah satu paket trekking.</p>
+            <p class="err">Pilih salah satu kategori registrasi.</p>
           </div>
 
           <div class="f">
-            <label for="routeInput">Rute Perjalanan</label>
-            <input type="text" id="routeInput" value="5 KM (Desa Kadubereum - Curug Lewi Bumi)" readonly
-              style="opacity:0.85; cursor:not-allowed;">
+            <label for="routeInput">Rangkaian Materi & Jadwal Kelas</label>
+            <input type="text" id="routeInput" value="6 Pertemuan (Setiap Minggu, 6 Des - 17 Jan 2026 Pukul 09.00 WIB) + Rihlah & Buku Pulih Bersama Allah" readonly
+              style="opacity:0.88; cursor:not-allowed;">
           </div>
 
-          <!-- Pilihan Transportasi Menuju Titik Kumpul -->
+          <!-- Status Pernikahan / Kesiapan Berlayar -->
           <div class="f" id="transportBox">
-            <span class="lbl">Pilihan Transportasi Menuju Titik Kumpul</span>
+            <span class="lbl">Status & Kesiapan "Belajar Sebelum Berlayar"</span>
             <div class="radio-pill-grid">
               <label class="radio-pill">
-                <input type="radio" name="transportasi" value="Kendaraan Pribadi">
+                <input type="radio" name="transportasi" value="Single (Mempersiapkan Ilmu Sebelum Menikah)">
                 <span class="pill-box">
-                  <span class="pill-icon">🚗</span>
-                  <span class="pill-title">Kendaraan Pribadi</span>
+                  <span class="pill-icon">⛵</span>
+                  <span class="pill-title">Single (Siapkan Ilmu)</span>
                 </span>
               </label>
               <label class="radio-pill">
-                <input type="radio" name="transportasi" value="Transportasi dari Panitia">
+                <input type="radio" name="transportasi" value="Target Menikah 2026 / 2027 (Siap Berlayar)">
                 <span class="pill-box">
-                  <span class="pill-icon">🚐</span>
-                  <span class="pill-title">Transportasi dari Panitia</span>
+                  <span class="pill-icon">💍</span>
+                  <span class="pill-title">Target Menikah Segera</span>
                 </span>
               </label>
               <label class="radio-pill">
-                <input type="radio" name="transportasi" value="Nebeng/kendaraan bersama peserta lain">
+                <input type="radio" name="transportasi" value="Sedang Proses Ta'aruf / Khitbah">
                 <span class="pill-box">
                   <span class="pill-icon">🤝</span>
-                  <span class="pill-title">Nebeng/bersama peserta lain</span>
+                  <span class="pill-title">Proses Ta'aruf / Khitbah</span>
                 </span>
               </label>
               <label class="radio-pill">
-                <input type="radio" name="transportasi" value="Datang Secara Mandiri">
+                <input type="radio" name="transportasi" value="Sudah Menikah / Ingin Memperkuat Fondasi Rumah Tangga">
                 <span class="pill-box">
-                  <span class="pill-icon">🚶</span>
-                  <span class="pill-title">Datang Secara Mandiri</span>
+                  <span class="pill-icon">🏡</span>
+                  <span class="pill-title">Memperkuat Keluarga</span>
                 </span>
               </label>
             </div>
-            <p class="err">Pilih salah satu opsi transportasi menuju titik kumpul.</p>
+            <p class="err">Pilih salah satu status / kesiapan pernikahan Anda.</p>
           </div>
 
-          <!-- Pengalaman Trekking & Intensitas Olahraga -->
+          <!-- Pengalaman Mengikuti Kajian & Komitmen Belajar -->
           <div class="row">
             <div class="f" id="trekBox">
-              <span class="lbl">Apakah Pernah Mengikuti Trekking</span>
+              <span class="lbl">Pernah Ikut Kelas Pranikah Sebelumnya</span>
               <div class="segment-group">
                 <label class="seg-item">
                   <input type="radio" name="pengalamanTrek" value="Belum Pernah">
@@ -3557,360 +4071,208 @@
                   <span>Sering</span>
                 </label>
               </div>
-              <p class="err">Pilih pengalaman trekking Anda.</p>
+              <p class="err">Pilih riwayat keikutsertaan kelas pranikah Anda.</p>
             </div>
 
             <div class="f" id="sportBox">
-              <span class="lbl">Seberapa Intens Olahraga</span>
+              <span class="lbl">Komitmen Mengikuti 6 Pertemuan</span>
               <div class="segment-group">
                 <label class="seg-item">
-                  <input type="radio" name="intensitasOlahraga" value="Tidak Pernah">
-                  <span>Tidak Pernah</span>
+                  <input type="radio" name="intensitasOlahraga" value="InsyaAllah 100% Siap">
+                  <span>Siap 100%</span>
                 </label>
                 <label class="seg-item">
-                  <input type="radio" name="intensitasOlahraga" value="Jarang">
-                  <span>Jarang</span>
+                  <input type="radio" name="intensitasOlahraga" value="Diusahakan Maksimal">
+                  <span>Maksimal</span>
                 </label>
                 <label class="seg-item">
-                  <input type="radio" name="intensitasOlahraga" value="Rutin">
-                  <span>Rutin</span>
+                  <input type="radio" name="intensitasOlahraga" value="Fleksibel + Rekaman Kelas">
+                  <span>Fleksibel</span>
                 </label>
               </div>
-              <p class="err">Pilih seberapa intens aktivitas olahraga Anda.</p>
+              <p class="err">Pilih tingkat komitmen kehadiran kelas Anda.</p>
             </div>
           </div>
         </fieldset>
 
-        <!-- Section 2: DATA PETUALANG LENGKAP (MULTI-PESERTA DYNAMIC) -->
+        <!-- Section 2: DATA PESERTA / PENDAFTAR LENGKAP -->
         <fieldset id="sectionPetualang">
-          <legend><span class="icon">👥</span> <span class="legend-title">2. Data Petualang</span> <span
+          <legend><span class="icon">👥</span> <span class="legend-title">2. Data Peserta</span> <span
               class="legend-pill"><span id="totalBadgeCount">1</span> Orang</span></legend>
 
           <div class="explorer-header-info">
-            <span>Setiap petualang yang didaftarkan wajib diisi datanya untuk data simaksi perizinan & asuransi
-              jalur:</span>
-            <b id="rosterSummaryText">1 Petualang</b>
+            <span>Data peserta digunakan untuk Sertifikat, Lanyard Eksklusif, Notebook, Buku Pulih Bersama Allah & Draft CV Nikah:</span>
+            <b id="rosterSummaryText">1 Peserta</b>
           </div>
 
-          <!-- Container tempat form setiap petualang dibuat secara dinamis -->
+          <!-- Container tempat form setiap peserta dibuat secara dinamis -->
           <div id="explorerContainer"></div>
 
-          <!-- Tombol Tambah Data Petualang Tambahan -->
-          <button type="button" class="btn-add-explorer" id="btnAddExplorer">
-            <span>➕ Tambah Data Petualang / Anggota Lain</span>
-          </button>
-
-          <!-- Informasi Alamat Lengkap & Titik Kumpul Dinamis -->
+          <!-- Informasi Alamat Lengkap & Pilihan Mode Kelas Hybrid -->
           <div class="f" data-req id="alamatBox">
-            <label for="alamatLengkap">Alamat Lengkap Domisili Petualang / Rombongan</label>
+            <label for="alamatLengkap">Alamat Lengkap Domisili Peserta</label>
             <textarea id="alamatLengkap" rows="2"
               placeholder="Nama Jalan, Nomor Rumah, RT/RW, Kelurahan/Desa, Kecamatan"></textarea>
-            <p class="err">Alamat lengkap petualang wajib diisi.</p>
+            <p class="err">Alamat lengkap peserta wajib diisi untuk pendataan buku & sertifikat.</p>
           </div>
 
           <div class="row">
             <div class="f" data-req id="kotaBox">
               <label for="kota">Kota / Kabupaten Domisili</label>
               <input id="kota" type="text" autocomplete="address-level2"
-                placeholder="Contoh: Jakarta Selatan / Kota Serang / Kab. Tangerang">
+                placeholder="Contoh: Kota Serang / Cilegon / Tangerang / Jakarta">
               <p class="err">Kota / Kabupaten domisili wajib diisi.</p>
             </div>
             <div class="f" data-req id="tikumField">
-              <label for="titikKumpulSelect">Konfirmasi Titik Kumpul</label>
+              <label for="titikKumpulSelect">Pilihan Mode Kehadiran (Kelas Hybrid)</label>
               <select id="titikKumpulSelect"></select>
-              <p class="err">Pilih titik kumpul rombongan.</p>
+              <p class="err">Pilih mode kehadiran kelas hybrid (Offline / Online).</p>
             </div>
           </div>
         </fieldset>
 
-        <!-- Section 3: Kontak Darurat Rombongan -->
-        <fieldset id="sectionDarurat">
-          <legend><span class="icon">🆘</span> <span class="legend-title">3. Kontak Darurat</span> <span
-              class="legend-pill darurat-pill">Keluarga di Luar Jalur</span></legend>
-
-          <div class="darurat-info-banner">
-            <span class="darurat-info-icon">🛡️</span>
-            <div class="darurat-info-text">
-              <b>Wajib Kontak di Luar Jalur Trekking:</b>
-              <span>Nomor ini wajib diisi keluarga / kerabat terdekat yang <u>tidak ikut mendaki</u>, untuk segera
-                dihubungi oleh koordinator TSJ jika terjadi kondisi darurat selama kegiatan.</span>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="f" data-req>
-              <label for="darurat">Nama Kontak Darurat</label>
-              <input id="darurat" type="text" placeholder="Contoh: Bpk. H. Ahmad (Ayah / Kakak)">
-              <p class="err">Nama kontak darurat wajib diisi demi keselamatan rombongan.</p>
-            </div>
-            <div class="f" data-req>
-              <label for="daruratHp">No. HP / WA Kontak Darurat <span class="prefix-badge-label">+62
-                  Permanen</span></label>
-              <div class="phone-input-group">
-                <span class="phone-prefix-addon">🇮🇩 +62</span>
-                <input id="daruratHp" type="tel" class="phone-input-field" placeholder="812-3456-7890 (Aktif & Siaga)">
-              </div>
-              <p class="err">Nomor kontak darurat wajib 9–13 digit angka.</p>
-            </div>
-          </div>
-        </fieldset>
-
-        <!-- Section 4: Metode Pembayaran & Bukti Transfer -->
+        <!-- Section 3: Bukti Transfer Pembayaran -->
         <fieldset id="bayar">
-          <legend><span class="icon">💳</span> <span class="legend-title">4. Metode Pembayaran & Bukti Transfer</span>
+          <legend><span class="icon">💳</span> <span class="legend-title">3. Bukti Transfer Pembayaran</span>
           </legend>
 
-          <!-- Pilihan Skema Pembayaran: Lunas atau DP -->
+          <!-- Pilihan Skema Pembayaran: Lunas atau Bertahap 3x -->
           <div class="f" id="skemaBayarBox">
             <div
               style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:8px;">
               <span class="lbl" style="margin-bottom:0;">Pilihan Skema Pembayaran</span>
               <span class="skema-info-pill">
-                <span>💡 Bisa DP 50% atau Lunas</span>
+                <span>💡 Bisa Lunas atau Bertahap 3x Bayar</span>
               </span>
             </div>
 
             <div class="skema-options-grid">
-              <!-- Opsi 1: Lunas 100% -->
+              <!-- Opsi 1: Lunas -->
               <div class="skema-card active" id="skemaCardLunas" onclick="setPaymentScheme('Lunas')" role="button"
-                tabindex="0" title="Pilih Pembayaran Lunas (100%)">
+                tabindex="0" title="Pilih Pembayaran Lunas (1x Bayar)">
                 <input type="radio" name="skemaBayarRadio" id="skemaRadioLunas" value="Lunas" checked>
                 <div class="skema-card-header">
                   <div class="skema-title-group">
                     <span class="skema-radio-circle"></span>
                     <div class="skema-title-text">
-                      <span class="skema-name">Pembayaran Lunas (100%)</span>
+                      <span class="skema-name">Lunas (1x Bayar)</span>
                       <span class="skema-badge badge-lunas">Paling Praktis</span>
                     </div>
                   </div>
-                  <div class="skema-amount-badge" id="skemaValLunas">Rp 0</div>
+                  <div class="skema-amount-badge" id="skemaValLunas">Rp 500.000</div>
                 </div>
                 <p class="skema-desc">
-                  Bayar penuh sekarang. Pendaftaran langsung tuntas terkonfirmasi 100% tanpa perlu transfer kedua
-                  menjelang hari H.
+                  Bayar penuh Rp 500.000 sekarang. Pendaftaran langsung tuntas 100% terkonfirmasi beserta seluruh hak fasilitas & buku.
                 </p>
               </div>
 
-              <!-- Opsi 2: DP / Uang Muka (50%) -->
-              <div class="skema-card" id="skemaCardDp" onclick="setPaymentScheme('DP')" role="button" tabindex="0"
-                title="Pilih Pembayaran DP (50%)">
-                <input type="radio" name="skemaBayarRadio" id="skemaRadioDp" value="DP">
+              <!-- Opsi 2: Bertahap 3x Bayar -->
+              <div class="skema-card" id="skemaCardDp" onclick="setPaymentScheme('Bertahap')" role="button" tabindex="0"
+                title="Pilih Pembayaran Bertahap (3x Bayar)">
+                <input type="radio" name="skemaBayarRadio" id="skemaRadioDp" value="Bertahap">
                 <div class="skema-card-header">
                   <div class="skema-title-group">
                     <span class="skema-radio-circle"></span>
                     <div class="skema-title-text">
-                      <span class="skema-name">DP / Uang Muka (50%)</span>
-                      <span class="skema-badge badge-dp">Kunci Kuota Dulu</span>
+                      <span class="skema-name">Bertahap (3x Bayar)</span>
+                      <span class="skema-badge badge-dp">Cicilan Ringan</span>
                     </div>
                   </div>
-                  <div class="skema-amount-badge dp" id="skemaValDp">Rp 0</div>
+                  <div class="skema-amount-badge dp" id="skemaValDp">Rp 200.000 (T-1)</div>
                 </div>
                 <p class="skema-desc">
-                  Cukup bayar 50% sekarang untuk mengunci slot petualang Anda. Sisa pelunasan <b>50%</b> dibayarkan
-                  paling lambat <b>H-7 kegiatan</b>.
+                  Bayar Tahap 1 sebesar <b>Rp 200.000</b> saat registrasi untuk kunci slot kuota. Sisa <b>Rp 300.000</b> dapat dicicil 2x (@ Rp 150.000).
                 </p>
               </div>
             </div>
 
             <!-- Banner Ketentuan Lunas -->
             <div class="lunas-notice-banner" id="lunasNoticeBanner">
-              <span>✅ <b>Pembayaran Lunas 100%:</b> Slot pendaftaran rombongan langsung terkonfirmasi resmi & tuntas.
-                Anda siap berangkat tanpa memikirkan pelunasan lagi.</span>
+              <span>✅ <b>Pembayaran Lunas:</b> Transfer penuh sebesar <b>Rp 500.000</b> dan lampirkan bukti transfer di bawah. Slot Anda langsung terkunci 100%.</span>
             </div>
 
-            <!-- Banner Informasi & Ketentuan DP -->
+            <!-- Banner Ketentuan Bertahap 3x -->
             <div class="dp-notice-banner" id="dpNoticeBanner" style="display:none;">
               <div class="dp-notice-header">
                 <span class="dp-notice-icon">📋</span>
-                <span>Ketentuan Pembayaran DP (Uang Muka 50%):</span>
+                <span>Jadwal & Rincian Pembayaran Bertahap (3x Bayar):</span>
               </div>
               <ul class="dp-notice-list">
-                <li><b>Kunci Slot Registrasi:</b> Transfer DP sebesar <b id="dpNoticeAmount">Rp 0</b> (50% dari harga
-                  paket) melalui QRIS di bawah dan unggah struknya untuk mengamankan kuota peserta Anda.</li>
-                <li><b>Sisa Pelunasan:</b> Sebesar <b id="dpNoticeRemaining">Rp 0</b> (50%) wajib dilunasi maksimal
-                  <b>H-7 sebelum hari keberangkatan trip</b>.
-                </li>
-                <li><b>Metode Pelunasan:</b> Pelunasan dapat ditransfer via QRIS yang sama dan dikonfirmasi langsung ke
-                  WhatsApp Admin / di dalam WhatsApp Group Trip.</li>
+                <li><b>Tahap 1 (Saat Pendaftaran):</b> Transfer <b id="dpNoticeAmount">Rp 200.000</b> sekarang & lampirkan buktinya di bawah untuk mengunci slot kuota peserta.</li>
+                <li><b>Tahap 2 (Sebelum Pertemuan 1):</b> Sebesar <b>Rp 150.000</b> dibayarkan maksimal <b>H-3 kelas perdana (3 Desember 2026)</b>.</li>
+                <li><b>Tahap 3 (Pelunasan Akhir):</b> Sebesar <b>Rp 150.000</b> dibayarkan maksimal sebelum <b>Pertemuan 4 (24 Desember 2026)</b>.</li>
+                <li><b>Total Keseluruhan:</b> Pas <b>Rp 500.000</b> (bebas bunga / biaya tambahan). Konfirmasi pelunasan bertahap dilakukan via WhatsApp panitia.</li>
               </ul>
             </div>
           </div>
 
-          <!-- Pilihan Metode Pembayaran: Hanya QRIS Saja (Klik untuk Menampilkan/Menutup) -->
-          <div class="f" id="metodeBayarBox">
-            <div
-              style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:8px;">
-              <span class="lbl" style="margin-bottom:0;">Pilihan Metode Pembayaran</span>
-              <span class="pay-hint-pill" onclick="toggleQrisShowcase()" style="cursor:pointer;"
-                title="Klik untuk menampilkan QRIS">
-                <span id="payToggleBadge">👆 Klik untuk Tampilkan QRIS</span>
-              </span>
-            </div>
-            <div class="payment-methods-grid">
-              <div class="pay-method-card" id="payMethodCard" onclick="toggleQrisShowcase()" role="button" tabindex="0"
-                aria-expanded="false" title="Klik untuk menampilkan kode QRIS & panduan transfer">
-                <input type="radio" name="metodePembayaran" value="QRIS" checked>
-                <div class="pay-method-content">
-                  <div class="pay-method-header">
-                    <div class="pay-method-title">
-                      <span class="pay-icon">📱</span>
-                      <b>QRIS (Pembayaran Nasional)</b>
-                      <span class="pay-badge-official">Resmi BI & GPN</span>
-                    </div>
-                    <div class="pay-toggle-indicator" id="payToggleIndicator">
-                      <span id="payToggleText">Tampilkan Kode QRIS</span>
-                      <span class="pay-toggle-chevron" id="payToggleChevron">▼</span>
-                    </div>
-                  </div>
-                  <div class="pay-method-desc">
-                    Mendukung transfer instan dari <b>BCA, Mandiri, BRI, BNI, GoPay, OVO, Dana, ShopeePay, LinkAja</b> &
-                    semua bank. <b>Klik di sini untuk membuka kode QRIS & rincian pembayaran.</b>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Showcase QRIS & Tagihan (Hidden by default, baru muncul setelah diklik) -->
-          <div class="qris-showcase-box hide" id="qrisShowcaseBox">
-            <div class="qris-amount-row">
-              <div class="qris-amount-info">
-                <span class="qris-amount-label" id="qrisAmountLabel">Total Tagihan Registrasi (Lunas 100%):</span>
-                <div class="qris-amount-val" id="qrisTotalDisplay">Rp 0</div>
-                <span class="qris-amount-sub" id="qrisPackageSub">Pilih salah satu paket trekking di bagian atas
-                  terlebih dahulu</span>
-                <div class="qris-dp-reminder hide" id="qrisDpReminder">
-                  <span>⚠️ Sisa Pelunasan: <b id="qrisDpRemainingVal">Rp 0</b> (Wajib lunas maks. H-7 trip)</span>
-                </div>
-              </div>
-              <span class="qris-status-tag">⚡ Bebas Biaya Admin</span>
-            </div>
-
-            <div class="qris-qr-wrapper">
-              <div class="qris-qr-frame" onclick="openQrisZoomModal()" title="Klik untuk memperbesar QRIS">
-                <img src="./qris.png" alt="QRIS Resmi Adventure Temansatujalan" class="qris-qr-img" id="qrisImgPreview">
-              </div>
-              <div class="qris-merchant-details">
-                <div class="qris-merchant-title">ADVENTURE TEMANSATUJALAN</div>
-                <div class="qris-nmid-row">
-                  <span class="nmid-label">NMID:</span>
-                  <span class="nmid-code" id="nmidCodeTxt">ID1025375876469</span>
-                  <button type="button" class="btn-copy-nmid" onclick="copyNmid()" title="Salin NMID">📋 Salin</button>
-                </div>
-                <p class="qris-scan-hint">Scan langsung lewat kamera HP Anda atau unduh gambar QRIS untuk diunggah dari
-                  galeri m-Banking/E-Wallet.</p>
-
-                <div class="qris-action-buttons">
-                  <a href="./qris.png" download="QRIS-TemanSatuJalan.png" class="btn-qris-action btn-qris-download"
-                    title="Unduh gambar QRIS ke galeri HP">
-                    <span>📥</span> Unduh QRIS
-                  </a>
-                  <button type="button" class="btn-qris-action btn-qris-zoom" onclick="openQrisZoomModal()"
-                    title="Lihat ukuran penuh">
-                    <span>🔍</span> Perbesar QR
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Quick 3-Step Guide -->
-            <div class="qris-steps-guide">
-              <div class="step-guide-item">
-                <span class="step-num">1</span>
-                <span>Buka aplikasi m-Banking atau E-Wallet Anda (BCA Mobile, Livin' Mandiri, BRImo, GoPay, Dana,
-                  dll).</span>
-              </div>
-              <div class="step-guide-item">
-                <span class="step-num">2</span>
-                <span>Pilih menu <b>QRIS / Bayar</b> lalu scan kode QR di atas (atau pilih foto QRIS dari galeri
-                  HP).</span>
-              </div>
-              <div class="step-guide-item">
-                <span class="step-num">3</span>
-                <span>Pastikan nama merchant penerima <b>ADVENTURE TEMANSATUJALAN</b>, selesaikan transaksi, dan unggah
-                  bukti struknya di bawah.</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Unggah Struk / Bukti Transfer -->
-          <div class="f" data-req id="bukti">
-            <label for="file" id="buktiTransferLabel">Unggah Struk / Bukti Pembayaran Lunas (100%)</label>
+          <!-- Unggah Struk / Bukti Pembayaran -->
+          <div class="f" data-req id="bukti" style="margin-top:16px;">
+            <label for="file" id="buktiTransferLabel">Unggah Struk / Bukti Pembayaran (Lunas - Rp 500.000)</label>
             <div class="file-dropzone" id="dropzone">
               <input id="file" type="file" accept="image/*,.pdf">
               <span class="file-icon">📸</span>
-              <div class="file-text">Klik atau seret struk pembayaran QRIS ke sini</div>
-              <div class="file-subtext">Mendukung format JPG, PNG, atau PDF (Maks. 5 MB). Wajib dilampirkan untuk
-                verifikasi pendaftaran.
-              </div>
+              <div class="file-text">Klik atau seret struk / bukti pembayaran ke sini</div>
+              <div class="file-subtext">Mendukung format JPG, PNG, atau PDF (Maks. 5 MB). Wajib dilampirkan untuk verifikasi pendaftaran & konfirmasi slot.</div>
               <div class="file-selected hide" id="fileNameBadge">
                 <span>📄</span> <span id="fileNameTxt">bukti-transfer.jpg</span>
               </div>
             </div>
-            <p class="err">Struk / bukti pembayaran QRIS wajib diunggah.</p>
+            <p class="err">Struk / bukti pembayaran wajib diunggah.</p>
           </div>
         </fieldset>
 
-        <!-- Section 5: Janji Seru & Aman 🌿 -->
+        <!-- Section 4: Komitmen & Janji Peserta "Belajar Sebelum Berlayar" ⛵ -->
         <fieldset>
-          <legend><span class="icon">🌿</span> 5. Janji Seru & Aman 🌿</legend>
+          <legend><span class="icon">⛵</span> 4. Komitmen Peserta Deen In Love Series</legend>
 
           <div class="f" data-req id="boxJanji1">
             <label class="chk">
               <input type="checkbox" id="janji1">
-              <span><b>Rombongan Sesuai Aturan Main:</b> Aku pastikan semua petualang yang didaftarkan sesuai kriteria
-                acara: pasangan suami-istri, keluarga, saudara semahram, atau sesama ikhwan. Jadi nggak ada yang nyempil
-                dari luar jalur ya! 😄</span>
+              <span><b>Komitmen 6 Pertemuan & Rihlah:</b> Siap mengikuti rangkaian kelas setiap hari Minggu (6 Des – 17 Jan 2026, Pukul 09.00 WIB) baik secara Offline di Masjid Tholibul Ilmi Widya Cendikia maupun Online via Zoom Meeting. 📖</span>
             </label>
-            <p class="err">Centang untuk menyetujui kriteria rombongan.</p>
+            <p class="err">Centang untuk menyetujui komitmen kehadiran 6 pertemuan.</p>
           </div>
 
           <div class="f" data-req id="boxJanji2">
             <label class="chk">
               <input type="checkbox" id="janji2">
-              <span><b>Badan & Hati Siap Tempur:</b> Semua anggota rombongan dalam kondisi sehat fisik dan mental buat
-                trekking alam bebas di rute pilihan. Lutut aman, semangat on! 💪</span>
+              <span><b>Niat Lurus "Belajar Sebelum Berlayar":</b> Berniat ikhlas menuntut ilmu pernikahan berbasis Deen (Pre Marriage, Deen Prepared) bersama Ustadz Mahruroji demi membangun rumah tangga menuju Surga. ✨</span>
             </label>
-            <p class="err">Centang untuk menyetujui kesiapan fisik & mental.</p>
+            <p class="err">Centang untuk menyetujui niat lurus & adab belajar.</p>
           </div>
 
           <div class="f" data-req id="boxJanji3">
             <label class="chk">
               <input type="checkbox" id="janji3">
-              <span><b>Adab Petualang Muslim:</b> Alam dijaga, sampah dibawa pulang (jangan ninggalin apa-apa selain
-                jejak
-                kaki!), aurat dan etika islami tetap terjaga sepanjang kegiatan. 🌲</span>
+              <span><b>Adab & Etika Kelas Hybrid:</b> Menjaga adab thalabul 'ilmi, batasan interaksi syar'i ikhwan dan akhwat, serta ketertiban selama sesi kelas maupun kegiatan Rihlah + Makan Bersama. 🤝</span>
             </label>
-            <p class="err">Centang untuk menyetujui adab petualang muslim.</p>
+            <p class="err">Centang untuk menyetujui adab & etika kelas.</p>
           </div>
 
           <div class="f" data-req id="boxJanji4">
             <label class="chk">
               <input type="checkbox" id="janji4">
-              <span><b>Taat Aba-Aba Guide:</b> Ikuti arahan tim dan jangan jalan sendiri demi konten. Pemandangan bagus,
-                tapi keselamatan nomor satu! 📸</span>
+              <span><b>Penyusunan Draft CV Nikah:</b> Bersedia menyusun lembar refleksi materi per pekan dan menyelesaikan Draft CV Nikah sesuai panduan program. 📝</span>
             </label>
-            <p class="err">Centang untuk menyetujui arahan guide & keselamatan.</p>
+            <p class="err">Centang untuk menyetujui kesiapan penyusunan Draft CV Nikah.</p>
           </div>
 
           <div class="f" data-req id="boxJanji5">
             <label class="chk">
               <input type="checkbox" id="janji5">
-              <span><b>Siap Kompak & Saling Jaga:</b> Nggak ada yang ditinggal, nggak ada yang ditinggal sendirian di
-                belakang. Kita berangkat bareng, pulang bareng! 🤝</span>
+              <span><b>Keabsahan Data Registrasi:</b> Menyatakan bahwa seluruh data diri untuk Sertifikat, Lanyard, Notebook, dan Buku Pulih Bersama Allah yang diisi adalah benar. 🕊️</span>
             </label>
-            <p class="err">Centang untuk menyetujui komitmen saling jaga & kompak.</p>
+            <p class="err">Centang untuk menyetujui keabsahan data.</p>
           </div>
         </fieldset>
 
         <button class="main" type="submit">
-          <span>🥾 DAFTARKAN ROMBONGAN PETUALANG</span>
+          <span>⛵ DAFTAR SEKARANG — DEEN IN LOVE SERIES</span>
         </button>
 
         <p class="note">
-          Slot petualangan terbatas, yuk daftar sebelum penuh! Setelah daftar, nomor urut briefing dan info lanjutan
-          akan
-          kami kirim lewat WhatsApp penanggung jawab. Pastikan nomornya aktif, biar kabar seru nggak nyasar! 🌄
+          Pendaftaran resmi <b>s.id/deeninloveseries</b> • Setelah mendaftar, e-pass bukti registrasi dan tautan grup WhatsApp peserta akan langsung ditampilkan untuk koordinasi kelas Offline & Zoom Meeting! 🌊
         </p>
       </form>
     </div> <!-- /#eventContentWrapper -->
@@ -3918,28 +4280,28 @@
     <!-- Success Confirmation Screen (Boarding Pass & Multi-Explorer Roster) -->
     <section class="done hide" id="done" aria-live="polite" tabindex="-1">
       <div class="done-header">
-        <span class="done-icon">🌊</span>
-        <h2>Pendaftaran Rombongan Berhasil!</h2>
-        <p class="done-sub">Alhamdulillah, seluruh data petualang telah tersimpan di sistem. Konfirmasi resmi dikirim ke
+        <span class="done-icon">⛵</span>
+        <h2>Pendaftaran Deen In Love Series Berhasil!</h2>
+        <p class="done-sub">Alhamdulillah, data peserta telah tersimpan di sistem UM Official. Konfirmasi resmi dikirim ke
           <b id="de">email@anda.com</b> & WhatsApp <b id="dhp">0812xxxxxxx</b>.
         </p>
       </div>
 
-      <!-- AJAKAN BERGABUNG KE GRUP WHATSAPP TRIP -->
+      <!-- AJAKAN BERGABUNG KE GRUP WHATSAPP PESERTA -->
       <div class="group-invite-card" id="groupInviteCard">
         <div class="group-invite-badge">
-          <span>💬</span> <span>Langkah Terakhir: Wajib Masuk Grup Trip</span>
+          <span>💬</span> <span>Langkah Terakhir: Wajib Masuk Grup Kelas</span>
         </div>
-        <h3 class="group-title">Gabung ke WhatsApp Group Trip <span id="groupEventName">Vol 6</span>!</h3>
+        <h3 class="group-title">Gabung ke WhatsApp Group <span id="groupEventName">Deen In Love Series</span>!</h3>
         <p class="group-desc">
-          Pastikan Anda segera bergabung ke grup koordinasi peserta <b id="groupEventDest">Curug Lewibumi</b> untuk
-          mendapatkan informasi briefing perlengkapan, update cuaca, live location tikum & koordinasi kendaraan bersama.
+          Pastikan Anda segera bergabung ke grup koordinasi peserta <b id="groupEventDest">Belajar Sebelum Berlayar</b> untuk
+          mendapatkan link Zoom Meeting mingguan, info kelas offline Masjid Tholibul Ilmi Widya Cendikia, pembagian Materi PPT, Video Materi per Pekan, dan agenda Rihlah.
         </p>
         <div style="display:flex; flex-direction:column; align-items:center; gap:12px;">
           <a href="https://chat.whatsapp.com/DgIVi7aOfYjGh76TbuwxaZ" target="_blank" rel="noopener"
             class="btn-join-group" id="btnJoinGroup">
             <span style="font-size:1.35rem;">📲</span>
-            <span id="btnJoinGroupText">Gabung Grup WhatsApp Trip Sekarang</span>
+            <span id="btnJoinGroupText">Gabung Grup WhatsApp Kelas Sekarang</span>
           </a>
           <div style="display:flex; gap:10px; width:100%; max-width:480px; flex-wrap:wrap;">
             <button type="button" class="btn-secondary" style="flex:1; min-height:42px; font-size:0.86rem;"
@@ -3948,58 +4310,56 @@
             </button>
             <a id="btnShareWa" href="#" target="_blank" rel="noopener" class="btn-secondary"
               style="flex:1; min-height:42px; font-size:0.86rem; text-decoration:none;">
-              <span>💬</span> <span>Share ke Anggota</span>
+              <span>💬</span> <span>Share ke Sahabat</span>
             </a>
           </div>
         </div>
         <small class="group-note">
-          🔒 Grup resmi khusus peserta terdaftar. Jika link terkendala, hubungi Admin: <a id="adminWaLink"
-            href="https://wa.me/6285882582729" target="_blank" rel="noopener">0858 8258 2729</a>
+          🔒 Grup resmi khusus peserta terdaftar (s.id/deeninloveseries). Jika link terkendala, hubungi Admin: <a id="adminWaLink"
+            href="https://wa.me/6281282785454" target="_blank" rel="noopener">+62 812-8278-5454</a>
         </small>
       </div>
 
       <div class="pass-card">
         <div class="pass-brand-row"
           style="display:flex; align-items:center; gap:12px; padding-bottom:14px; margin-bottom:16px; border-bottom:1.5px solid var(--line);">
-          <img src="./logo.png" alt="Logo Teman Satu Jalan"
-            style="width:48px; height:48px; border-radius:50%; border:2px solid var(--primary); object-fit:cover; box-shadow:0 0 10px rgba(132,204,22,0.3);">
+          <img src="./1.png" alt="Poster Deen In Love Series"
+            style="width:48px; height:48px; border-radius:50%; border:2px solid var(--primary); object-fit:cover; box-shadow:0 0 10px var(--primary-glow);">
           <div>
             <div
               style="font-family:var(--font-display); font-weight:900; font-size:1.02rem; color:var(--ink); letter-spacing:0.04em;">
-              TEMAN SATU JALAN</div>
-            <div style="font-size:0.75rem; color:var(--primary); font-weight:700; letter-spacing:0.02em;">MOESLIM SPORT
-              CLUB
-              • PASS RESMI</div>
+              UM OFFICIAL • DEEN IN LOVE SERIES</div>
+            <div style="font-size:0.75rem; color:var(--primary); font-weight:700; letter-spacing:0.02em;">BELAJAR SEBELUM BERLAYAR • PASS RESMI PESERTA</div>
           </div>
         </div>
 
         <div class="pass-row">
           <span class="pass-label">Kode Registrasi</span>
-          <span class="pass-value" id="passCode">TMN1JLN-V6-7821</span>
+          <span class="pass-value" id="passCode">DIL-2026-7821</span>
         </div>
         <div class="pass-row">
-          <span class="pass-label">Kegiatan & Edisi</span>
-          <span class="pass-value" id="passEventName">Vol 6: Goes to Curug Lewibumi</span>
+          <span class="pass-label">Program & Seri</span>
+          <span class="pass-value" id="passEventName">Deen In Love Series: Belajar Sebelum Berlayar</span>
         </div>
         <div class="pass-row">
-          <span class="pass-label">Kategori Paket</span>
-          <span class="pass-value" id="passTk">Paket Couple (Suami - Istri)</span>
+          <span class="pass-label">Kategori Tiket</span>
+          <span class="pass-value" id="passTk">Ikhwan (500K)</span>
         </div>
         <div class="pass-row">
-          <span class="pass-label">Jumlah Petualang</span>
-          <span class="pass-value" id="passTotalOrang">2 Orang</span>
+          <span class="pass-label">Jumlah Peserta</span>
+          <span class="pass-value" id="passTotalOrang">1 Orang Peserta</span>
         </div>
         <div class="pass-row">
-          <span class="pass-label">Transportasi Tikum</span>
-          <span class="pass-value" id="passTransport">Kendaraan Pribadi</span>
+          <span class="pass-label">Status Kesiapan</span>
+          <span class="pass-value" id="passTransport">Single (Mempersiapkan Ilmu Sebelum Menikah)</span>
         </div>
         <div class="pass-row">
-          <span class="pass-label">Pengalaman & Olahraga</span>
-          <span class="pass-value" id="passKebugaran">Pernah Trekking • Rutin</span>
+          <span class="pass-label">Pengalaman & Komitmen</span>
+          <span class="pass-value" id="passKebugaran">Belum Pernah • Siap 100%</span>
         </div>
         <div class="pass-row">
-          <span class="pass-label">Titik Kumpul</span>
-          <span class="pass-value" id="passMepo">Desa Kadubereum (06.00 WIB)</span>
+          <span class="pass-label">Mode Kelas Hybrid</span>
+          <span class="pass-value" id="passMepo">Offline — Masjid Tholibul Ilmi Widya Cendikia (09.00 WIB)</span>
         </div>
         <div class="pass-row">
           <span class="pass-label">Skema Pembayaran</span>
@@ -4008,23 +4368,22 @@
         </div>
         <div class="pass-row">
           <span class="pass-label">Nominal Ditransfer</span>
-          <span class="pass-value" id="passNominalBayar">Rp 0</span>
+          <span class="pass-value" id="passNominalBayar">Rp 500.000</span>
         </div>
         <div class="pass-row hide" id="passRowSisa">
           <span class="pass-label">Sisa Pelunasan (H-7)</span>
           <span class="pass-value" id="passSisaBayar" style="color:#f59e0b; font-weight:800;">Rp 0 (Wajib lunas maks.
-            H-7 trip)</span>
+            H-7 kelas)</span>
         </div>
         <div class="pass-row">
           <span class="pass-label">Metode Pembayaran</span>
-          <span class="pass-value" style="color:var(--ink-secondary); font-weight:600;">QRIS (ADVENTURE
-            TEMANSATUJALAN)</span>
+          <span class="pass-value" style="color:var(--ink-secondary); font-weight:600;">QRIS Resmi (ADVENTURE TEMANSATUJALAN)</span>
         </div>
 
-        <!-- Roster Seluruh Petualang yang Terdaftar -->
+        <!-- Roster Seluruh Peserta yang Terdaftar -->
         <div class="pass-roster">
           <div class="roster-title">
-            <span>👥 Roster Petualang Terdaftar:</span>
+            <span>👥 Roster Peserta Terdaftar:</span>
           </div>
           <ol class="roster-list" id="passRosterList"></ol>
         </div>
@@ -4032,57 +4391,57 @@
         <!-- Tombol Selesai (Kembali ke Form Isian) -->
         <div class="done-finish-wrap">
           <button type="button" class="btn-finish" id="btnFinish" onclick="backToForm()">
-            <span>🌿 Selesai (Kembali ke Form Isian)</span>
+            <span>⛵ Selesai (Kembali ke Halaman Utama)</span>
           </button>
         </div>
       </div>
     </section>
   </div>
 
-  <!-- POPUP MODAL: AJAKAN BERGABUNG KE GRUP WHATSAPP TRIP -->
+  <!-- POPUP MODAL: AJAKAN BERGABUNG KE GRUP WHATSAPP KELAS -->
   <div class="modal-overlay hide" id="groupInviteModal" role="dialog" aria-modal="true"
     aria-labelledby="modalGroupTitle">
     <div class="modal-card">
       <button type="button" class="modal-close" onclick="closeGroupModal()" aria-label="Tutup">&times;</button>
-      <div class="modal-celebrate-badge">🎉 PENDAFTARAN ROMBONGAN BERHASIL!</div>
+      <div class="modal-celebrate-badge">🎉 PENDAFTARAN PESERTA BERHASIL!</div>
       <div class="modal-icon-glow">
         <span>📲</span>
       </div>
-      <h2 class="modal-title" id="modalGroupTitle">Wajib Masuk ke WhatsApp Group Trip!</h2>
+      <h2 class="modal-title" id="modalGroupTitle">Wajib Masuk ke WhatsApp Group Kelas!</h2>
       <p class="modal-subtitle">
-        Alhamdulillah seluruh data rombongan Anda telah tersimpan. Segera bergabung ke grup koordinasi peserta:
+        Alhamdulillah data pendaftaran Anda telah tersimpan. Segera bergabung ke grup koordinasi peserta:
       </p>
 
       <div class="modal-event-pill">
-        <span id="modalEventBadge">VOL 6</span>
-        <b id="modalEventName">Goes to Curug Lewibumi</b>
+        <span id="modalEventBadge" style="background:var(--primary); color:var(--primary-ink); padding:2px 8px; border-radius:4px; font-weight:800;">DEEN IN LOVE</span>
+        <b id="modalEventName">Belajar Sebelum Berlayar — Ustadz Mahruroji</b>
       </div>
 
       <div class="modal-benefits">
         <div class="benefit-item">
-          <span class="benefit-icon">📍</span>
+          <span class="benefit-icon">🕌</span>
           <div class="benefit-text">
-            <b>Live Location & Konvoi Tikum</b>
-            <p>Update titik temu akurat, panduan rute, dan rombongan konvoi berangkat bersama.</p>
+            <b>Akses Kelas Hybrid (Offline & Zoom)</b>
+            <p>Info kehadiran di Masjid Tholibul Ilmi Widya Cendikia & tautan Zoom Meeting setiap Minggu pukul 09.00 WIB.</p>
           </div>
         </div>
         <div class="benefit-item">
-          <span class="benefit-icon">🎒</span>
+          <span class="benefit-icon">📘</span>
           <div class="benefit-text">
-            <b>Briefing & Checklist Perlengkapan</b>
-            <p>Info cuaca terkini, rekomendasi sepatu & busana trekking syar'i ramah keluarga.</p>
+            <b>Materi PPT, Rekaman & Special Give</b>
+            <p>Distribusi Materi PPT, Video Materi per Pekan, Lanyard, Notebook & Buku "Pulih Bersama Allah".</p>
           </div>
         </div>
         <div class="benefit-item">
-          <span class="benefit-icon">👥</span>
+          <span class="benefit-icon">💍</span>
           <div class="benefit-text">
-            <b>Koordinasi Guide & Dokumentasi</b>
-            <p>Mengenal sesama petualang, arahan tour leader TSJ, serta akses foto/video dokumentasi.</p>
+            <b>Draft CV Nikah, Rihlah & Reward Hotel Aston</b>
+            <p>Panduan penyusunan Draft CV Nikah, jadwal Rihlah + Makan Bersama, serta kesempatan hadiah Kamar Hotel Aston 1 malam.</p>
           </div>
         </div>
       </div>
 
-      <a href="#" target="_blank" rel="noopener" class="btn-modal-join" id="modalJoinBtn">
+      <a href="#" target="_blank" rel="noopener" class="btn-modal-join" id="modalJoinBtn" style="background:var(--primary); color:var(--primary-ink);">
         <span style="font-size:1.3rem;">📲</span>
         <span id="modalJoinBtnText">Gabung Grup WhatsApp Sekarang</span>
       </a>
@@ -4092,35 +4451,42 @@
           <span>📋</span> <span id="modalBtnCopyText">Salin Link Grup</span>
         </button>
         <button type="button" class="btn-modal-view-pass" onclick="closeGroupModal()">
-          <span>👥</span> <span>Lihat Data Rombongan</span>
+          <span>👥</span> <span>Lihat Pass Peserta</span>
         </button>
       </div>
 
       <p class="modal-footer-hint">
-        Butuh bantuan atau kendala masuk grup? Hubungi Admin TSJ: <a id="modalAdminWa"
-          href="https://wa.me/6285882582729" target="_blank" rel="noopener">0858 8258 2729</a>
+        Butuh bantuan atau kendala masuk grup? Hubungi Panitia UM Official: <a id="modalAdminWa"
+          href="https://wa.me/6281282785454" target="_blank" rel="noopener">+62 812-8278-5454</a>
       </p>
     </div>
   </div>
 
-  <!-- POPUP MODAL: INFOGRAFIS BROSUR PAKET RESMI (info.jpeg) -->
+  <!-- POPUP MODAL: INFOGRAFIS BROSUR LENGKAP (1.png, 2.png, 3.png) -->
   <div class="modal-overlay hide" id="infoPosterModal" role="dialog" aria-modal="true"
     aria-labelledby="modalInfoPosterTitle" onclick="if(event.target===this)closeInfoPosterModal()">
-    <div class="modal-card" style="max-width: 480px; padding: 22px; text-align: center;">
+    <div class="modal-card" style="max-width: 520px; padding: 22px; text-align: center;">
       <button type="button" class="modal-close" onclick="closeInfoPosterModal()" aria-label="Tutup">&times;</button>
       <div class="modal-celebrate-badge"
-        style="background:var(--ok-bg); color:var(--primary); border:1px solid var(--primary); margin-bottom:12px;">📊
-        INFOGRAFIS PAKET & HARGA</div>
+        style="background:var(--ok-bg); color:var(--primary); border:1px solid var(--primary); margin-bottom:10px;">📊
+        GALERI POSTER & SILABUS RESMI</div>
       <h3 id="modalInfoPosterTitle"
-        style="font-family:var(--font-display); font-size:1.15rem; margin-bottom:12px; color:var(--ink);">Teman Satu
-        Jalan Vol 7 — Rincian Paket</h3>
+        style="font-family:var(--font-display); font-size:1.12rem; margin-bottom:10px; color:var(--ink);">Deen In Love Series — Belajar Sebelum Berlayar</h3>
+
+      <!-- Modal Slide Selector Buttons -->
+      <div style="display:flex; gap:6px; justify-content:center; flex-wrap:wrap; margin-bottom:12px;">
+        <button type="button" class="slide-tab-btn active" id="modalTabBtn0" onclick="switchModalPoster(0)" style="font-size:0.74rem; padding:6px 10px;">1. Poster Utama</button>
+        <button type="button" class="slide-tab-btn" id="modalTabBtn1" onclick="switchModalPoster(1)" style="font-size:0.74rem; padding:6px 10px;">2. Materi 6 Pertemuan</button>
+        <button type="button" class="slide-tab-btn" id="modalTabBtn2" onclick="switchModalPoster(2)" style="font-size:0.74rem; padding:6px 10px;">3. Benefit & Buku</button>
+      </div>
+
       <div
-        style="border-radius:var(--radius-md); overflow:hidden; border:1.5px solid var(--card-border); background:#0d1611; margin-bottom:14px; box-shadow:var(--shadow-sm);">
-        <img id="modalInfoPosterImg" src="./TJ22.png" alt="Infografis Brosur Resmi TSJ"
+        style="border-radius:var(--radius-md); overflow:hidden; border:1.5px solid var(--card-border); background:#02131c; margin-bottom:14px; box-shadow:var(--shadow-sm);">
+        <img id="modalInfoPosterImg" src="./1.png" alt="Poster Resmi Deen In Love Series"
           style="width:100%; height:auto; display:block;">
       </div>
       <button type="button" class="btn-modal-view-pass" onclick="closeInfoPosterModal()" style="width:100%;">Tutup
-        Infografis</button>
+        Galeri Poster</button>
     </div>
   </div>
 
@@ -4182,7 +4548,7 @@
       // GOOGLE SHEETS & APPS SCRIPT WEB APP INTEGRATION CONFIGURATION
       // =========================================================================
       // URL Web App Google Apps Script Aktif:
-      var GOOGLE_SHEET_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbwVy1aa2ajN8W7o7MGl6FLWeFLaGgoy89GIuWf350sBwgngUNdDVQ111PiA2Y_u3CjPPg/exec";
+      var GOOGLE_SHEET_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbzvXQTvnjoksSrwN4D6FLN1rDREH-gaPzl1QPdzPzmTXPI_b8Dc6SylzhHt7O576HzfPg/exec";
 
       function getGoogleSheetUrl() {
         if (GOOGLE_SHEET_WEBAPP_URL && GOOGLE_SHEET_WEBAPP_URL.trim().length > 0) {
@@ -4200,173 +4566,70 @@
       } catch (e) { }
 
       // ==========================================
-      // CONFIGURATION: EVENT VOL 6 & VOL 7
+      // CONFIGURATION: DEEN IN LOVE SERIES (UM OFFICIAL)
       // ==========================================
       var EVENTS_DATA = {
-        vol6: {
-          key: "vol6",
-          volTag: "VOL 6",
-          titleMain: "TEMAN",
-          titleHighlight: "SATUJALAN",
-          destination: "CURUG LEWIBUMI",
-          eventNameDisplay: "Vol 6: Goes to Curug Lewibumi",
-          badgeLimited: "⚡ KUOTA SANGAT TERBATAS!",
-          posterImg: "./TJ2.jpeg",
-          posterAlt: "Poster Teman Satu Jalan Vol 6 Goes to Curug Lewi Bumi",
+        pranikah: {
+          key: "pranikah",
+          volTag: "PRE MARRIAGE, DEEN PREPARED",
+          titleMain: "Belajar Sebelum",
+          titleHighlight: "Berlayar",
+          destination: "Bersama Ustadz Mahruroji",
+          eventNameDisplay: "Deen In Love Series: Belajar Sebelum Berlayar",
+          badgeLimited: "📘 SPECIAL GIVE: BUKU PULIH BERSAMA ALLAH",
+          posterImg: "./1.png",
+          posterAlt: "Poster Utama Deen In Love Series: Belajar Sebelum Berlayar Bersama Ustadz Mahruroji",
           carouselImages: [
-            { src: "./TJ2.jpeg", alt: "Poster Teman Satu Jalan Vol 6 Goes to Curug Lewi Bumi" },
-            { src: "./TJ11.jpeg", alt: "Rute Trek & Special Include Curug Lewibumi" },
-            { src: "./TJ12.jpeg", alt: "Bonus Buku Pulih Bersama Allah Khusus 10 Tiket Pertama" },
-            { src: "./info.jpeg", alt: "Pilihan Paket Registrasi Vol 6 Curug Lewibumi" }
+            { src: "./1.png", alt: "Poster Utama Deen In Love Series: Belajar Sebelum Berlayar Bersama Ustadz Mahruroji" },
+            { src: "./2.png", alt: "Silabus Materi 6 Pertemuan & Kelas Hybrid Deen In Love Series" },
+            { src: "./3.png", alt: "Benefit, Fasilitas Kelas & Special Give Buku Pulih Bersama Allah" }
           ],
-          infoPosterImg: "./info.jpeg",
-          infoPosterAlt: "Pilihan Paket Registrasi Vol 6 Curug Lewibumi",
-          infoPosterTitle: "Teman Satu Jalan Vol 6 — Rincian Paket",
-          mahramNotice: "<b>Khusus:</b> Pasangan Suami-Istri (Couple), Keluarga (Family), Saudara Semahram, dan Ikhwan (Laki-laki).",
-          date: "29 November 2026",
-          time: "06.00 WIB",
-          tikum: "Desa Kaduberum",
-          distance: "5 KM",
-          routeDesc: "5 KM (Desa Kadubereum - Curug Lewi Bumi)",
-          codePrefix: "TMN1JLN-V6-",
-          barcodeCaption: "VALIDASI TIKUM DESA KADUBEREUM",
+          infoPosterImg: "./1.png",
+          infoPosterAlt: "Galeri Poster Resmi Deen In Love Series UM Official",
+          infoPosterTitle: "Deen In Love Series — Belajar Sebelum Berlayar",
+          mahramNotice: "<b>Benefit & Fasilitas Lengkap:</b> 1. <b>Pengalaman Berharga:</b> Draft CV Nikah, Rihlah + Makan Bersama, & Kesempatan Kamar Hotel Aston 1 malam (peserta pertama yang menikah setelah event) • 2. <b>Materi & Sertifikasi:</b> Rekaman Kelas, Materi PPT, Video Materi per Pekan & Sertifikat • 3. <b>Fasilitas & Special Give:</b> Lanyard Eksklusif, Notebook & <b>Buku Pulih Bersama Allah</b> (Karya Ustadz Mahruroji).",
+          date: "6 Des – 17 Jan 2026",
+          time: "Pukul 09.00 WIB",
+          tikum: "Masjid Tholibul Ilmi Widya Cendikia",
+          distance: "Zoom Meeting (Hybrid)",
+          routeDesc: "6 Pertemuan (Setiap Minggu, 6 Des - 17 Jan 2026 Pukul 09.00 WIB) + Rihlah & Buku Pulih Bersama Allah",
+          codePrefix: "DIL-2026-",
+          barcodeCaption: "VALIDASI PESERTA DEEN IN LOVE SERIES",
           waGroupUrl: "https://chat.whatsapp.com/DgIVi7aOfYjGh76TbuwxaZ",
-          waGroupName: "Trip TSJ Vol 6 - Curug Lewibumi",
+          waGroupName: "Deen In Love Series - UM Official",
           tikumOptions: [
-            "Langsung ke Desa Kadubereum (06.00 WIB)",
-            "Konvoi Bersama dari Pom Bensin Palima (04.45 WIB)"
+            "Offline — Masjid Tholibul Ilmi Widya Cendikia (Setiap Minggu, 09.00 WIB)",
+            "Online — Zoom Meeting Interaktif (Setiap Minggu, 09.00 WIB)",
+            "Hybrid Fleksibel — Kombinasi Offline Masjid Tholibul Ilmi & Online Zoom"
           ],
           packages: [
             {
-              name: "Lovetrail Single",
-              value: "Lovetrail Single (160K - Ikhwan Only)",
-              badge: "160K",
-              desc: "(Ikhwan Only) • 1 Orang",
-              price: 160000,
-              priceDisplay: "160K",
+              name: "Ikhwan",
+              value: "Ikhwan (500K - 1 Orang)",
+              badge: "500K",
+              desc: "6 Pertemuan Hybrid + Buku Pulih Bersama Allah + Lanyard & Notebook + Draft CV Nikah + Rihlah + Sertifikat",
+              price: 500000,
+              priceDisplay: "500K",
               priceUnit: "/1 orang",
               defaultCount: 1,
-              checked: false
+              checked: true
             },
             {
-              name: "Lovetrail Couple",
-              value: "Lovetrail Couple (320K - Suami-Istri / Adik-Kaka / Mahram)",
-              badge: "320K",
-              desc: "Suami-Istri / Adik-Kaka / Saudara Semahram • 2 Orang",
-              price: 320000,
-              priceDisplay: "320K",
-              priceUnit: "/2 orang",
-              defaultCount: 2,
-              checked: false
-            },
-            {
-              name: "Lovetrail Little Family",
-              value: "Lovetrail Little Family (475K - Keluarga 1 Anak)",
-              badge: "475K",
-              desc: "Keluarga 1 Anak • 3 Orang",
-              price: 475000,
-              priceDisplay: "475K",
-              priceUnit: "/3 orang",
-              defaultCount: 3,
-              checked: false
-            },
-            {
-              name: "Lovetrail Squad Family",
-              value: "Lovetrail Squad Family (630K - Keluarga 2 Anak)",
-              badge: "630K",
-              desc: "Keluarga 2 Anak • 4 Orang",
-              price: 630000,
-              priceDisplay: "630K",
-              priceUnit: "/4 orang",
-              defaultCount: 4,
-              checked: false
-            }
-          ]
-        },
-        vol7: {
-          key: "vol7",
-          volTag: "VOL 7",
-          titleMain: "TEMAN",
-          titleHighlight: "SATUJALAN",
-          destination: "CURUG PANJANG",
-          eventNameDisplay: "Vol 7: Goes to Curug Panjang",
-          badgeLimited: "⚡ KUOTA SANGAT TERBATAS!",
-          posterImg: "./TJ1.jpeg",
-          posterAlt: "Poster Teman Satu Jalan Vol 7 Goes to Curug Panjang",
-          carouselImages: [
-            { src: "./TJ1.jpeg", alt: "Poster Teman Satu Jalan Vol 7 Goes to Curug Panjang" },
-            { src: "./TJ21.png", alt: "Rute Trek & Special Include Curug Panjang" },
-            { src: "./TJ22.png", alt: "Pilihan Paket Registrasi Vol 7 Curug Panjang" },
-            { src: "./TJ12.jpeg", alt: "Bonus Buku Pulih Bersama Allah Khusus 10 Tiket Pertama" }
-          ],
-          infoPosterImg: "./TJ22.png",
-          infoPosterAlt: "Pilihan Paket Registrasi Vol 7 Curug Panjang",
-          infoPosterTitle: "Teman Satu Jalan Vol 7 — Rincian Paket",
-          mahramNotice: "<b>Khusus:</b> Pasangan Suami-Istri (Couple), Keluarga (Family), Saudara Semahram, Ikhwan & Akhwat.",
-          date: "27 Desember 2026",
-          time: "06.00 WIB",
-          tikum: "Bukit Waruwangi",
-          distance: "5 KM",
-          routeDesc: "5 KM (Treking Bukit Waruwangi – Curug Panjang)",
-          codePrefix: "TMN1JLN-V7-",
-          barcodeCaption: "VALIDASI TIKUM BUKIT WARUWANGI",
-          waGroupUrl: "https://chat.whatsapp.com/Hpiy3L44HJ9BDizakcZK39",
-          waGroupName: "Trip TSJ Vol 7 - Curug Panjang",
-          tikumOptions: [
-            "Langsung ke Bukit Waruwangi (06.00 WIB)",
-            "Konvoi Bersama dari Rest Area Tol Cilegon Timur (04.45 WIB)",
-            "Meeting Point Shuttle Stasiun Serang / Rangkasbitung (05.00 WIB)"
-          ],
-          packages: [
-            {
-              name: "Lovetrail Single",
-              value: "Lovetrail Single (200K - Ikhwan/Akhwat)",
-              badge: "200K",
-              desc: "(Ikhwan/Akhwat) • 1 Orang",
-              price: 200000,
-              priceDisplay: "200K",
+              name: "Akhwat",
+              value: "Akhwat (500K - 1 Orang)",
+              badge: "500K",
+              desc: "6 Pertemuan Hybrid + Buku Pulih Bersama Allah + Lanyard & Notebook + Draft CV Nikah + Rihlah + Sertifikat",
+              price: 500000,
+              priceDisplay: "500K",
               priceUnit: "/1 orang",
               defaultCount: 1,
-              checked: false
-            },
-            {
-              name: "Lovetrail Couple",
-              value: "Lovetrail Couple (400K - Suami-Istri / Adik-Kaka / Mahram)",
-              badge: "400K",
-              desc: "Suami-Istri / Adik-Kaka / Saudara Semahram • 2 Orang",
-              price: 400000,
-              priceDisplay: "400K",
-              priceUnit: "/2 orang",
-              defaultCount: 2,
-              checked: false
-            },
-            {
-              name: "Lovetrail Little Family",
-              value: "Lovetrail Little Family (585K - Keluarga 1 Anak)",
-              badge: "585K",
-              desc: "Keluarga 1 Anak • 3 Orang",
-              price: 585000,
-              priceDisplay: "585K",
-              priceUnit: "/3 orang",
-              defaultCount: 3,
-              checked: false
-            },
-            {
-              name: "Lovetrail Squad Family",
-              value: "Lovetrail Squad Family (775K - Keluarga 2 Anak)",
-              badge: "775K",
-              desc: "Keluarga 2 Anak • 4 Orang",
-              price: 775000,
-              priceDisplay: "775K",
-              priceUnit: "/4 orang",
-              defaultCount: 4,
               checked: false
             }
           ]
         }
       };
 
-      var currentEventKey = null;
+      var currentEventKey = "pranikah";
 
       // Theme Toggle (Dark / Light)
       var html = document.documentElement;
@@ -4378,12 +4641,12 @@
         var isDark = html.getAttribute("data-theme") !== "light";
         if (isDark) {
           html.setAttribute("data-theme", "light");
-          themeIcon.textContent = "🌲";
-          themeText.textContent = "Forest Night";
+          themeIcon.textContent = "☀️";
+          themeText.textContent = "Pearl Day";
         } else {
           html.setAttribute("data-theme", "dark");
-          themeIcon.textContent = "☀️";
-          themeText.textContent = "Outdoor Day";
+          themeIcon.textContent = "🌊";
+          themeText.textContent = "Deep Ocean";
         }
       });
 
@@ -4395,7 +4658,7 @@
         currentIndex: 0,
         slidesCount: 0,
         timer: null,
-        intervalMs: 4000,
+        intervalMs: 4500,
         isPaused: false,
         touchStartX: 0,
         touchStartY: 0,
@@ -4469,6 +4732,7 @@
         var track = $("heroCarouselTrack");
         var counter = $("carouselCounter");
         var indicators = $("carouselIndicators");
+        var quickTabs = $("slideQuickTabs");
         var idx = heroCarouselState.currentIndex;
         var total = heroCarouselState.slidesCount;
 
@@ -4488,6 +4752,13 @@
           });
         }
 
+        if (quickTabs) {
+          var tabBtns = quickTabs.querySelectorAll(".slide-tab-btn");
+          tabBtns.forEach(function (btn, i) {
+            btn.classList.toggle("active", i === idx);
+          });
+        }
+
         if (counter) {
           counter.innerHTML = '<span class="carousel-counter-curr">' + (idx + 1) + '</span> / <span class="carousel-counter-total">' + total + '</span>';
         }
@@ -4498,6 +4769,48 @@
           progressBar.style.width = "0%";
         }
       }
+
+      window.jumpToPosterSlide = function (targetIdx) {
+        goToCarouselSlide(targetIdx, true);
+        var carouselEl = $("heroCarousel");
+        if (carouselEl) {
+          try {
+            carouselEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
+          } catch (e) { }
+        }
+      };
+
+      window.switchModalPoster = function (targetIdx) {
+        var evt = EVENTS_DATA[currentEventKey];
+        var imgs = (evt && evt.carouselImages && evt.carouselImages.length > 0)
+          ? evt.carouselImages
+          : [
+              { src: "./1.png", alt: "Poster Utama Deen In Love Series" },
+              { src: "./2.png", alt: "Materi 6 Pertemuan Deen In Love Series" },
+              { src: "./3.png", alt: "Benefit & Special Give Buku Pulih Bersama Allah" }
+            ];
+        var titles = [
+          "1. Poster Utama — Belajar Sebelum Berlayar",
+          "2. Silabus Materi (6 Pertemuan) & Kelas Hybrid",
+          "3. Benefit Lengkap & Buku Pulih Bersama Allah"
+        ];
+        var chosen = imgs[targetIdx] || imgs[0];
+        var modalImg = $("modalInfoPosterImg");
+        var modalTitle = $("modalInfoPosterTitle");
+        if (modalImg && chosen) {
+          modalImg.src = chosen.src;
+          modalImg.alt = chosen.alt || "Poster Deen In Love Series";
+        }
+        if (modalTitle && titles[targetIdx]) {
+          modalTitle.textContent = titles[targetIdx];
+        }
+        for (var i = 0; i < 3; i++) {
+          var btn = $("modalTabBtn" + i);
+          if (btn) {
+            btn.classList.toggle("active", i === targetIdx);
+          }
+        }
+      };
 
       function goToCarouselSlide(newIndex, restart) {
         if (heroCarouselState.slidesCount <= 1) return;
@@ -4622,7 +4935,7 @@
       }
 
       // ==========================================
-      // EVENT SWITCHER LOGIC (VOL 6 <-> VOL 7)
+      // EVENT SWITCHER LOGIC (DEEN IN LOVE SERIES)
       // ==========================================
       window.switchEvent = function (eventKey) {
         if (!EVENTS_DATA[eventKey]) return;
@@ -4638,55 +4951,61 @@
           $("eventContentWrapper").classList.remove("hide");
         }
 
-        // 1. Update Tabs UI
-        $("tabVol6").classList.toggle("active", eventKey === "vol6");
-        $("tabVol7").classList.toggle("active", eventKey === "vol7");
-        $("tabVol6").setAttribute("aria-selected", eventKey === "vol6");
-        $("tabVol7").setAttribute("aria-selected", eventKey === "vol7");
+        // 1. Update Tabs UI (Guarded for single-tab or multi-tab layouts)
+        if ($("tabVol6")) {
+          $("tabVol6").classList.toggle("active", eventKey === "pranikah" || eventKey === "vol6");
+          $("tabVol6").setAttribute("aria-selected", eventKey === "pranikah" || eventKey === "vol6");
+        }
+        if ($("tabVol7")) {
+          $("tabVol7").classList.toggle("active", eventKey === "vol7");
+          $("tabVol7").setAttribute("aria-selected", eventKey === "vol7");
+        }
 
         // Perbarui modal info brosur paket & visibilitas tombol
         if ($("modalInfoPosterTitle")) {
-          $("modalInfoPosterTitle").textContent = evt.infoPosterTitle || ("Teman Satu Jalan " + evt.volTag + " — Rincian Paket");
+          $("modalInfoPosterTitle").textContent = evt.infoPosterTitle || ("Deen In Love Series — " + evt.volTag);
         }
         var posterImgEl = $("modalInfoPosterImg") || ($("infoPosterModal") ? $("infoPosterModal").querySelector("img") : null);
         if (posterImgEl && evt.infoPosterImg) {
           posterImgEl.src = evt.infoPosterImg;
-          posterImgEl.alt = evt.infoPosterAlt || ("Infografis Brosur Resmi TSJ " + evt.volTag);
+          posterImgEl.alt = evt.infoPosterAlt || ("Poster Resmi " + evt.eventNameDisplay);
         }
         if ($("btnViewInfografis")) {
           $("btnViewInfografis").style.display = "inline-flex";
         }
 
-        // Perbarui ketentuan peserta mahram
+        // Perbarui ketentuan benefit & fasilitas
         if ($("mahramDesc") && evt.mahramNotice) {
           $("mahramDesc").innerHTML = evt.mahramNotice;
         }
 
         // 2. Update Hero Banner & Headings & Carousel
         setupHeroCarousel(evt.carouselImages || [{ src: evt.posterImg, alt: evt.posterAlt }]);
-        $("badgeLimited").textContent = evt.badgeLimited;
-        $("heroVolTag").textContent = evt.volTag;
-        $("heroMainTitle").textContent = evt.titleMain;
-        $("heroHighlightTitle").textContent = evt.titleHighlight;
-        $("heroDestination").textContent = evt.destination;
-        $("paketEventName").textContent = evt.volTag;
+        if ($("badgeLimited")) $("badgeLimited").textContent = evt.badgeLimited;
+        if ($("heroVolTag")) $("heroVolTag").textContent = evt.volTag;
+        if ($("heroMainTitle")) $("heroMainTitle").textContent = evt.titleMain;
+        if ($("heroHighlightTitle")) $("heroHighlightTitle").textContent = evt.titleHighlight;
+        if ($("heroDestination")) $("heroDestination").textContent = evt.destination;
+        if ($("paketEventName")) $("paketEventName").textContent = "DEEN IN LOVE SERIES";
 
         // 3. Update Specs Grid
-        $("specDate").textContent = evt.date;
-        $("specTime").textContent = evt.time;
-        $("specTikum").textContent = evt.tikum;
-        $("specDistance").textContent = evt.distance;
-        $("routeInput").value = evt.routeDesc;
+        if ($("specDate")) $("specDate").textContent = evt.date;
+        if ($("specTime")) $("specTime").textContent = evt.time;
+        if ($("specTikum")) $("specTikum").textContent = evt.tikum;
+        if ($("specDistance")) $("specDistance").textContent = evt.distance;
+        if ($("routeInput")) $("routeInput").value = evt.routeDesc;
 
-        // 4. Update Titik Kumpul Options
+        // 4. Update Mode Kehadiran Options
         var tikumSelect = $("titikKumpulSelect");
-        tikumSelect.innerHTML = '<option value="" selected disabled>-- Pilih Titik Kumpul --</option>';
-        evt.tikumOptions.forEach(function (optText) {
-          var op = document.createElement("option");
-          op.value = optText;
-          op.textContent = optText;
-          tikumSelect.appendChild(op);
-        });
+        if (tikumSelect) {
+          tikumSelect.innerHTML = '<option value="" selected disabled>-- Pilih Mode Kehadiran (Offline Masjid / Online Zoom) --</option>';
+          evt.tikumOptions.forEach(function (optText) {
+            var op = document.createElement("option");
+            op.value = optText;
+            op.textContent = optText;
+            tikumSelect.appendChild(op);
+          });
+        }
 
         // 5. Render Ticket Packages for the selected Event
         renderTicketsForCurrentEvent();
@@ -4763,21 +5082,20 @@
       }
 
       // ==========================================
-      // SKEMA PEMBAYARAN: LUNAS vs DP (50%)
+      // SKEMA PEMBAYARAN: LUNAS vs BERTAHAP 3X BAYAR
       // ==========================================
       var currentPaymentScheme = "Lunas";
 
       function setPaymentScheme(scheme) {
-        currentPaymentScheme = (scheme === "DP") ? "DP" : "Lunas";
+        currentPaymentScheme = (scheme === "Bertahap" || scheme === "3x" || scheme === "DP") ? "Bertahap" : "Lunas";
         var cardLunas = $("skemaCardLunas");
         var cardDp = $("skemaCardDp");
         var radioLunas = $("skemaRadioLunas");
         var radioDp = $("skemaRadioDp");
         var lunasBanner = $("lunasNoticeBanner");
         var dpBanner = $("dpNoticeBanner");
-        var reminder = $("qrisDpReminder");
 
-        if (currentPaymentScheme === "DP") {
+        if (currentPaymentScheme === "Bertahap") {
           if (cardLunas) {
             cardLunas.classList.remove("active");
             cardLunas.classList.remove("skema-dp-active");
@@ -4789,7 +5107,6 @@
           if (radioDp) radioDp.checked = true;
           if (lunasBanner) lunasBanner.style.display = "none";
           if (dpBanner) dpBanner.style.display = "block";
-          if (reminder) reminder.classList.remove("hide");
         } else {
           if (cardDp) {
             cardDp.classList.remove("active");
@@ -4802,7 +5119,6 @@
           if (radioLunas) radioLunas.checked = true;
           if (lunasBanner) lunasBanner.style.display = "block";
           if (dpBanner) dpBanner.style.display = "none";
-          if (reminder) reminder.classList.add("hide");
         }
 
         updateQrisAmountDisplay();
@@ -4815,74 +5131,21 @@
           el.addEventListener("keydown", function (e) {
             if (e.key === "Enter" || e.key === " ") {
               e.preventDefault();
-              setPaymentScheme(id === "skemaCardDp" ? "DP" : "Lunas");
+              setPaymentScheme(id === "skemaCardDp" ? "Bertahap" : "Lunas");
             }
           });
         }
       });
 
       function updateQrisAmountDisplay() {
-        var ticket = getSelectedTicket();
-        var evt = currentEventKey ? EVENTS_DATA[currentEventKey] : null;
-        var qrisTotal = $("qrisTotalDisplay");
-        var qrisSub = $("qrisPackageSub");
-        var qrisLabel = $("qrisAmountLabel");
-        var skemaValLunas = $("skemaValLunas");
-        var skemaValDp = $("skemaValDp");
-        var dpNoticeAmount = $("dpNoticeAmount");
-        var dpNoticeRemaining = $("dpNoticeRemaining");
-        var qrisDpRemainingVal = $("qrisDpRemainingVal");
-        var reminder = $("qrisDpReminder");
         var buktiLabel = $("buktiTransferLabel");
+        var isBertahap = (currentPaymentScheme === "Bertahap");
 
         if (buktiLabel) {
-          buktiLabel.textContent = (currentPaymentScheme === "DP")
-            ? "Unggah Struk / Bukti Pembayaran DP (50%)"
-            : "Unggah Struk / Bukti Pembayaran Lunas (100%)";
+          buktiLabel.textContent = isBertahap
+            ? "Unggah Struk / Bukti Pembayaran Bertahap (Tahap 1: Rp 200.000)"
+            : "Unggah Struk / Bukti Pembayaran Lunas (Rp 500.000)";
         }
-
-        if (ticket && evt && evt.packages) {
-          var val = ticket.value;
-          var pkg = evt.packages.find(function (p) { return p.value === val; });
-          if (pkg && pkg.price) {
-            var fullPrice = pkg.price;
-            var dpPrice = Math.round(fullPrice * 0.5);
-            var sisaPrice = fullPrice - dpPrice;
-
-            var fullFormatted = "Rp " + fullPrice.toLocaleString("id-ID");
-            var dpFormatted = "Rp " + dpPrice.toLocaleString("id-ID");
-            var sisaFormatted = "Rp " + sisaPrice.toLocaleString("id-ID");
-
-            if (skemaValLunas) skemaValLunas.textContent = fullFormatted;
-            if (skemaValDp) skemaValDp.textContent = dpFormatted;
-            if (dpNoticeAmount) dpNoticeAmount.textContent = dpFormatted;
-            if (dpNoticeRemaining) dpNoticeRemaining.textContent = sisaFormatted;
-            if (qrisDpRemainingVal) qrisDpRemainingVal.textContent = sisaFormatted;
-
-            if (currentPaymentScheme === "DP") {
-              if (qrisLabel) qrisLabel.textContent = "Nominal Transfer QRIS Sekarang (DP 50%):";
-              if (qrisTotal) qrisTotal.textContent = dpFormatted;
-              if (qrisSub) qrisSub.textContent = "Paket: " + pkg.name + " • Uang Muka DP 50% (Total Tagihan Paket: " + fullFormatted + ")";
-              if (reminder) reminder.classList.remove("hide");
-            } else {
-              if (qrisLabel) qrisLabel.textContent = "Total Tagihan Registrasi (Lunas 100%):";
-              if (qrisTotal) qrisTotal.textContent = fullFormatted;
-              if (qrisSub) qrisSub.textContent = "Paket: " + pkg.name + " (" + (pkg.badge || pkg.priceDisplay || "") + " • " + (pkg.desc || "") + ")";
-              if (reminder) reminder.classList.add("hide");
-            }
-            return;
-          }
-        }
-
-        if (skemaValLunas) skemaValLunas.textContent = "Rp 0";
-        if (skemaValDp) skemaValDp.textContent = "Rp 0";
-        if (dpNoticeAmount) dpNoticeAmount.textContent = "Rp 0";
-        if (dpNoticeRemaining) dpNoticeRemaining.textContent = "Rp 0";
-        if (qrisDpRemainingVal) qrisDpRemainingVal.textContent = "Rp 0";
-        if (qrisLabel) qrisLabel.textContent = (currentPaymentScheme === "DP") ? "Nominal Transfer QRIS (DP 50%):" : "Total Tagihan Registrasi:";
-        if (qrisTotal) qrisTotal.textContent = "Rp 0";
-        if (qrisSub) qrisSub.textContent = "Pilih salah satu paket trekking di bagian atas terlebih dahulu";
-        if (reminder) reminder.classList.add("hide");
       }
 
       function getSelectedTicket() {
@@ -4955,34 +5218,26 @@
         var headerHtml = isLeader
           ? `<div class="explorer-title-box">
                <div class="explorer-title-main">
-                 <span class="exp-icon-title">👤 Petualang 1</span>
-                 <span class="explorer-badge pic-badge">Wajib (PIC)</span>
+                 <span class="exp-icon-title">👤 Peserta 1</span>
+                 <span class="explorer-badge pic-badge" style="background:var(--primary); color:var(--primary-ink);">Wajib (PIC)</span>
                </div>
-               <div class="explorer-subtitle">Penanggung Jawab / Kontak Utama Rombongan</div>
+               <div class="explorer-subtitle">Penanggung Jawab / Kontak Utama Pendaftaran</div>
              </div>`
           : `<div class="explorer-title-box">
                <div class="explorer-title-main">
-                 <span class="exp-icon-title">🥾 Petualang ${index}</span>
+                 <span class="exp-icon-title">⛵ Peserta ${index}</span>
                </div>
-               <div class="explorer-subtitle">Anggota Rombongan</div>
+               <div class="explorer-subtitle">Peserta / Calon Pasangan Tambahan</div>
              </div>
              <div class="explorer-actions">
                <button type="button" class="btn-del-explorer" onclick="removeExplorerCard('${cardId}')">🗑️ Hapus</button>
              </div>`;
 
-        var roleOptions = isLeader
-          ? `<option value="" selected disabled>-- Pilih Status Hubungan / Peran --</option>
-         <option value="Suami / Ayah (Ketua)">Suami / Ayah (Ketua Rombongan)</option>
-         <option value="Ikhwan (Ketua)">Ikhwan (Ketua Rombongan)</option>
-         <option value="Istri / Ibu (Ketua)">Istri / Ibu (Ketua Rombongan)</option>
-         <option value="Saudara Tertua (Ketua)">Saudara Tertua (Ketua)</option>`
-          : `<option value="" selected disabled>-- Pilih Status Hubungan / Peran --</option>
-         <option value="Istri">Istri (Pasangan)</option>
-         <option value="Suami">Suami (Pasangan)</option>
-         <option value="Anak">Anak Kandung</option>
-         <option value="Saudara Kandung">Saudara Kandung (Semahram)</option>
-         <option value="Orang Tua">Orang Tua (Ayah/Ibu)</option>
-         <option value="Teman Ikhwan">Rekan Ikhwan (Laki-laki)</option>`;
+        var roleOptions = `<option value="" selected disabled>-- Pilih Status Kepesertaan --</option>
+         <option value="Ikhwan">Ikhwan</option>
+         <option value="Akhwat">Akhwat</option>
+         <option value="Janda">Janda</option>
+         <option value="Duda">Duda</option>`;
 
         card.innerHTML = `
       <div class="explorer-top">
@@ -4993,15 +5248,15 @@
         <div class="f" data-req>
           <label for="${cardId}_nama">Nama Lengkap Sesuai Identitas (KTP/KIA)</label>
           <input type="text" id="${cardId}_nama" class="exp-name" placeholder="${isLeader ? 'Contoh: Muhammad Farhan' : 'Nama lengkap peserta ke-' + index}">
-          <p class="err">Nama lengkap petualang wajib diisi.</p>
+          <p class="err">Nama lengkap peserta wajib diisi untuk sertifikat & lanyard.</p>
         </div>
 
         <div class="f" data-req>
-          <label for="${cardId}_peran">Status Hubungan / Peran</label>
+          <label for="${cardId}_peran">Status Kepesertaan</label>
           <select id="${cardId}_peran" class="exp-role">
             ${roleOptions}
           </select>
-          <p class="err">Pilih status hubungan / peran.</p>
+          <p class="err">Pilih status kepesertaan.</p>
         </div>
       </div>
 
@@ -5010,39 +5265,47 @@
           <label for="${cardId}_gender">Jenis Kelamin</label>
           <select id="${cardId}_gender" class="exp-gender">
             <option value="" selected disabled>-- Pilih Jenis Kelamin --</option>
-            <option value="Laki-laki">Laki-laki</option>
-            <option value="Perempuan">Perempuan</option>
+            <option value="Laki-laki (Ikhwan)">Laki-laki (Ikhwan)</option>
+            <option value="Perempuan (Akhwat)">Perempuan (Akhwat)</option>
           </select>
           <p class="err">Pilih jenis kelamin.</p>
         </div>
 
         <div class="f" data-req>
-          <label for="${cardId}_usia">Usia / Kategori</label>
-          <input type="text" id="${cardId}_usia" class="exp-age" placeholder="Contoh: 28 Tahun / Dewasa">
-          <p class="err">Usia / kategori petualang wajib diisi.</p>
+          <label for="${cardId}_usia">Usia (Tahun)</label>
+          <input type="text" id="${cardId}_usia" class="exp-age" placeholder="Contoh: 24 Tahun">
+          <p class="err">Usia peserta wajib diisi.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="f" data-req>
+          <label for="${cardId}_pendidikan">Pendidikan Terakhir</label>
+          <input type="text" id="${cardId}_pendidikan" class="exp-edu" placeholder="Contoh: S1 Psikologi / D3 Manajemen / SMA">
+          <p class="err">Pendidikan terakhir peserta wajib diisi.</p>
+        </div>
+
+        <div class="f">
+          <label for="${cardId}_medis">Pekerjaan / Aktivitas Saat Ini <span class="opt">(Opsional)</span></label>
+          <input type="text" id="${cardId}_medis" class="exp-medis" placeholder="Contoh: Karyawan Swasta, Mahasiswa, Wiraswasta">
         </div>
       </div>
 
       <div class="row">
         <div class="f" ${isLeader ? 'data-req' : ''}>
-          <label for="${cardId}_hp">No. WhatsApp / HP <span class="prefix-badge-label">+62 Permanen</span> ${isLeader ? '' : '<span class="opt">(Opsional jika sama dg ketua)</span>'}</label>
+          <label for="${cardId}_hp">No. WhatsApp / HP <span class="prefix-badge-label">+62 Permanen</span> ${isLeader ? '' : '<span class="opt">(Opsional jika sama dg PIC)</span>'}</label>
           <div class="phone-input-group">
             <span class="phone-prefix-addon">🇮🇩 +62</span>
-            <input type="tel" id="${cardId}_hp" class="exp-hp phone-input-field" placeholder="${isLeader ? '812-3456-7890 (Wajib untuk info grup)' : '812-3456-7890 (Boleh kosong jika anak/istri)'}">
+            <input type="tel" id="${cardId}_hp" class="exp-hp phone-input-field" placeholder="${isLeader ? '812-3456-7890 (Wajib untuk info grup & Zoom)' : '812-3456-7890 (Boleh kosong)'}">
           </div>
           <p class="err">Nomor WhatsApp wajib 9–13 digit angka.</p>
         </div>
 
         <div class="f" ${isLeader ? 'data-req' : ''}>
           <label for="${cardId}_email">Email ${isLeader ? '' : '<span class="opt">(Opsional)</span>'}</label>
-          <input type="email" id="${cardId}_email" class="exp-email" placeholder="${isLeader ? 'nama@email.com (Untuk pengiriman e-tiket)' : 'email@anggota.com'}">
+          <input type="email" id="${cardId}_email" class="exp-email" placeholder="${isLeader ? 'nama@email.com (Untuk pengiriman materi PPT & sertifikat)' : 'email@anggota.com'}">
           <p class="err">Masukkan format email yang valid.</p>
         </div>
-      </div>
-
-      <div class="f">
-        <label for="${cardId}_medis">Catatan Medis / Alergi <span class="opt">(Opsional)</span></label>
-        <input type="text" id="${cardId}_medis" class="exp-medis" placeholder="Contoh: Asma, alergi dingin, fit normal">
       </div>
     `;
 
@@ -5062,6 +5325,20 @@
           });
         });
 
+        var roleSelect = card.querySelector(".exp-role");
+        var genderSelect = card.querySelector(".exp-gender");
+        if (roleSelect && genderSelect) {
+          roleSelect.addEventListener("change", function () {
+            if (this.value === "Ikhwan" || this.value === "Duda") {
+              genderSelect.value = "Laki-laki (Ikhwan)";
+              mark(genderSelect.closest(".f"), true);
+            } else if (this.value === "Akhwat" || this.value === "Janda") {
+              genderSelect.value = "Perempuan (Akhwat)";
+              mark(genderSelect.closest(".f"), true);
+            }
+          });
+        }
+
         return card;
       }
 
@@ -5072,17 +5349,17 @@
           var titleEl = card.querySelector(".exp-icon-title");
           var subEl = card.querySelector(".explorer-subtitle");
           if (idx === 0) {
-            if (titleEl) titleEl.textContent = "👤 Petualang 1";
-            if (subEl) subEl.textContent = "Penanggung Jawab / Kontak Utama Rombongan";
+            if (titleEl) titleEl.textContent = "👤 Peserta 1";
+            if (subEl) subEl.textContent = "Penanggung Jawab / Kontak Utama Pendaftaran";
           } else {
-            if (titleEl) titleEl.textContent = "🥾 Petualang " + num;
-            if (subEl) subEl.textContent = "Anggota Rombongan";
+            if (titleEl) titleEl.textContent = "⛵ Peserta " + num;
+            if (subEl) subEl.textContent = "Peserta Tambahan";
           }
         });
 
         var count = cards.length;
         totalBadgeCount.textContent = count;
-        rosterSummaryText.textContent = count + " Petualang Terdaftar";
+        rosterSummaryText.textContent = count + " Peserta Terdaftar";
       }
 
       window.removeExplorerCard = function (cardId) {
@@ -5093,13 +5370,15 @@
         }
       };
 
-      btnAddExplorer.addEventListener("click", function () {
-        var currentCount = explorerContainer.querySelectorAll(".explorer-card").length;
-        var newCard = createExplorerCard(currentCount + 1);
-        explorerContainer.appendChild(newCard);
-        renumberCards();
-        newCard.scrollIntoView({ behavior: "smooth", block: "center" });
-      });
+      if (btnAddExplorer) {
+        btnAddExplorer.addEventListener("click", function () {
+          var currentCount = explorerContainer.querySelectorAll(".explorer-card").length;
+          var newCard = createExplorerCard(currentCount + 1);
+          explorerContainer.appendChild(newCard);
+          renumberCards();
+          newCard.scrollIntoView({ behavior: "smooth", block: "center" });
+        });
+      }
 
       function syncExplorersWithPackage() {
         var ticket = getSelectedTicket();
@@ -5161,10 +5440,6 @@
       $("kota").addEventListener("input", function () {
         if (this.value.trim().length >= 2) mark($("kotaBox"), true);
       });
-      $("darurat").addEventListener("input", function () {
-        if (this.value.trim().length >= 2) mark(this.closest(".f"), true);
-      });
-      bindPhoneInputEvents($("daruratHp"));
       for (var j = 1; j <= 5; j++) {
         (function (n) {
           var chk = $("janji" + n);
@@ -5196,7 +5471,7 @@
         // 1. Validate all explorer cards
         var cards = explorerContainer.querySelectorAll(".explorer-card");
         if (cards.length === 0) {
-          alert("Harap tambahkan minimal 1 data petualang.");
+          alert("Harap tambahkan minimal 1 data peserta.");
           return;
         }
 
@@ -5207,6 +5482,7 @@
           var roleSelect = card.querySelector(".exp-role");
           var genderSelect = card.querySelector(".exp-gender");
           var ageSelect = card.querySelector(".exp-age");
+          var eduInput = card.querySelector(".exp-edu");
           var hpInput = card.querySelector(".exp-hp");
           var emailInput = card.querySelector(".exp-email");
           var medisInput = card.querySelector(".exp-medis");
@@ -5214,18 +5490,20 @@
           var nameVal = nameInput ? nameInput.value.trim() : "";
           var hpVal = hpInput ? hpInput.value.trim() : "";
           var emailVal = emailInput ? emailInput.value.trim() : "";
+          var eduVal = eduInput ? eduInput.value.trim() : "";
           var medisVal = medisInput ? medisInput.value.trim() : "-";
 
           // Validate name
           checkField(nameInput.closest(".f"), nameVal.length >= 2);
 
-          // Validate role, gender, age
+          // Validate role, gender, age, pendidikan
           var roleVal = roleSelect ? roleSelect.value.trim() : "";
           var genderVal = genderSelect ? genderSelect.value.trim() : "";
           var ageVal = ageSelect ? ageSelect.value.trim() : "";
           if (roleSelect) checkField(roleSelect.closest(".f"), roleVal !== "");
           if (genderSelect) checkField(genderSelect.closest(".f"), genderVal !== "");
           if (ageSelect) checkField(ageSelect.closest(".f"), ageVal.length >= 1);
+          if (eduInput) checkField(eduInput.closest(".f"), eduVal.length >= 2);
 
           // Validate Leader contact
           if (idx === 0) {
@@ -5246,6 +5524,7 @@
             peran: roleVal || "Peserta",
             gender: genderVal || "-",
             usia: ageVal || "-",
+            pendidikan: eduVal || "-",
             hp: formattedHp,
             email: emailVal,
             medis: medisVal || "-"
@@ -5266,24 +5545,18 @@
         checkField($("alamatBox"), $("alamatLengkap").value.trim().length >= 5);
         checkField($("kotaBox"), $("kota").value.trim().length >= 2);
 
-        // 4. Validate Titik Kumpul
+        // 4. Validate Mode Kehadiran
         var tikumVal = $("titikKumpulSelect") ? $("titikKumpulSelect").value.trim() : "";
         checkField($("tikumField"), tikumVal !== "");
 
-        // 5. Validate Emergency Contact
-        var daruratHpRaw = $("daruratHp").value.trim();
-        var formattedDaruratHp = formatFullPhone(daruratHpRaw);
-        checkField($("darurat").closest(".f"), $("darurat").value.trim().length >= 2);
-        checkField($("daruratHp").closest(".f"), isValidPhone(daruratHpRaw));
-
-        // 6. Ticket Selection
+        // 5. Ticket Selection
         checkField($("tkbox"), !!getSelectedTicket());
 
-        // 7. Payment Proof (Wajib Diunggah)
+        // 6. Payment Proof (Wajib Diunggah)
         var hasFile = (fileInput && fileInput.files && fileInput.files.length > 0);
         checkField($("bukti"), hasFile);
 
-        // 8. Janji Seru & Aman 🌿 (5 Poin Wajib Centang)
+        // 7. Komitmen Peserta (5 Poin Wajib Centang)
         checkField($("boxJanji1"), $("janji1").checked);
         checkField($("boxJanji2"), $("janji2").checked);
         checkField($("boxJanji3"), $("janji3").checked);
@@ -5306,7 +5579,7 @@
         var submitBtn = $("f").querySelector('button[type="submit"]');
         if (submitBtn) {
           submitBtn.disabled = true;
-          submitBtn.innerHTML = '<span>⏳ Memproses & Mendaftarkan Rombongan...</span>';
+          submitBtn.innerHTML = '<span>⏳ Memproses & Mendaftarkan Peserta...</span>';
         }
 
         // Success Generation
@@ -5316,56 +5589,57 @@
 
         var leader = explorerList[0];
         $("de").textContent = leader.email || "email terdaftar";
-        $("dhp").textContent = leader.hp || formattedDaruratHp;
+        $("dhp").textContent = leader.hp || "-";
         $("passEventName").textContent = evt.eventNameDisplay;
         $("passTk").textContent = getSelectedTicket().value;
-        $("passTotalOrang").textContent = explorerList.length + " Orang Petualang";
+        $("passTotalOrang").textContent = explorerList.length + " Peserta Terdaftar";
 
         var transportRadio = document.querySelector('input[name="transportasi"]:checked');
         var trekRadio = document.querySelector('input[name="pengalamanTrek"]:checked');
         var sportRadio = document.querySelector('input[name="intensitasOlahraga"]:checked');
         if ($("passTransport")) $("passTransport").textContent = transportRadio ? transportRadio.value : "-";
-        if ($("passKebugaran")) $("passKebugaran").textContent = (trekRadio ? trekRadio.value : "-") + " • Olahraga: " + (sportRadio ? sportRadio.value : "-");
+        if ($("passKebugaran")) $("passKebugaran").textContent = (trekRadio ? trekRadio.value : "-") + " • Fokus: " + (sportRadio ? sportRadio.value : "-");
 
         $("passMepo").textContent = $("titikKumpulSelect").value;
         if ($("passBarcodeCaption")) $("passBarcodeCaption").textContent = evt.barcodeCaption;
 
-        // Hitung rincian pembayaran DP atau Lunas
+        // Hitung rincian pembayaran (Lunas vs Bertahap 3x Bayar)
         var ticket = getSelectedTicket();
         var selectedPkg = (evt && evt.packages && ticket) ? evt.packages.find(function (p) { return p.value === ticket.value; }) : null;
-        var fullPrice = selectedPkg ? selectedPkg.price : 0;
-        var dpPrice = Math.round(fullPrice * 0.5);
-        var sisaPrice = fullPrice - dpPrice;
+        var fullPrice = selectedPkg ? selectedPkg.price : 500000;
 
-        var isDp = (currentPaymentScheme === "DP");
-        var nominalStr = isDp ? ("Rp " + dpPrice.toLocaleString("id-ID")) : ("Rp " + fullPrice.toLocaleString("id-ID"));
-        var sisaStr = isDp ? ("Rp " + sisaPrice.toLocaleString("id-ID")) : "Rp 0 (Lunas)";
-        var skemaStr = isDp ? "DP / Uang Muka (50%)" : "Lunas (100%)";
-        var metodeStr = isDp
-          ? ("QRIS - DP 50% (Bayar: " + nominalStr + ", Sisa: " + sisaStr + " maks. H-7)")
-          : ("QRIS - Lunas 100% (" + nominalStr + ")");
+        var isBertahap = (currentPaymentScheme === "Bertahap");
+        var bayarSekarang = isBertahap ? 200000 : fullPrice;
+        var sisaAngka = isBertahap ? 300000 : 0;
+
+        var nominalStr = "Rp " + bayarSekarang.toLocaleString("id-ID");
+        var sisaStr = isBertahap ? "Rp 300.000 (Sisa 2x @ Rp 150.000)" : "Rp 0 (Lunas)";
+        var skemaStr = isBertahap ? "Bertahap (3x Bayar)" : "Lunas (100%)";
+        var metodeStr = isBertahap
+          ? "Bukti Transfer Bertahap - Tahap 1 (Rp 200.000, Sisa Rp 300.000 dicicil 2x)"
+          : ("Bukti Transfer Lunas (" + nominalStr + ")");
 
         if ($("passSkemaBayar")) $("passSkemaBayar").textContent = skemaStr;
-        if ($("passNominalBayar")) $("passNominalBayar").textContent = nominalStr;
+        if ($("passNominalBayar")) $("passNominalBayar").textContent = isBertahap ? (nominalStr + " (Tahap 1)") : nominalStr;
         if ($("passRowSisa")) {
-          if (isDp) {
+          if (isBertahap) {
             $("passRowSisa").classList.remove("hide");
-            if ($("passSisaBayar")) $("passSisaBayar").textContent = sisaStr + " (Wajib lunas maks. H-7 trip)";
+            if ($("passSisaBayar")) $("passSisaBayar").textContent = sisaStr;
           } else {
             $("passRowSisa").classList.add("hide");
           }
         }
 
-        // Build the Roster List for all explorers
+        // Build the Roster List for all participants
         var passRosterList = $("passRosterList");
         passRosterList.innerHTML = "";
         explorerList.forEach(function (exp) {
           var li = document.createElement("li");
-          li.innerHTML = `<b>${exp.nama}</b> (${exp.peran}) — <span class="meta">${exp.gender}, ${exp.usia}</span>`;
+          li.innerHTML = `<b>${exp.nama}</b> <span class="meta" style="font-size:0.85em; color:var(--gold,#f4c430);">(${exp.peran})</span> — <span class="meta">${exp.gender}, Usia: ${exp.usia} thn, Pendidikan: ${exp.pendidikan}</span>`;
           passRosterList.appendChild(li);
         });
 
-        // Siapkan Payload Lengkap Rombongan untuk Google Spreadsheet
+        // Siapkan Payload Lengkap Peserta untuk Google Spreadsheet
         var fullAddress = ($("alamatLengkap") ? $("alamatLengkap").value.trim() : "");
         var cityVal = ($("kota") ? $("kota").value.trim() : "");
         var combinedAddress = fullAddress ? (fullAddress + (cityVal ? ", " + cityVal : "")) : (cityVal || "-");
@@ -5375,11 +5649,11 @@
           kodeRegistrasi: randomCode,
           eventNama: evt.eventNameDisplay,
           eventKey: currentEventKey,
-          paketTrekking: (getSelectedTicket() ? getSelectedTicket().value : "Paket Trekking"),
+          paketTrekking: (getSelectedTicket() ? getSelectedTicket().value : "Paket Kelas"),
           skemaPembayaran: skemaStr,
           nominalBayar: nominalStr,
           sisaPelunasan: sisaStr,
-          leaderHp: leader.hp || formattedDaruratHp,
+          leaderHp: leader.hp || "-",
           leaderEmail: leader.email || "",
           alamatLengkap: fullAddress || "-",
           kotaDomisili: combinedAddress,
@@ -5388,8 +5662,8 @@
           intensitasOlahraga: sportRadio ? sportRadio.value : "-",
           titikKumpul: $("titikKumpulSelect") ? $("titikKumpulSelect").value : "-",
           metodePembayaran: metodeStr,
-          kontakDaruratNama: $("darurat").value.trim(),
-          kontakDaruratHp: formattedDaruratHp,
+          kontakDaruratNama: "-",
+          kontakDaruratHp: "-",
           buktiTransferFileName: (fileInput && fileInput.files && fileInput.files.length > 0) ? fileInput.files[0].name : "Struk Transfer Terlampir",
           explorers: explorerList
         };
@@ -5406,7 +5680,6 @@
           console.warn("Storage warning:", err);
         }
 
-        // 1. KIRIM & SIMPAN DATA KE GOOGLE SPREADSHEET
         // 1. KIRIM & SIMPAN DATA KE GOOGLE SPREADSHEET (OTOMATIS DI LATAR BELAKANG)
         var scriptUrl = getGoogleSheetUrl();
         if (scriptUrl) {
@@ -5424,18 +5697,18 @@
         }
 
         // 2. PERBARUI KARTU AJAKAN GRUP DI HALAMAN SUKSES
-        if ($("groupEventName")) $("groupEventName").textContent = evt.volTag;
-        if ($("groupEventDest")) $("groupEventDest").textContent = evt.destination;
+        if ($("groupEventName")) $("groupEventName").textContent = "DEEN IN LOVE SERIES";
+        if ($("groupEventDest")) $("groupEventDest").textContent = "Belajar Sebelum Berlayar • Ustadz Mahruroji";
         if ($("btnJoinGroup")) {
           $("btnJoinGroup").href = evt.waGroupUrl;
-          if ($("btnJoinGroupText")) $("btnJoinGroupText").textContent = "Gabung WhatsApp Group " + evt.volTag + " Sekarang";
+          if ($("btnJoinGroupText")) $("btnJoinGroupText").textContent = "Gabung WhatsApp Group Kelas Sekarang";
         }
         if ($("adminWaLink")) {
-          var adminMsg = "Assalamu'alaikum Admin TSJ, saya mendaftar " + evt.eventNameDisplay + " [Kode: " + randomCode + "] dengan Skema " + skemaStr + " (" + nominalStr + (isDp ? ", Sisa: " + sisaStr : "") + "). Mohon verifikasi pendaftaran & akses grup trip.";
-          $("adminWaLink").href = "https://wa.me/6285882582729?text=" + encodeURIComponent(adminMsg);
+          var adminMsg = "Assalamu'alaikum Admin UM Official, saya mendaftar " + evt.eventNameDisplay + " [Kode: " + randomCode + "] dengan Skema " + skemaStr + " (" + nominalStr + (isBertahap ? ", Sisa: " + sisaStr : "") + "). Struk / bukti transfer telah saya lampirkan. Mohon verifikasi pendaftaran & akses grup Deen In Love Series.";
+          $("adminWaLink").href = "https://wa.me/6281282785454?text=" + encodeURIComponent(adminMsg);
         }
         if ($("btnShareWa")) {
-          var shareText = "Bismillah! Kami sudah mendaftar trip *Teman Satu Jalan* (" + evt.eventNameDisplay + ") dengan Kode Registrasi: *" + randomCode + "*. Yuk gabung ke WhatsApp Group Trip resmi di link ini: " + evt.waGroupUrl;
+          var shareText = "Bismillah! Kami sudah mendaftar *Deen In Love Series: Belajar Sebelum Berlayar* bersama Ustadz Mahruroji (Setiap Minggu, 6 Des - 17 Jan 2026) dengan Kode: *" + randomCode + "*. Yuk daftar di s.id/deeninloveseries!";
           $("btnShareWa").href = "https://wa.me/?text=" + encodeURIComponent(shareText);
         }
 
@@ -5447,11 +5720,11 @@
 
         if (submitBtn) {
           submitBtn.disabled = false;
-          submitBtn.innerHTML = '<span>🥾 DAFTARKAN ROMBONGAN PETUALANG</span>';
+          submitBtn.innerHTML = '<span>⛵ DAFTAR SEKARANG — DEEN IN LOVE SERIES</span>';
         }
         isSubmitting = false;
 
-        // 3. MUNCULKAN POPUP MODAL AJAKAN BERGABUNG KEDALAM GRUP TRIP
+        // 3. MUNCULKAN POPUP MODAL AJAKAN BERGABUNG KEDALAM GRUP KELAS
         setTimeout(function () {
           openGroupModal();
         }, 350);
@@ -5475,8 +5748,8 @@
         // Reset skema pembayaran ke default Lunas
         setPaymentScheme("Lunas");
 
-        // 4. Inisialisasi ulang event (Vol 6 / Vol 7) dalam kondisi bersih
-        switchEvent(currentEventKey || "vol7");
+        // 4. Inisialisasi ulang event
+        switchEvent("pranikah");
 
         // 5. Pastikan semua radio dan pilihan tidak tercentang
         document.querySelectorAll('input[name="tk"]').forEach(function (r) { r.checked = false; });
@@ -5484,11 +5757,11 @@
         document.querySelectorAll('input[name="pengalamanTrek"]').forEach(function (r) { r.checked = false; });
         document.querySelectorAll('input[name="intensitasOlahraga"]').forEach(function (r) { r.checked = false; });
 
-        // 6. Reset titik kumpul ke placeholder default
+        // 6. Reset mode kehadiran ke placeholder default
         var tikumSelect = $("titikKumpulSelect");
         if (tikumSelect) tikumSelect.selectedIndex = 0;
 
-        // 7. Reset petualang: buat 1 kartu petualang kosong
+        // 7. Reset peserta: buat 1 kartu peserta kosong
         explorerContainer.innerHTML = "";
         explorerContainer.appendChild(createExplorerCard(1));
         renumberCards();
@@ -5496,8 +5769,6 @@
         // 8. Reset isian teks & badge upload file
         if ($("alamatLengkap")) $("alamatLengkap").value = "";
         if ($("kota")) $("kota").value = "";
-        if ($("darurat")) $("darurat").value = "";
-        if ($("daruratHp")) $("daruratHp").value = "";
         if ($("file")) $("file").value = "";
         if ($("fileNameBadge")) $("fileNameBadge").classList.add("hide");
         for (var k = 1; k <= 5; k++) {
@@ -5513,7 +5784,7 @@
         var submitBtn = $("f").querySelector('button[type="submit"]');
         if (submitBtn) {
           submitBtn.disabled = false;
-          submitBtn.innerHTML = '<span>🥾 DAFTARKAN ROMBONGAN PETUALANG</span>';
+          submitBtn.innerHTML = '<span>⛵ DAFTAR SEKARANG — DEEN IN LOVE SERIES</span>';
         }
         isSubmitting = false;
 
@@ -5522,19 +5793,19 @@
       };
 
       // ==========================================
-      // MODAL AJAKAN BERGABUNG GRUP TRIP HANDLERS
+      // MODAL AJAKAN BERGABUNG GRUP KELAS HANDLERS
       // ==========================================
       window.openGroupModal = function () {
         var evt = EVENTS_DATA[currentEventKey];
         if (!evt) return;
-        if ($("modalEventBadge")) $("modalEventBadge").textContent = evt.volTag;
+        if ($("modalEventBadge")) $("modalEventBadge").textContent = "DEEN IN LOVE SERIES";
         if ($("modalEventName")) $("modalEventName").textContent = evt.eventNameDisplay;
         if ($("modalJoinBtn")) {
           $("modalJoinBtn").href = evt.waGroupUrl;
-          if ($("modalJoinBtnText")) $("modalJoinBtnText").textContent = "Gabung Grup WhatsApp " + evt.volTag + " Sekarang";
+          if ($("modalJoinBtnText")) $("modalJoinBtnText").textContent = "Gabung Grup WhatsApp Deen In Love Series";
         }
         if ($("modalAdminWa")) {
-          $("modalAdminWa").href = "https://wa.me/6285882582729?text=" + encodeURIComponent("Assalamu'alaikum Admin TSJ, mohon bantuan akses grup trip " + evt.eventNameDisplay);
+          $("modalAdminWa").href = "https://wa.me/6281282785454?text=" + encodeURIComponent("Assalamu'alaikum Admin UM Official, mohon bantuan akses grup kelas " + evt.eventNameDisplay);
         }
         $("groupInviteModal").classList.remove("hide");
       };
@@ -5549,7 +5820,7 @@
 
         if (navigator.clipboard && navigator.clipboard.writeText) {
           navigator.clipboard.writeText(url).then(function () {
-            showToast("✓ Link grup WhatsApp trip berhasil disalin!");
+            showToast("✓ Link grup WhatsApp kelas berhasil disalin!");
             updateCopyBtnTexts();
           }).catch(function () {
             fallbackCopyText(url);
@@ -5569,10 +5840,10 @@
         ta.select();
         try {
           document.execCommand("copy");
-          showToast("✓ Link grup WhatsApp trip berhasil disalin!");
+          showToast("✓ Link grup WhatsApp kelas berhasil disalin!");
           updateCopyBtnTexts();
         } catch (e) {
-          prompt("Salin tautan WhatsApp Group Trip:", text);
+          prompt("Salin tautan WhatsApp Group Kelas:", text);
         }
         document.body.removeChild(ta);
       }
@@ -5589,9 +5860,14 @@
       // Toast notice helper is defined above: window.showToast = showToast;
 
       // ==========================================
-      // MODAL INFOGRAFIS BROSUR PAKET RESMI (info.jpeg)
+      // MODAL GALERI POSTER & SILABUS RESMI (1.png, 2.png, 3.png)
       // ==========================================
-      window.openInfoPosterModal = function () {
+      window.openInfoPosterModal = function (slideIdx) {
+        if (typeof slideIdx === "number") {
+          window.switchModalPoster(slideIdx);
+        } else {
+          window.switchModalPoster(heroCarouselState.currentIndex || 0);
+        }
         if ($("infoPosterModal")) $("infoPosterModal").classList.remove("hide");
       };
 
@@ -5671,39 +5947,36 @@
         });
       }
 
-
-
       // ==========================================
       // UNDUH DATA SPREADSHEET (.CSV) LOKAL
       // ==========================================
       window.downloadCurrentCsv = function () {
         var data = window.currentRegistrationData;
         if (!data || !data.explorers || data.explorers.length === 0) {
-          alert("Belum ada data rombongan yang didaftarkan.");
+          alert("Belum ada data peserta yang didaftarkan.");
           return;
         }
 
         var headers = [
           "Waktu Pendaftaran",
           "Kode Registrasi",
-          "Edisi Event",
-          "Paket Trekking",
-          "No. Petualang",
+          "Program Kelas",
+          "Paket Kepesertaan",
+          "No. Peserta",
           "Nama Lengkap",
-          "Status / Hubungan",
+          "Status Kepesertaan",
           "Jenis Kelamin",
-          "Usia / Kategori",
+          "Usia (Tahun)",
+          "Pendidikan Terakhir",
           "No. WhatsApp",
           "Email",
-          "Catatan Medis",
+          "Pekerjaan / Aktivitas",
           "Alamat Lengkap Domisili",
-          "Transportasi Titik Kumpul",
-          "Pengalaman Trekking",
-          "Intensitas Olahraga",
-          "Titik Kumpul",
+          "Status Persiapan Pernikahan",
+          "Pengalaman Kajian Pranikah",
+          "Fokus Utama Belajar",
+          "Mode Kehadiran (Hybrid)",
           "Metode Pembayaran",
-          "Nama Kontak Darurat",
-          "No. HP Darurat",
           "Nama File Bukti Transfer"
         ];
 
@@ -5721,11 +5994,12 @@
             data.kodeRegistrasi || "",
             data.eventNama || "",
             data.paketTrekking || "",
-            "Petualang " + (idx + 1),
+            "Peserta " + (idx + 1),
             exp.nama || "",
             exp.peran || "",
             exp.gender || "",
             exp.usia || "",
+            exp.pendidikan || "",
             exp.hp || (idx === 0 ? data.leaderHp : ""),
             exp.email || (idx === 0 ? data.leaderEmail : ""),
             exp.medis || "-",
@@ -5734,9 +6008,7 @@
             data.pengalamanTrek || "",
             data.intensitasOlahraga || "",
             data.titikKumpul || "",
-            data.metodePembayaran || "QRIS",
-            data.kontakDaruratNama || "",
-            data.kontakDaruratHp || "",
+            data.metodePembayaran || "Bukti Transfer",
             data.buktiTransferFileName || "Tidak ada / Konfirmasi WA"
           ];
           rows.push(row.map(escapeCsv).join(","));
@@ -5747,7 +6019,7 @@
         var blobUrl = URL.createObjectURL(blob);
         var link = document.createElement("a");
         link.href = blobUrl;
-        link.download = "Pendaftaran_TSJ_" + (data.kodeRegistrasi || "data") + ".csv";
+        link.download = "Pendaftaran_DeenInLove_" + (data.kodeRegistrasi || "data") + ".csv";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -5763,8 +6035,8 @@
         }
       });
 
-      // Ekspedisi tidak dibuka otomatis — pengunjung harus memilih VOL 6 atau VOL 7 terlebih dahulu
-      // switchEvent akan dipicu ketika pengunjung mengklik tab atau kartu pilihan ekspedisi
+      // Buka dan inisialisasi otomatis event Deen In Love Series
+      switchEvent("pranikah");
     })();
   </script>
 
