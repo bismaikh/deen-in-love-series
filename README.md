@@ -2,26 +2,26 @@
 
 Portal Registrasi Resmi **Deen In Love Series: "Belajar Sebelum Berlayar" (`Pre Marriage, Deen Prepared`)** bersama **Ustadz Mahruroji**, diselenggarakan oleh **UM Official** (`s.id/deeninloveseries`).
 
-Formulir pendaftaran interaktif bertema *Deep Ocean Midnight Teal & Luminous Cyan* yang disesuaikan langsung dengan desain visual poster resmi (`1.png`, `2.png`, `3.png`). Dilengkapi integrasi otomatis ke **Google Sheets** via Google Apps Script (Dashboard KPI, Database Peserta & Lembar Presensi 6 Pertemuan), validasi nomor WhatsApp internasional (`+62` permanen), bukti transfer pembayaran, serta undangan grup WhatsApp otomatis.
+Formulir pendaftaran interaktif bertema *Deep Ocean Midnight Teal & Luminous Cyan* yang disesuaikan langsung dengan desain visual poster resmi (`4.png`, `5.png`, `6.png`). Dilengkapi integrasi otomatis ke **Google Sheets** via Google Apps Script (Dashboard KPI, Database Peserta & Lembar Presensi 6 Pertemuan), validasi nomor WhatsApp internasional (`+62` permanen), bukti transfer pembayaran, serta undangan grup WhatsApp otomatis.
 
 ---
 
-## 🌟 Informasi Program & Kurikulum (`1.png`, `2.png`, `3.png`)
+## 🌟 Informasi Program & Kurikulum (`4.png`, `5.png`, `6.png`)
 
-- **Detail Pelaksanaan (`1.png`)**:
+- **Detail Pelaksanaan (`4.png`)**:
   - **Tagline**: `PRE MARRIAGE, DEEN PREPARED`
   - **Series**: `DEEN IN LOVE SERIES`
   - **Judul Utama**: *Belajar Sebelum Berlayar*
   - **Pemateri**: Bersama **Ustadz Mahruroji**
   - **Jadwal**: **Setiap Minggu, 6 Des – 17 Jan 2026**
   - **Waktu**: **Pukul 09.00 WIB**
-  - **Link Resmi**: `s.id/deeninloveseries`
+  - **Link Resmi**: `bit.ly/deeninloveseries`
 
-- **Format Kelas Hybrid (`2.png`)**:
+- **Format Kelas Hybrid (`6.png`)**:
   - 🕌 **Offline**: **Masjid Tholibul Ilmi Widya Cendikia**
   - 💻 **Online**: **Zoom Meeting**
 
-- **Kurikulum Materi — 6 Pertemuan (`2.png`)**:
+- **Kurikulum Materi — 6 Pertemuan (`6.png`)**:
   1. **Pertemuan 1 (6 Des)**: *Sudahkah Aku Siap Menjadi Pasangan?*
   2. **Pertemuan 2 (13 Des)**: *Memilih Pasangan Yang Tepat*
   3. **Pertemuan 3 (20 Des)**: *Membangun Fondasi Rumah Tangga*
@@ -30,7 +30,7 @@ Formulir pendaftaran interaktif bertema *Deep Ocean Midnight Teal & Luminous Cya
   6. **Pertemuan 6 (10 Jan)**: *Mengelola Perbedaan dan Konflik*
   - **Rihlah + Makan Bersama (17 Jan)**: Sesi kebersamaan, evaluasi belajar, dan rihlah santai.
 
-- **Benefit & Fasilitas Lengkap (`3.png`)**:
+- **Benefit & Fasilitas Lengkap (`5.png`)**:
   - **Pengalaman Berharga & Kesempatan Istimewa**:
     - Draft CV Nikah
     - Rihlah + Makan Bersama
@@ -119,9 +119,9 @@ Formulir pendaftaran interaktif bertema *Deep Ocean Midnight Teal & Luminous Cya
 ```
 TSJ - Salin/
 ├── index.html                       # Portal utama registrasi Deen In Love Series
-├── 1.png                            # Slide 1: Poster Utama "Belajar Sebelum Berlayar"
-├── 2.png                            # Slide 2: Poster Silabus 6 Pertemuan & Kelas Hybrid
-├── 3.png                            # Slide 3: Poster Benefit, Fasilitas & Buku Pulih Bersama Allah
+├── 4.png                            # Slide 1: Poster Utama "Belajar Sebelum Berlayar"
+├── 5.png                            # Slide 2: Poster Benefit, Fasilitas & Buku Pulih Bersama Allah
+├── 6.png                            # Slide 3: Poster Silabus 6 Pertemuan & Kelas Hybrid
 ├── qris.png                         # Kode QRIS resmi untuk pembayaran
 ├── google-apps-script.js            # Script integrasi otomatis, dashboard & presensi Google Sheets
 └── README.md                        # Dokumentasi proyek
